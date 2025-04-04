@@ -176,6 +176,7 @@ export default function FigmaExtractorPage() {
         
         console.log(`${processedNodes.length} nós válidos para renderização`);
         setNodes(processedNodes as FigmaNode[]);
+        
       } else if (data && typeof data === 'object') {
         // Caso 2: Recebemos um único nó (provavelmente de uma URL com nodeId específico)
         console.log('Processando nó único recebido da API:', data);
@@ -183,12 +184,16 @@ export default function FigmaExtractorPage() {
         // Verificar se o nó tem as propriedades necessárias para renderização
         if (data.id && data.absoluteBoundingBox) {
           // Processar o nó para adicionar referências aos pais
-          const processedNode = processNodeWithParentReferences(data);
-          const nodeArray = [processedNode] as FigmaNode[];
-          setNodes(nodeArray);
-        } else {
-          console.error('Nó recebido não tem as propriedades necessárias para renderização:', data);
-          throw new Error('Node is missing required properties for rendering');
+          const extractedNodes = await response.json();
+      console.log('Extracted nodes:', extractedNodes);
+      
+      if (extractedNodes && Array.isArray(extractedNodes) && extractedNodes.length > 0) {
+        setNodes(extractedNodes);
+        setStatus('success');
+      } else {
+        setStatus('success'); // Ainda é sucesso, mas sem nós para mostrar
+        setError('No frames or components found in this Figma file.');
+      }    throw new Error('Node is missing required properties for rendering');
         }
       } else {
         throw new Error('API returned invalid data format.');
@@ -238,26 +243,8 @@ export default function FigmaExtractorPage() {
 
   const handleCopyJson = useCallback(() => {
       if (nodes.length > 0 && nodes[0]) {
-          try {
-              const jsonStr = JSON.stringify(nodes[0], null, 2);
-              // Usar uma abordagem alternativa que não depende diretamente do clipboard API
-              // Criar um elemento temporário para copiar o texto
-              const textArea = document.createElement('textarea');
-              textArea.value = jsonStr;
-              document.body.appendChild(textArea);
-              textArea.select();
-              
-              try {
-                  document.execCommand('copy');
-                  console.log('JSON copied successfully');
-              } catch (err) {
-                  console.error('Failed to copy JSON:', err);
-              }
-              
-              document.body.removeChild(textArea);
-          } catch (err) {
-              console.error('Error preparing JSON for copy:', err);
-          }
+          const jsonStr = JSON.stringify(nodes[0], null, 2);
+          navigator.clipboard.writeText(jsonStr);
       }
   }, [nodes]);
 
