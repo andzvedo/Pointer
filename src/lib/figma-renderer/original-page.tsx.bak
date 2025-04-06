@@ -1,0 +1,924 @@
+'use client'
+import React, { useState, useCallback, useRef, useEffect } from 'react'
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { Loader2, AlertCircle, Copy, Info, ArrowLeft, ZoomOut, ZoomIn, Layout } from 'lucide-react'
+import { Textarea } from '@/components/ui/textarea'
+
+// Helper function to convert Figma color (0-1 range) to CSS rgba string
+function figmaColorToCss(color?: { r: number; g: number; b: number; a: number }): string {
+    if (!color) return 'transparent';
+    const r = Math.round(color.r * 255);
+    const g = Math.round(color.g * 255);
+    const b = Math.round(color.b * 255);
+    // Garantir que o valor de alpha esteja presente
+    const alpha = color.a !== undefined ? color.a : 1;
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+// Helper function to get background color or gradient from fills
+function getBackgroundColor(fills?: ReadonlyArray<any>): string {
+    if (!fills || fills.length === 0) return 'transparent';
+    
+    // Processa fills em ordem inversa para respeitar a ordem de camadas do Figma
+    for (let i = fills.length - 1; i >= 0; i--) {
+        const fill = fills[i];
+        
+        // Ignora fills invisíveis
+        if (fill.visible === false) continue;
+        
+        if (fill.type === 'SOLID') {
+            return figmaColorToCss(fill.color);
+        }
+        else if (fill.type === 'GRADIENT_LINEAR') {
+            return createLinearGradient(fill);
+        }
+        else if (fill.type === 'GRADIENT_RADIAL') {
+            return createRadialGradient(fill);
+        }
+        else if (fill.type === 'GRADIENT_ANGULAR') {
+            return createConicGradient(fill);
+        }
+    }
+    
+    return 'transparent';
+}
+
+// Helper function to create linear gradient CSS
+function createLinearGradient(fill: any): string {
+    if (!fill.gradientStops || fill.gradientStops.length === 0) return 'transparent';
+    
+    // Calcular o ângulo do gradiente
+    const startX = fill.gradientHandlePositions[0].x;
+    const startY = fill.gradientHandlePositions[0].y;
+    const endX = fill.gradientHandlePositions[1].x;
+    const endY = fill.gradientHandlePositions[1].y;
+    
+    // Calcular o ângulo em graus
+    const angle = Math.atan2(endY - startY, endX - startX) * (180 / Math.PI);
+    
+    // Criar a string de cores do gradiente
+    const stops = fill.gradientStops.map((stop: any) => {
+        const color = figmaColorToCss(stop.color);
+        const position = Math.round(stop.position * 100);
+        return `${color} ${position}%`;
+    }).join(', ');
+    
+    return `linear-gradient(${angle}deg, ${stops})`;
+}
+
+// Helper function to create radial gradient CSS
+function createRadialGradient(fill: any): string {
+    if (!fill.gradientStops || fill.gradientStops.length === 0) return 'transparent';
+    
+    // Criar a string de cores do gradiente
+    const stops = fill.gradientStops.map((stop: any) => {
+        const color = figmaColorToCss(stop.color);
+        const position = Math.round(stop.position * 100);
+        return `${color} ${position}%`;
+    }).join(', ');
+    
+    // Posição do centro do gradiente
+    const centerX = Math.round(fill.gradientHandlePositions[0].x * 100);
+    const centerY = Math.round(fill.gradientHandlePositions[0].y * 100);
+    
+    return `radial-gradient(circle at ${centerX}% ${centerY}%, ${stops})`;
+}
+
+// Helper function to create conic gradient CSS
+function createConicGradient(fill: any): string {
+    if (!fill.gradientStops || fill.gradientStops.length === 0) return 'transparent';
+    
+    // Criar a string de cores do gradiente
+    const stops = fill.gradientStops.map((stop: any) => {
+        const color = figmaColorToCss(stop.color);
+        const position = Math.round(stop.position * 360); // Converter para graus
+        return `${color} ${position}deg`;
+    }).join(', ');
+    
+    // Posição do centro do gradiente
+    const centerX = Math.round(fill.gradientHandlePositions[0].x * 100);
+    const centerY = Math.round(fill.gradientHandlePositions[0].y * 100);
+    
+    return `conic-gradient(from 0deg at ${centerX}% ${centerY}%, ${stops})`;
+}
+
+// Helper function to render a node recursively
+function renderNode(node: FigmaNode, scale: number = 0.2): React.ReactNode {
+    console.log('renderNode called with:', node.id, node.name, node.type);
+    
+    if (!node) {
+        console.log('Attempted to render null node');
+        return null;
+    }
+    
+    // Se o nó não tiver absoluteBoundingBox, não podemos renderizá-lo corretamente
+    if (!node.absoluteBoundingBox) {
+        console.log('Node missing absoluteBoundingBox:', node.id, node.name);
+        return null;
+    }
+    
+    console.log('Node has boundingBox:', node.absoluteBoundingBox);
+    
+    // Para nós de primeiro nível (frames), definir posição relativa ao container
+    // Para nós filhos, definir posição absoluta em relação ao pai
+    const isTopLevelNode = node.type === 'FRAME' || node.type === 'COMPONENT' || node.type === 'INSTANCE';
+    
+    // Calcular posição com precisão
+    const parentX = node.parent?.absoluteBoundingBox?.x || 0;
+    const parentY = node.parent?.absoluteBoundingBox?.y || 0;
+    const x = isTopLevelNode ? 0 : (node.absoluteBoundingBox.x - parentX) * scale;
+    const y = isTopLevelNode ? 0 : (node.absoluteBoundingBox.y - parentY) * scale;
+    
+    console.log('Calculated position:', { x, y, isTopLevelNode, parentX, parentY });
+    
+    // Aplicar opacidade do nó
+    let opacity = 1;
+    if (typeof node.opacity === 'number') {
+        opacity = node.opacity;
+    }
+    
+    // Criar estilo base
+    const style: React.CSSProperties = {
+        position: 'absolute',
+        left: `${x}px`,
+        top: `${y}px`,
+        width: `${node.absoluteBoundingBox.width * scale}px`,
+        height: `${node.absoluteBoundingBox.height * scale}px`,
+        backgroundColor: getBackgroundColor(node.fills),
+        opacity: opacity,
+        overflow: 'hidden',
+    };
+    
+    // Processar border radius (suporta tanto número único quanto valores específicos para cada canto)
+    if (typeof node.cornerRadius === 'number' && node.cornerRadius > 0) {
+        style.borderRadius = `${node.cornerRadius * scale}px`;
+    } else if (node.cornerRadius && typeof node.cornerRadius === 'object') {
+        const tl = node.cornerRadius.topLeft || 0;
+        const tr = node.cornerRadius.topRight || 0;
+        const br = node.cornerRadius.bottomRight || 0;
+        const bl = node.cornerRadius.bottomLeft || 0;
+        if (tl > 0 || tr > 0 || br > 0 || bl > 0) {
+            style.borderRadius = `${tl * scale}px ${tr * scale}px ${br * scale}px ${bl * scale}px`;
+        }
+    }
+    
+    // Processar bordas (strokes)
+    if (node.strokes && node.strokes.length > 0) {
+        const strokeFill = node.strokes.find((stroke: any) => stroke.type === 'SOLID');
+        if (strokeFill && node.strokeWeight) {
+            const strokeWidth = node.strokeWeight * scale;
+            const strokeColor = figmaColorToCss(strokeFill.color);
+            style.border = `${strokeWidth}px solid ${strokeColor}`;
+            
+            // Aplicar strokeAlign se disponível
+            if (node.strokeAlign === 'INSIDE') {
+                style.boxSizing = 'border-box';
+            } else if (node.strokeAlign === 'OUTSIDE') {
+                // Ajustar tamanho e posição para stroke outside
+                const offset = strokeWidth;
+                style.width = `calc(${style.width} + ${offset * 2}px)`;
+                style.height = `calc(${style.height} + ${offset * 2}px)`;
+                style.left = `calc(${style.left} - ${offset}px)`;
+                style.top = `calc(${style.top} - ${offset}px)`;
+            }
+            // CENTER é o padrão e não precisa de ajustes
+        }
+    }
+    
+    // Processar efeitos (sombras, etc)
+    if (node.effects && node.effects.length > 0) {
+        // Processar sombras
+        const dropShadows = node.effects.filter((effect: any) => 
+            (effect.type === 'DROP_SHADOW' || effect.type === 'INNER_SHADOW') && effect.visible !== false
+        );
+        
+        if (dropShadows.length > 0) {
+            const shadowsCSS = dropShadows.map((shadow: any) => {
+                const color = figmaColorToCss(shadow.color);
+                const offsetX = shadow.offset?.x * scale || 0;
+                const offsetY = shadow.offset?.y * scale || 0;
+                const blur = shadow.radius * scale;
+                const spread = (shadow.spread || 0) * scale;
+                const inset = shadow.type === 'INNER_SHADOW' ? 'inset ' : '';
+                return `${inset}${offsetX}px ${offsetY}px ${blur}px ${spread}px ${color}`;
+            }).join(', ');
+            
+            style.boxShadow = shadowsCSS;
+        }
+        
+        // Processar blur
+        const blurEffects = node.effects.filter((effect: any) => 
+            effect.type === 'LAYER_BLUR' && effect.visible !== false
+        );
+        
+        if (blurEffects.length > 0) {
+            const blur = blurEffects[0].radius * scale;
+            style.filter = `${style.filter || ''} blur(${blur}px)`.trim();
+        }
+    }
+    
+    // Aplicar blend mode se disponível
+    if (node.blendMode && node.blendMode !== 'NORMAL') {
+        const blendModeMap: {[key: string]: string} = {
+            'MULTIPLY': 'multiply',
+            'SCREEN': 'screen',
+            'OVERLAY': 'overlay',
+            'DARKEN': 'darken',
+            'LIGHTEN': 'lighten',
+            'COLOR_DODGE': 'color-dodge',
+            'COLOR_BURN': 'color-burn',
+            'HARD_LIGHT': 'hard-light',
+            'SOFT_LIGHT': 'soft-light',
+            'DIFFERENCE': 'difference',
+            'EXCLUSION': 'exclusion',
+            'HUE': 'hue',
+            'SATURATION': 'saturation',
+            'COLOR': 'color',
+            'LUMINOSITY': 'luminosity'
+        };
+        
+        const cssBlendMode = blendModeMap[node.blendMode];
+        if (cssBlendMode) {
+            style.mixBlendMode = cssBlendMode as any;
+        }
+    }
+    
+    // Processamento especial para nós de texto
+    if (node.type === 'TEXT' && node.characters) {
+        // Estilos específicos para texto
+        const textStyle: React.CSSProperties = {
+            margin: 0,
+            padding: 0,
+            fontSize: node.style?.fontSize ? `${node.style.fontSize * scale}px` : undefined,
+            fontWeight: node.style?.fontWeight,
+            fontFamily: node.style?.fontFamily || 'Inter, system-ui, sans-serif',
+            lineHeight: node.style?.lineHeightPx ? `${node.style.lineHeightPx * scale}px` : 
+                       node.style?.lineHeightPercent ? `${node.style.lineHeightPercent}%` : undefined,
+            letterSpacing: node.style?.letterSpacing ? `${node.style.letterSpacing * scale}px` : undefined,
+            textAlign: node.style?.textAlignHorizontal?.toLowerCase() as any,
+            color: getBackgroundColor(node.fills) !== 'transparent' ? getBackgroundColor(node.fills) : '#000',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            whiteSpace: 'pre-wrap', // Preserva quebras de linha
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+        };
+        
+        // Alinhamento vertical
+        if (node.style?.textAlignVertical) {
+            switch (node.style.textAlignVertical.toLowerCase()) {
+                case 'top':
+                    textStyle.justifyContent = 'flex-start';
+                    break;
+                case 'center':
+                    textStyle.justifyContent = 'center';
+                    break;
+                case 'bottom':
+                    textStyle.justifyContent = 'flex-end';
+                    break;
+            }
+        }
+        
+        return (
+            <div style={style}>
+                <div style={textStyle}>
+                    {node.characters}
+                </div>
+            </div>
+        );
+    }
+    
+    // Processamento especial para VECTOR e SVG
+    if (node.type === 'VECTOR' || node.type === 'LINE' || node.type === 'ELLIPSE' || node.type === 'POLYGON') {
+        // Para vetores, apenas renderizamos um placeholder colorido
+        return <div style={{...style, backgroundColor: style.backgroundColor || '#CCCCCC'}} />;
+    }
+    
+    // Processamento especial para AUTO_LAYOUT
+    if (node.layoutMode) {
+        const autoLayoutStyle: React.CSSProperties = {...style};
+        
+        // Direção do layout
+        if (node.layoutMode === 'HORIZONTAL') {
+            autoLayoutStyle.display = 'flex';
+            autoLayoutStyle.flexDirection = 'row';
+        } else if (node.layoutMode === 'VERTICAL') {
+            autoLayoutStyle.display = 'flex';
+            autoLayoutStyle.flexDirection = 'column';
+        }
+        
+        // Espaçamento entre itens
+        if (typeof node.itemSpacing === 'number') {
+            autoLayoutStyle.gap = `${node.itemSpacing * scale}px`;
+        }
+        
+        // Padding
+        const paddingTop = node.paddingTop !== undefined ? node.paddingTop * scale : 0;
+        const paddingRight = node.paddingRight !== undefined ? node.paddingRight * scale : 0;
+        const paddingBottom = node.paddingBottom !== undefined ? node.paddingBottom * scale : 0;
+        const paddingLeft = node.paddingLeft !== undefined ? node.paddingLeft * scale : 0;
+        
+        if (paddingTop > 0 || paddingRight > 0 || paddingBottom > 0 || paddingLeft > 0) {
+            autoLayoutStyle.padding = `${paddingTop}px ${paddingRight}px ${paddingBottom}px ${paddingLeft}px`;
+            autoLayoutStyle.boxSizing = 'border-box';
+        }
+        
+        // Alinhamento de itens
+        if (node.primaryAxisAlignItems) {
+            const alignMap: {[key: string]: string} = {
+                'MIN': 'flex-start',
+                'CENTER': 'center',
+                'MAX': 'flex-end',
+                'SPACE_BETWEEN': 'space-between'
+            };
+            
+            if (node.layoutMode === 'HORIZONTAL') {
+                autoLayoutStyle.justifyContent = alignMap[node.primaryAxisAlignItems] || 'flex-start';
+            } else {
+                autoLayoutStyle.alignItems = alignMap[node.primaryAxisAlignItems] || 'flex-start';
+            }
+        }
+        
+        if (node.counterAxisAlignItems) {
+            const alignMap: {[key: string]: string} = {
+                'MIN': 'flex-start',
+                'CENTER': 'center',
+                'MAX': 'flex-end'
+            };
+            
+            if (node.layoutMode === 'HORIZONTAL') {
+                autoLayoutStyle.alignItems = alignMap[node.counterAxisAlignItems] || 'flex-start';
+            } else {
+                autoLayoutStyle.justifyContent = alignMap[node.counterAxisAlignItems] || 'flex-start';
+            }
+        }
+        
+        return (
+            <div style={autoLayoutStyle}>
+                {node.children?.map((child: FigmaNode) => (
+                    <React.Fragment key={child.id}>
+                        {renderNode(child, scale)}
+                    </React.Fragment>
+                ))}
+            </div>
+        );
+    }
+    
+    // Renderização padrão para outros tipos de nós
+    return (
+        <div style={style}>
+            {node.children?.map((child: FigmaNode) => (
+                <React.Fragment key={child.id}>
+                    {renderNode(child, scale)}
+                </React.Fragment>
+            ))}
+        </div>
+    );
+}
+
+// Interface for Figma nodes (expanded to support more node types)
+interface FigmaNode {
+    id: string;
+    name: string;
+    type: string; // 'FRAME', 'RECTANGLE', 'TEXT', 'GROUP', 'COMPONENT', 'INSTANCE', 'VECTOR', etc.
+    absoluteBoundingBox?: { x: number; y: number; width: number; height: number };
+    fills?: ReadonlyArray<any>;
+    strokes?: ReadonlyArray<any>;
+    strokeWeight?: number;
+    strokeAlign?: 'INSIDE' | 'OUTSIDE' | 'CENTER';
+    cornerRadius?: number | { topLeft?: number; topRight?: number; bottomRight?: number; bottomLeft?: number };
+    characters?: string; // For TEXT nodes
+    style?: { // For TEXT nodes
+        fontFamily?: string;
+        fontWeight?: number;
+        fontSize?: number;
+        textAlignHorizontal?: string;
+        textAlignVertical?: string;
+        letterSpacing?: number;
+        lineHeightPx?: number;
+        lineHeightPercent?: number;
+        paragraphIndent?: number;
+        paragraphSpacing?: number;
+        textCase?: 'UPPER' | 'LOWER' | 'TITLE' | 'ORIGINAL';
+        textDecoration?: 'NONE' | 'UNDERLINE' | 'STRIKETHROUGH';
+    };
+    layoutMode?: string; // For AUTO_LAYOUT ('HORIZONTAL' or 'VERTICAL')
+    primaryAxisSizingMode?: string;
+    counterAxisSizingMode?: string;
+    primaryAxisAlignItems?: 'MIN' | 'CENTER' | 'MAX' | 'SPACE_BETWEEN';
+    counterAxisAlignItems?: 'MIN' | 'CENTER' | 'MAX';
+    paddingLeft?: number;
+    paddingRight?: number;
+    paddingTop?: number;
+    paddingBottom?: number;
+    itemSpacing?: number; // For AUTO_LAYOUT
+    effects?: ReadonlyArray<any>; // For shadows, blurs, etc.
+    opacity?: number;
+    blendMode?: string;
+    isMask?: boolean;
+    isVisible?: boolean;
+    constraints?: {
+        horizontal?: 'LEFT' | 'RIGHT' | 'CENTER' | 'SCALE' | 'STRETCH';
+        vertical?: 'TOP' | 'BOTTOM' | 'CENTER' | 'SCALE' | 'STRETCH';
+    };
+    children?: FigmaNode[];
+    parent?: FigmaNode; // Referência ao nó pai para cálculo de posição relativa
+}
+
+type FetchStatus = 'idle' | 'loading' | 'success' | 'error'
+
+export default function FigmaExtractorPage() {
+  const [figmaUrl, setFigmaUrl] = useState<string>('')
+  const [status, setStatus] = useState<FetchStatus>('idle')
+  const [nodes, setNodes] = useState<FigmaNode[]>([])
+  const [error, setError] = useState<string | null>(null)
+  const [position, setPosition] = useState({ x: 100, y: 100 })
+  const [scale, setScale] = useState(0.5)
+  const [isDragging, setIsDragging] = useState(false)
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 })
+  const canvasRef = useRef<HTMLDivElement>(null)
+
+  const handleFetchData = async () => {
+    if (!figmaUrl) {
+      setError('Please enter a valid Figma File URL.');
+      setStatus('error');
+      return;
+    }
+    
+    setStatus('loading');
+    setError(null);
+    setNodes([]);
+
+    try {
+      console.log('Fetching data from Figma URL:', figmaUrl);
+      
+      // Adicionar parâmetros opcionais para a API
+      const params = new URLSearchParams({
+        figmaUrl: figmaUrl,
+        includeStyles: 'true',
+        includeComponents: 'true',
+        depth: '3' // Profundidade maior para capturar mais detalhes
+      });
+      
+      const response = await fetch(`/api/figma?${params.toString()}`)
+      if (!response.ok) {
+        let errorMsg = `Request failed: ${response.status}`;
+        try { const data = await response.json(); errorMsg = data.details || data.error || errorMsg; } catch {} 
+        throw new Error(errorMsg);
+      }
+      
+      const data = await response.json();
+      console.log('Received data from API:', data);
+      
+      // Verificar a nova estrutura de resposta da API
+      if (data.node) {
+        // Nova estrutura com metadados
+        console.log('Processando nó com nova estrutura de API:', data.node);
+        
+        // Verificar se o nó tem as propriedades necessárias para renderização
+        if (data.node.id) {
+          // Processar o nó para adicionar referências aos pais
+          const processedNode = processNodeWithParentReferences(data.node);
+          const nodeArray = [processedNode] as FigmaNode[];
+          setNodes(nodeArray);
+          
+          // Exibir informações do arquivo no console para debug
+          if (data.metadata) {
+            console.log('Figma file metadata:', data.metadata);
+          }
+          
+          // Se tiver múltiplas páginas, mostrar no console
+          if (data.pages && Array.isArray(data.pages)) {
+            console.log('Available Figma pages:', data.pages);
+          }
+        } else {
+          console.error('Nó recebido não tem as propriedades necessárias para renderização:', data.node);
+          throw new Error('Node is missing required properties for rendering');
+        }
+      } else {
+        // Estrutura antiga ou array de nós
+        if (Array.isArray(data)) {
+          // Caso 1: Recebemos um array de frames/nós
+          console.log(`Processando ${data.length} nós recebidos da API`);
+          
+          // Verificar se os nós têm as propriedades necessárias para renderização
+          const validNodes = data.filter(node => {
+            const hasRequiredProps = node && node.id && node.absoluteBoundingBox;
+            if (!hasRequiredProps) {
+              console.warn('Nó inválido encontrado:', node);
+            }
+            return hasRequiredProps;
+          });
+          
+          // Processar nós para adicionar referências aos pais
+          const processedNodes = processNodesWithParentReferences(validNodes);
+          
+          console.log(`${processedNodes.length} nós válidos para renderização`);
+          setNodes(processedNodes as FigmaNode[]);
+        } else if (data && typeof data === 'object') {
+          // Caso 2: Recebemos um único nó (provavelmente de uma URL com nodeId específico)
+          console.log('Processando nó único recebido da API:', data);
+          
+          // Verificar se o nó tem as propriedades necessárias para renderização
+          if (data.id && data.absoluteBoundingBox) {
+            // Processar o nó para adicionar referências aos pais
+            const processedNode = processNodeWithParentReferences(data);
+            const nodeArray = [processedNode] as FigmaNode[];
+            setNodes(nodeArray);
+          } else {
+            console.error('Nó recebido não tem as propriedades necessárias para renderização:', data);
+            throw new Error('Node is missing required properties for rendering');
+          }
+        } else {
+          throw new Error('API returned invalid data format.');
+        }
+      }
+      
+      setStatus('success');
+    } catch (err: any) {
+      console.error("Fetch error:", err);
+      setError(err.message || 'An unexpected error occurred.');
+      setStatus('error');
+    }
+  }
+  
+  // Função para processar nós e adicionar referências aos pais
+  const processNodesWithParentReferences = (nodes: any[]): any[] => {
+    // Primeiro, criar uma cópia profunda dos nós para não modificar os originais
+    const nodesCopy = JSON.parse(JSON.stringify(nodes));
+    
+    // Função recursiva para processar nós
+    const processNode = (node: any, parent: any = null) => {
+      // Adicionar referência ao pai apenas com as propriedades essenciais
+      // para evitar circularidade
+      if (parent) {
+        node.parent = { 
+          id: parent.id,
+          absoluteBoundingBox: parent.absoluteBoundingBox
+          // Não incluir children aqui para evitar circularidade
+        };
+      }
+      
+      // Processar filhos recursivamente
+      if (node.children && Array.isArray(node.children)) {
+        node.children.forEach((child: any) => {
+          processNode(child, node);
+        });
+      }
+      
+      return node;
+    };
+    
+    // Processar cada nó de primeiro nível
+    return nodesCopy.map((node: any) => processNode(node));
+  };
+  
+  // Função para processar um único nó e adicionar referências aos pais
+  const processNodeWithParentReferences = (node: any): any => {
+    return processNodesWithParentReferences([node])[0];
+  };
+
+  // Canvas manipulation handlers
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    // Only start dragging with left mouse button or if shift key is pressed
+    if (e.button === 0 && (e.shiftKey || e.button === 1 as number)) {
+      setIsDragging(true)
+      setDragStart({ x: e.clientX - position.x, y: e.clientY - position.y })
+    }
+  }, [position])
+
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+    if (isDragging) {
+      setPosition({
+        x: e.clientX - dragStart.x,
+        y: e.clientY - dragStart.y
+      })
+    }
+  }, [isDragging, dragStart])
+
+  const handleMouseUp = useCallback(() => {
+    setIsDragging(false)
+  }, [])
+
+  const zoomIn = useCallback(() => {
+    setScale(prev => Math.min(prev * 1.2, 5))
+  }, [])
+
+  const zoomOut = useCallback(() => {
+    setScale(prev => Math.max(prev / 1.2, 0.1))
+  }, [])
+
+  const resetZoom = useCallback(() => {
+    setScale(1.0);
+    setPosition({ x: 0, y: 0 });
+  }, [])
+
+  // Handle zoom with mouse wheel
+  useEffect(() => {
+    const handleWheel = (e: WheelEvent) => {
+      // Only zoom if Ctrl/Cmd key is pressed
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault()
+        const delta = e.deltaY > 0 ? 0.9 : 1.1
+        setScale(prev => Math.max(0.1, Math.min(5, prev * delta)))
+      }
+    }
+
+    const canvas = canvasRef.current
+    if (canvas) {
+      canvas.addEventListener('wheel', handleWheel, { passive: false })
+    }
+
+    return () => {
+      if (canvas) {
+        canvas.removeEventListener('wheel', handleWheel)
+      }
+    }
+  }, [canvasRef])
+
+  const handleCopyJson = useCallback(() => {
+      if (nodes.length > 0 && nodes[0]) {
+          try {
+              const jsonStr = JSON.stringify(nodes[0], null, 2);
+              // Usar uma abordagem alternativa que não depende diretamente do clipboard API
+              // Criar um elemento temporário para copiar o texto
+              const textArea = document.createElement('textarea');
+              textArea.value = jsonStr;
+              document.body.appendChild(textArea);
+              textArea.select();
+              
+              try {
+                  document.execCommand('copy');
+                  console.log('JSON copied successfully');
+              } catch (err) {
+                  console.error('Failed to copy JSON:', err);
+              }
+              
+              document.body.removeChild(textArea);
+          } catch (err) {
+              console.error('Error preparing JSON for copy:', err);
+          }
+      }
+  }, [nodes]);
+
+  // State 1 & 2: Idle and Loading
+  if (status === 'idle' || status === 'loading' ) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <Card className="w-full max-w-md shadow-md">
+          <CardHeader>
+            <CardTitle>Extract data from Figma</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <div className="relative">
+                 <label className="text-sm font-medium text-gray-700 absolute -top-2 left-2 bg-white px-1">Figma URL</label>
+                 <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer" title="Paste the full URL of your Figma file.">
+                   <Info className="h-4 w-4" />
+                 </span>
+                 <Input
+                    type="url"
+                    placeholder="Enter Figma URL here"
+                    className="border-gray-300 pt-3"
+                    value={figmaUrl}
+                    onChange={(e) => setFigmaUrl(e.target.value)}
+                    disabled={status === 'loading'}
+                  />
+              </div>
+              
+              <Button onClick={handleFetchData} disabled={status === 'loading'} className="w-full bg-gray-800 hover:bg-gray-700 text-white">
+                {status === 'loading' ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    <span>Extracting...</span> 
+                  </>
+                ) : (
+                  <span>Extract data</span> 
+                )}
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  // State 3: Error occurred during fetch
+  if (status === 'error') {
+    return (
+       <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <Card className="w-full max-w-md shadow-md">
+          <CardHeader>
+            <CardTitle>Extract data from Figma</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <div className="relative">
+                 <label className="text-sm font-medium text-gray-700 absolute -top-2 left-2 bg-white px-1">Figma URL</label>
+                 <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer" title="Paste the full URL of your Figma file.">
+                   <Info className="h-4 w-4" />
+                 </span>
+                 <Input
+                    type="url"
+                    placeholder="Enter Figma URL here"
+                    className="border-gray-300 pt-3" 
+                    value={figmaUrl}
+                    onChange={(e) => setFigmaUrl(e.target.value)}
+                  />
+              </div>
+              <Alert variant="destructive">
+                <AlertCircle className="h-4 w-4" />
+                <AlertTitle>Error</AlertTitle>
+                <AlertDescription>{error || 'Could not fetch data.'}</AlertDescription>
+              </Alert>
+              <Button onClick={() => setStatus('idle')} variant="outline" className="w-full">
+                Try Again
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  // Helper for conditional rendering
+  const isSuccessWithNoNodes = status === 'success' && nodes.length === 0
+
+  // State 4: Success (Data Extracted Layout)
+  return (
+    <div className="flex h-screen w-screen bg-white overflow-hidden">
+      <aside className="w-72 bg-white border-r border-gray-200 p-4 flex flex-col space-y-4 overflow-y-auto">
+          <div>
+              <label htmlFor="figmaUrlDisplay" className="text-xs font-medium text-gray-500 flex items-center justify-between mb-1">
+                  <span>Figma URL</span>
+                  <span className="cursor-pointer" title="The URL of the Figma file being displayed.">
+                    <Info className="h-3 w-3 text-gray-400" />
+                  </span>
+              </label>
+              <Input 
+                  id="figmaUrlDisplay"
+                  type="text" 
+                  value={figmaUrl} 
+                  readOnly 
+                  className="w-full border-gray-300 bg-gray-50 text-xs h-8 focus-visible:ring-offset-0 focus-visible:ring-0"
+              />
+          </div>
+
+          {nodes.length > 0 && nodes[0] && (
+            <div className="flex-grow overflow-y-auto border rounded-md p-3 bg-white space-y-3">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-sm font-semibold">{nodes[0].name}</h3>
+                  <span className="text-xs bg-gray-100 px-2 py-0.5 rounded text-gray-600">{nodes[0].type}</span>
+                </div>
+                
+                {/* Dimensões do nó */}
+                {nodes[0].absoluteBoundingBox && (
+                  <div className="text-xs text-gray-600 border-t border-gray-100 pt-2 mt-1">
+                    <div className="grid grid-cols-2 gap-1">
+                      <div>Largura: {nodes[0].absoluteBoundingBox.width}px</div>
+                      <div>Altura: {nodes[0].absoluteBoundingBox.height}px</div>
+                    </div>
+                  </div>
+                )}
+                
+                {/* Título para filhos */}
+                <div className="text-xs font-medium text-gray-700 mt-3 pt-2 border-t border-gray-100">
+                  Elementos ({nodes[0].children?.length || 0})
+                </div>
+                
+                {/* Lista de filhos */}
+                <div className="max-h-[300px] overflow-y-auto">
+                  {nodes[0].children?.slice(0, 20).map(child => (
+                      <div key={child.id} className="text-xs flex items-center py-1 pl-2 border-l-2 border-gray-200 hover:bg-gray-50 my-1 group">
+                          <div className="flex-1 truncate">
+                            {child.name || "Sem nome"}
+                          </div>
+                          <div className="text-gray-400 text-[10px] opacity-0 group-hover:opacity-100">
+                            {child.type}
+                          </div>
+                      </div>
+                  ))}
+                  {nodes[0].children && nodes[0].children.length > 20 && (
+                      <div className="text-xs text-gray-400 pl-2 mt-1 italic">
+                        ...e mais {nodes[0].children.length - 20} elementos
+                      </div>
+                  )}
+                  {nodes[0].children?.length === 0 && (
+                      <div className="text-xs text-gray-400 pl-2 italic">
+                        Nenhum elemento filho encontrado.
+                      </div>
+                  )}
+                </div>
+                
+                {/* Botão para copiar JSON */}
+                <div className="pt-2 mt-2 border-t border-gray-100">
+                  <Button 
+                    onClick={handleCopyJson} 
+                    variant="outline" 
+                    size="sm" 
+                    className="w-full text-xs h-7"
+                  >
+                    <Copy className="h-3 w-3 mr-1" />
+                    Copiar Dados JSON
+                  </Button>
+                </div>
+            </div>
+          )}
+      </aside>
+
+      <main className="flex-grow flex flex-col overflow-hidden relative bg-gray-100"> 
+          <header className="flex items-center justify-between p-4 border-b border-gray-200 bg-white flex-shrink-0">
+               <h1 className="text-lg font-semibold truncate pr-4">Figma Design Viewer</h1>
+               <Button onClick={() => setStatus('idle')} variant="outline" size="sm">
+                   <ArrowLeft className="h-4 w-4 mr-2"/>
+                   Back
+               </Button>
+           </header>
+
+          <div 
+            className="flex-grow relative overflow-hidden cursor-grab" 
+            ref={canvasRef}
+            onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseUp} 
+            style={{ cursor: isDragging ? 'grabbing' : 'grab' }} 
+          >
+            <div 
+              className="absolute top-0 left-0" 
+              style={{ 
+                transform: `translate(${position.x}px, ${position.y}px) scale(${scale})`,
+                transformOrigin: '0 0', 
+                // Consider adding transition for smoother zoom/pan later if needed
+                // transition: 'transform 0.1s ease-out',
+              }} 
+            >
+              {/* Console logs para debug */}
+              {status === 'success' && nodes.length > 0 && (() => { console.log('Rendering nodes:', nodes); return null; })()}
+              {status === 'success' && nodes.length > 0 && nodes.map(node => {
+                console.log('Rendering node:', node.id, node.name, node.type);
+                return renderNode(node, scale);
+              })}
+            </div>
+
+            {/* Loading or empty results overlay */}
+            {(status as string) === 'loading' && (
+                <div className="absolute inset-0 flex items-center justify-center p-10 z-10"> 
+                    <div className="text-center p-8 bg-white rounded-lg border border-gray-200 shadow-sm max-w-sm">
+                        <Loader2 className="h-12 w-12 text-blue-500 mx-auto mb-4 animate-spin" />
+                        <h3 className="text-lg font-semibold mb-2">Fetching Data...</h3>
+                        <p className="text-sm text-gray-600">
+Please wait while we load the Figma file content.
+                        </p>
+                    </div>
+                </div>
+            )}
+            {isSuccessWithNoNodes && (
+                <div className="absolute inset-0 flex items-center justify-center p-10 z-10"> 
+                      <div className="text-center p-8 bg-white rounded-lg border border-gray-200 shadow-sm max-w-sm">
+                          <Layout className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                          <h3 className="text-lg font-semibold mb-2">No Visible Content</h3>
+                          <p className="text-sm text-gray-600">
+                              The Figma file was loaded, but no top-level frames were found, or they might be empty or outside the initial view.
+                          </p>
+                          <Button onClick={handleFetchData} variant="link" className="mt-2 text-xs">
+                            Try Reloading
+                          </Button>
+                      </div>
+                </div>
+            )}
+          </div>
+          
+          <div className="absolute bottom-4 right-4 flex items-center space-x-1 bg-white/90 backdrop-blur-sm p-1.5 rounded-lg shadow-md border border-gray-200/80 z-20">
+              <Button onClick={zoomOut} variant="ghost" size="icon" title="Zoom Out (-)" className="h-7 w-7">
+                  <ZoomOut className="h-4 w-4" />
+              </Button>
+              <span 
+                className="text-xs font-medium w-12 text-center px-1 tabular-nums cursor-pointer hover:bg-gray-100 rounded py-1" 
+                title="Reset Zoom & Position (Click)" 
+                onClick={resetZoom}
+              >
+                {Math.round(scale * 100)}%
+              </span>
+              <Button onClick={zoomIn} variant="ghost" size="icon" title="Zoom In (+)" className="h-7 w-7">
+                  <ZoomIn className="h-4 w-4" />
+              </Button>
+          </div>
+
+          <div className="absolute bottom-4 left-4 text-xs text-gray-600 bg-white/90 backdrop-blur-sm p-2 rounded shadow border border-gray-200/80 z-20">
+              <strong>Pan:</strong> Shift+Drag / Middle Click | <strong>Zoom:</strong> Ctrl/Cmd+Scroll
+          </div>
+
+      </main>
+    </div>
+  );
+}
+
+// Helper types and functions (FigmaNode, FetchStatus, processFigmaUrl, renderNode, etc.) remain below
+// ... (rest of the component code)
