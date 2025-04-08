@@ -71,10 +71,10 @@ export default function FigmaExtractorPage() {
         setNodes([data.node]);
         setJsonData(JSON.stringify(data, null, 2));
       } else if (Array.isArray(data)) {
-        console.log(`Processando ${data.length} nós recebidos da API`);
+          console.log(`Processando ${data.length} nós recebidos da API`);
         setNodes(data);
         setJsonData(JSON.stringify(data, null, 2));
-      } else if (data && typeof data === 'object') {
+        } else if (data && typeof data === 'object') {
         console.log('Processando único nó recebido da API');
         setNodes([data]);
         setJsonData(JSON.stringify(data, null, 2));

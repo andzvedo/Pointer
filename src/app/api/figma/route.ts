@@ -1,4 +1,9 @@
-import { type NextRequest } from 'next/server'
+// Definindo tipos para substituir a importação de next/server
+interface NextRequest extends Request {
+  nextUrl: {
+    searchParams: URLSearchParams;
+  };
+}
 
 // Definindo interfaces para a API do Figma com base na documentação oficial
 interface FigmaApiNodeResponse {
