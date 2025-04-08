@@ -1,11 +1,11 @@
 'use client'
 import React, { useState } from 'react'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { Button } from "../components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
+import { Input } from "../components/ui/input"
+import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert"
 import { Loader2, AlertCircle, Copy, Info, ArrowLeft, Download } from 'lucide-react'
-import { Textarea } from '@/components/ui/textarea'
+import { Textarea } from '../components/ui/textarea'
 
 // NOTA: A funcionalidade de renderização visual do Figma foi temporariamente desativada.
 // Todo o código relacionado à renderização foi preservado e pode ser encontrado nos
@@ -14,11 +14,11 @@ import { Textarea } from '@/components/ui/textarea'
 
 // Interface simplificada para os nós do Figma (apenas para visualização JSON)
 interface FigmaNode {
-  id: string;
-  name: string;
+    id: string;
+    name: string;
   type: string;
-  absoluteBoundingBox?: { x: number; y: number; width: number; height: number };
-  children?: FigmaNode[];
+    absoluteBoundingBox?: { x: number; y: number; width: number; height: number };
+    children?: FigmaNode[];
   [key: string]: any; // Para outras propriedades
 }
 
@@ -78,8 +78,8 @@ export default function FigmaExtractorPage() {
         console.log('Processando único nó recebido da API');
         setNodes([data]);
         setJsonData(JSON.stringify(data, null, 2));
-      } else {
-        throw new Error('API returned invalid data format.');
+        } else {
+          throw new Error('API returned invalid data format.');
       }
       
       setStatus('success');
@@ -89,7 +89,7 @@ export default function FigmaExtractorPage() {
       setStatus('error');
     }
   }
-
+  
   const handleCopyJson = () => {
     if (!jsonData) return;
     
@@ -123,17 +123,17 @@ export default function FigmaExtractorPage() {
           <CardContent>
             <div className="space-y-4">
               <div className="relative">
-                <label className="text-sm font-medium text-gray-700 absolute -top-2 left-2 bg-white px-1">Figma URL</label>
-                <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer" title="Paste the full URL of your Figma file.">
-                  <Info className="h-4 w-4" />
-                </span>
-                <Input
-                  type="url"
-                  placeholder="Enter Figma URL here"
-                  className="border-gray-300 pt-3" 
-                  value={figmaUrl}
-                  onChange={(e) => setFigmaUrl(e.target.value)}
-                />
+                 <label className="text-sm font-medium text-gray-700 absolute -top-2 left-2 bg-white px-1">Figma URL</label>
+                 <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer" title="Paste the full URL of your Figma file.">
+                   <Info className="h-4 w-4" />
+                 </span>
+                 <Input
+                    type="url"
+                    placeholder="Enter Figma URL here"
+                    className="border-gray-300 pt-3"
+                    value={figmaUrl}
+                    onChange={(e) => setFigmaUrl(e.target.value)}
+                  />
               </div>
               <div className="text-xs text-gray-500 -mt-2">
                 Example: https://www.figma.com/file/abcdef123456/My-Design
@@ -222,19 +222,19 @@ export default function FigmaExtractorPage() {
         {/* Informações do nó */}
         <aside className="w-full sm:w-72 bg-white border-r border-gray-200 p-4 flex flex-col space-y-4 overflow-y-auto">
           <div>
-            <label htmlFor="figmaUrlDisplay" className="text-xs font-medium text-gray-500 flex items-center justify-between mb-1">
-              <span>Figma URL</span>
-              <span className="cursor-pointer" title="The URL of the Figma file being displayed.">
-                <Info className="h-3 w-3 text-gray-400" />
-              </span>
-            </label>
-            <Input 
-              id="figmaUrlDisplay"
-              type="text" 
-              value={figmaUrl} 
-              readOnly 
-              className="w-full border-gray-300 bg-gray-50 text-xs h-8 focus-visible:ring-offset-0 focus-visible:ring-0"
-            />
+              <label htmlFor="figmaUrlDisplay" className="text-xs font-medium text-gray-500 flex items-center justify-between mb-1">
+                  <span>Figma URL</span>
+                  <span className="cursor-pointer" title="The URL of the Figma file being displayed.">
+                    <Info className="h-3 w-3 text-gray-400" />
+                  </span>
+              </label>
+              <Input 
+                  id="figmaUrlDisplay"
+                  type="text" 
+                  value={figmaUrl} 
+                  readOnly 
+                  className="w-full border-gray-300 bg-gray-50 text-xs h-8 focus-visible:ring-offset-0 focus-visible:ring-0"
+              />
           </div>
 
           {nodes.length > 0 && nodes[0] && (
@@ -269,14 +269,14 @@ export default function FigmaExtractorPage() {
                     <div className="text-gray-400 text-[10px] opacity-0 group-hover:opacity-100">
                       {child.type}
                     </div>
-                  </div>
+                    </div>
                 ))}
                 {nodes[0].children && nodes[0].children.length > 20 && (
                   <div className="text-xs text-gray-400 pl-2 mt-1 italic">
                     ...e mais {nodes[0].children.length - 20} elementos
                   </div>
                 )}
-                {nodes[0].children?.length === 0 && (
+                 {nodes[0].children?.length === 0 && (
                   <div className="text-xs text-gray-400 pl-2 italic">
                     Nenhum elemento filho encontrado.
                   </div>
@@ -306,7 +306,7 @@ export default function FigmaExtractorPage() {
               </div>
             </div>
           )}
-        </aside>
+      </aside>
 
         {/* Área de JSON */}
         <main className="flex-grow p-4 bg-gray-50 overflow-hidden flex flex-col">
@@ -324,7 +324,7 @@ export default function FigmaExtractorPage() {
             />
           </div>
         </main>
-      </div>
+          </div>
     </div>
   );
 }
