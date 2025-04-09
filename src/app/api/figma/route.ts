@@ -97,90 +97,6 @@ function extractFigmaParams(url: string): { fileKey: string | null; nodeId: stri
   }
 }
 
-// Função para processar um nó e garantir que ele tenha todas as propriedades necessárias para renderização
-function processNodeForRendering(node: any, parentRef: any = null): any {
-  if (!node) return null;
-  
-  // Criar uma cópia do nó para não modificar o original
-  const processedNode = { ...node };
-  
-  // Garantir que o nó tenha um absoluteBoundingBox
-  if (!processedNode.absoluteBoundingBox) {
-    // Se o nó tiver x, y, width e height diretamente, criar um absoluteBoundingBox
-    if (typeof processedNode.x === 'number' && 
-        typeof processedNode.y === 'number' && 
-        typeof processedNode.width === 'number' && 
-        typeof processedNode.height === 'number') {
-      processedNode.absoluteBoundingBox = {
-        x: processedNode.x,
-        y: processedNode.y,
-        width: processedNode.width,
-        height: processedNode.height
-      };
-    }
-  }
-  
-  // Adicionar referência ao nó pai, mas apenas com as propriedades mínimas necessárias
-  // para evitar circularidade
-  if (parentRef) {
-    processedNode.parent = {
-      id: parentRef.id,
-      absoluteBoundingBox: parentRef.absoluteBoundingBox
-      // Não incluir 'children' aqui para evitar circularidade
-    };
-  }
-  
-  // Processar propriedades específicas por tipo de nó
-  switch (processedNode.type) {
-    case 'TEXT':
-      // Garantir que nós de texto tenham as propriedades de estilo necessárias
-      if (!processedNode.style) {
-        processedNode.style = {};
-      }
-      // Valores padrão para propriedades de texto
-      processedNode.style.fontFamily = processedNode.style.fontFamily || 'Inter';
-      processedNode.style.fontSize = processedNode.style.fontSize || 14;
-      processedNode.style.fontWeight = processedNode.style.fontWeight || 400;
-      processedNode.style.textAlignHorizontal = processedNode.style.textAlignHorizontal || 'LEFT';
-      processedNode.style.textAlignVertical = processedNode.style.textAlignVertical || 'TOP';
-      break;
-      
-    case 'FRAME':
-    case 'GROUP':
-    case 'COMPONENT':
-    case 'INSTANCE':
-      // Garantir que nós de container tenham as propriedades de layout necessárias
-      if (processedNode.layoutMode) {
-        // Para nós com Auto Layout, garantir que tenham as propriedades necessárias
-        processedNode.primaryAxisAlignItems = processedNode.primaryAxisAlignItems || 'MIN';
-        processedNode.counterAxisAlignItems = processedNode.counterAxisAlignItems || 'MIN';
-        processedNode.primaryAxisSizingMode = processedNode.primaryAxisSizingMode || 'AUTO';
-        processedNode.counterAxisSizingMode = processedNode.counterAxisSizingMode || 'AUTO';
-        processedNode.itemSpacing = processedNode.itemSpacing || 0;
-        processedNode.paddingLeft = processedNode.paddingLeft || 0;
-        processedNode.paddingRight = processedNode.paddingRight || 0;
-        processedNode.paddingTop = processedNode.paddingTop || 0;
-        processedNode.paddingBottom = processedNode.paddingBottom || 0;
-      }
-      break;
-  }
-  
-  // Garantir que fills, strokes e effects sejam arrays
-  processedNode.fills = Array.isArray(processedNode.fills) ? processedNode.fills : [];
-  processedNode.strokes = Array.isArray(processedNode.strokes) ? processedNode.strokes : [];
-  processedNode.effects = Array.isArray(processedNode.effects) ? processedNode.effects : [];
-  
-  // Processar recursivamente os filhos, se existirem
-  if (processedNode.children && Array.isArray(processedNode.children)) {
-    // Processar cada filho recursivamente passando o nó atual como o pai
-    processedNode.children = processedNode.children
-      .map((child: any) => processNodeForRendering(child, processedNode))
-      .filter(Boolean); // Remover filhos nulos
-  }
-  
-  return processedNode;
-}
-
 // Função auxiliar para serializar objetos que podem conter referências circulares
 function serializeWithoutCircular(obj: any) {
   // Conjunto para acompanhar objetos já visitados
@@ -217,6 +133,9 @@ export async function GET(request: NextRequest) {
   const includeComponents = searchParams.get('includeComponents') === 'true'
   const depth = searchParams.get('depth') || '2' // Profundidade padrão para buscar nós
 
+  // Variável para contar elementos ocultos
+  let hiddenElementsTotal = 0;
+
   if (!figmaUrl) {
     return Response.json({ error: 'Missing figmaUrl parameter' }, { status: 400 })
   }
@@ -237,6 +156,108 @@ export async function GET(request: NextRequest) {
 
   if (!fileKey) {
     return Response.json({ error: 'Could not extract fileKey from the provided Figma URL' }, { status: 400 })
+  }
+
+  // Função para processar um nó e garantir que ele tenha todas as propriedades necessárias para renderização
+  function processNodeForRendering(node: any, parentRef: any = null): any {
+    if (!node) return null;
+    
+    // Ignorar nós que estão explicitamente definidos como não visíveis
+    if (node.visible === false) {
+      hiddenElementsTotal++; // Incrementar contador global
+      console.log(`Ignorando elemento oculto: ${node.name || 'Sem nome'} (ID: ${node.id || 'Sem ID'})`);
+      return null;
+    }
+    
+    // Criar uma cópia do nó para não modificar o original
+    const processedNode = { ...node };
+    
+    // Garantir que o nó tenha um absoluteBoundingBox
+    if (!processedNode.absoluteBoundingBox) {
+      // Se o nó tiver x, y, width e height diretamente, criar um absoluteBoundingBox
+      if (typeof processedNode.x === 'number' && 
+          typeof processedNode.y === 'number' && 
+          typeof processedNode.width === 'number' && 
+          typeof processedNode.height === 'number') {
+        processedNode.absoluteBoundingBox = {
+          x: processedNode.x,
+          y: processedNode.y,
+          width: processedNode.width,
+          height: processedNode.height
+        };
+      }
+    }
+    
+    // Adicionar referência ao nó pai, mas apenas com as propriedades mínimas necessárias
+    // para evitar circularidade
+    if (parentRef) {
+      processedNode.parent = {
+        id: parentRef.id,
+        absoluteBoundingBox: parentRef.absoluteBoundingBox
+        // Não incluir 'children' aqui para evitar circularidade
+      };
+    }
+    
+    // Processar propriedades específicas por tipo de nó
+    switch (processedNode.type) {
+      case 'TEXT':
+        // Garantir que nós de texto tenham as propriedades de estilo necessárias
+        if (!processedNode.style) {
+          processedNode.style = {};
+        }
+        // Valores padrão para propriedades de texto
+        processedNode.style.fontFamily = processedNode.style.fontFamily || 'Inter';
+        processedNode.style.fontSize = processedNode.style.fontSize || 14;
+        processedNode.style.fontWeight = processedNode.style.fontWeight || 400;
+        processedNode.style.textAlignHorizontal = processedNode.style.textAlignHorizontal || 'LEFT';
+        processedNode.style.textAlignVertical = processedNode.style.textAlignVertical || 'TOP';
+        break;
+        
+      case 'FRAME':
+      case 'GROUP':
+      case 'COMPONENT':
+      case 'INSTANCE':
+        // Garantir que nós de container tenham as propriedades de layout necessárias
+        if (processedNode.layoutMode) {
+          // Para nós com Auto Layout, garantir que tenham as propriedades necessárias
+          processedNode.primaryAxisAlignItems = processedNode.primaryAxisAlignItems || 'MIN';
+          processedNode.counterAxisAlignItems = processedNode.counterAxisAlignItems || 'MIN';
+          processedNode.primaryAxisSizingMode = processedNode.primaryAxisSizingMode || 'AUTO';
+          processedNode.counterAxisSizingMode = processedNode.counterAxisSizingMode || 'AUTO';
+          processedNode.itemSpacing = processedNode.itemSpacing || 0;
+          processedNode.paddingLeft = processedNode.paddingLeft || 0;
+          processedNode.paddingRight = processedNode.paddingRight || 0;
+          processedNode.paddingTop = processedNode.paddingTop || 0;
+          processedNode.paddingBottom = processedNode.paddingBottom || 0;
+        }
+        break;
+    }
+    
+    // Garantir que fills, strokes e effects sejam arrays
+    processedNode.fills = Array.isArray(processedNode.fills) ? processedNode.fills : [];
+    processedNode.strokes = Array.isArray(processedNode.strokes) ? processedNode.strokes : [];
+    processedNode.effects = Array.isArray(processedNode.effects) ? processedNode.effects : [];
+    
+    // Processar recursivamente os filhos, se existirem
+    if (processedNode.children && Array.isArray(processedNode.children)) {
+      // Contar elementos ocultos
+      const totalChildren = processedNode.children.length;
+      const visibleChildren = processedNode.children.filter((child: any) => child.visible !== false).length;
+      
+      if (totalChildren > visibleChildren) {
+        const hiddenCount = totalChildren - visibleChildren;
+        hiddenElementsTotal += hiddenCount; // Incrementar contador global
+        console.log(`Ignorando ${hiddenCount} elementos ocultos em: ${processedNode.name || 'Sem nome'} (ID: ${processedNode.id || 'Sem ID'})`);
+      }
+      
+      // Processar cada filho recursivamente passando o nó atual como o pai
+      // Filtra os elementos para incluir apenas os visíveis (visible !== false)
+      processedNode.children = processedNode.children
+        .map((child: any) => processNodeForRendering(child, processedNode))
+        .filter(Boolean); // Remover filhos nulos (incluindo os ocultos)
+    }
+    
+    return processedNode;
   }
 
   // Construir parâmetros de consulta para a API do Figma
@@ -343,7 +364,8 @@ export async function GET(request: NextRequest) {
           lastModified: nodeResponse.lastModified,
           version: nodeResponse.version,
           thumbnailUrl: nodeResponse.thumbnailUrl,
-          nodeId: nodeId
+          nodeId: nodeId,
+          hiddenElementsIgnored: hiddenElementsTotal // Adicionar contagem ao metadata
         }
       };
       
@@ -354,6 +376,8 @@ export async function GET(request: NextRequest) {
         hasBoundingBox: !!processedNode.absoluteBoundingBox,
         childrenCount: processedNode.children?.length || 0
       });
+      
+      console.log(`Processamento concluído. Total de elementos ocultos ignorados: ${hiddenElementsTotal}`);
       
       // Serializar manualmente para evitar problemas com referências circulares
       const serialized = serializeWithoutCircular(result);
@@ -374,7 +398,7 @@ export async function GET(request: NextRequest) {
       }
       
       // Find the first page (canvas)
-      const pages = fileResponse.document.children?.filter((child: any) => child.type === 'CANVAS') || [];
+      const pages = fileResponse.document.children?.filter((child: any) => child.type === 'CANVAS' && child.visible !== false) || [];
       
       if (pages.length === 0) {
         console.error('No canvas pages found in the document:', fileResponse.document);
@@ -417,7 +441,8 @@ export async function GET(request: NextRequest) {
           version: fileResponse.version,
           thumbnailUrl: fileResponse.thumbnailUrl,
           pageId: processedPage.id,
-          pageName: processedPage.name
+          pageName: processedPage.name,
+          hiddenElementsIgnored: hiddenElementsTotal // Adicionar contagem ao metadata
         },
         pages: pages.map((page: { id: any; name: any; children: string | any[]; }) => ({
           id: page.id,
@@ -425,6 +450,8 @@ export async function GET(request: NextRequest) {
           childrenCount: page.children?.length || 0
         }))
       };
+      
+      console.log(`Processamento concluído. Total de elementos ocultos ignorados: ${hiddenElementsTotal}`);
       
       // Serializar manualmente para evitar problemas com referências circulares
       const serialized = serializeWithoutCircular(result);

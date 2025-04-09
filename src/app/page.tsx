@@ -4,8 +4,9 @@ import { Button } from "../components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
 import { Input } from "../components/ui/input"
 import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert"
-import { Loader2, AlertCircle, Copy, Info, ArrowLeft, Download } from 'lucide-react'
+import { Loader2, AlertCircle, Copy, Info, ArrowLeft, Download, Pencil } from 'lucide-react'
 import { Textarea } from '../components/ui/textarea'
+import Link from 'next/link'
 
 // NOTA: A funcionalidade de renderização visual do Figma foi temporariamente desativada.
 // Todo o código relacionado à renderização foi preservado e pode ser encontrado nos
@@ -142,6 +143,15 @@ export default function FigmaExtractorPage() {
                 <Info className="h-4 w-4 mr-2" /> 
                 Extract Figma Data
               </Button>
+              
+              <div className="border-t border-gray-200 pt-4 mt-4">
+                <Link href="/editor">
+                  <Button variant="outline" className="w-full">
+                    <Pencil className="h-4 w-4 mr-2" />
+                    Abrir Editor Visual
+                  </Button>
+                </Link>
+              </div>
             </div>
           </CardContent>
         </Card>
