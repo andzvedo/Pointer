@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 /**
  * Filtro de propriedades relevantes de nodes Figma para exportação enxuta.
