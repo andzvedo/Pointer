@@ -1,36 +1,36 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
-import json from 'react-syntax-highlighter/dist/esm/languages/hljs/json';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import React, { useState } from 'react'
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter'
+import json from 'react-syntax-highlighter/dist/esm/languages/hljs/json'
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 
-SyntaxHighlighter.registerLanguage('json', json);
+SyntaxHighlighter.registerLanguage('json', json)
 
 interface JsonViewerProps {
-  data: any;
+  data: any
 }
 
 const JsonViewer: React.FC<JsonViewerProps> = ({ data }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <div className="w-full bg-white rounded-lg shadow-lg">
-      <div className="p-4 border-b border-gray-200">
-        <div className="flex justify-between items-center">
-          <h3 className="text-lg font-semibold">Dados do Figma</h3>
+    <div className='w-full bg-white rounded-lg shadow-lg'>
+      <div className='p-4 border-b border-gray-200'>
+        <div className='flex justify-between items-center'>
+          <h3 className='text-lg font-semibold'>Dados do Figma</h3>
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="px-4 py-2 text-sm text-blue-500 hover:text-blue-600"
+            className='px-4 py-2 text-sm text-blue-500 hover:text-blue-600'
           >
             {isExpanded ? 'Minimizar' : 'Expandir'}
           </button>
         </div>
       </div>
       {isExpanded && (
-        <div className="p-4 max-h-[500px] overflow-auto">
+        <div className='p-4 max-h-[500px] overflow-auto'>
           <SyntaxHighlighter
-            language="json"
+            language='json'
             style={docco}
             customStyle={{
               margin: 0,
@@ -43,7 +43,7 @@ const JsonViewer: React.FC<JsonViewerProps> = ({ data }) => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default JsonViewer; 
+export default JsonViewer

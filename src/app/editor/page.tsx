@@ -35,11 +35,11 @@ export default function EditorPage() {
   useEffect(() => {
     const savedFigmaUrl = localStorage.getItem('figmaUrl')
     const savedFigmaData = localStorage.getItem('figmaData')
-    
+
     if (savedFigmaUrl) {
       setFigmaUrl(savedFigmaUrl)
     }
-    
+
     if (savedFigmaData) {
       try {
         setFigmaData(JSON.parse(savedFigmaData))
@@ -57,26 +57,26 @@ export default function EditorPage() {
 
     setLoading(true)
     setError(null)
-    
+
     try {
       const params = new URLSearchParams({
         figmaUrl: figmaUrl,
         includeStyles: 'true',
         includeComponents: 'true',
-        depth: '10' // Profundidade maior para capturar toda a hierarquia
+        depth: '10', // Profundidade maior para capturar toda a hierarquia
       })
-      
+
       const response = await fetch(`/api/figma?${params.toString()}`)
-      
+
       if (!response.ok) {
         throw new Error(`Erro ao buscar dados: ${response.status}`)
       }
-      
+
       const data = await response.json()
       console.log('Dados recebidos da API:', data)
-      
+
       setFigmaData(data)
-      
+
       // Salvar no localStorage para uso futuro
       localStorage.setItem('figmaUrl', figmaUrl)
       localStorage.setItem('figmaData', JSON.stringify(data))
@@ -99,45 +99,43 @@ export default function EditorPage() {
     // Atualizar o elemento selecionado com a nova propriedade
     const updatedElement = { ...selectedElement, [property]: value }
     setSelectedElement(updatedElement)
-    
+
     // Aqui você também poderia atualizar o estado global do canvas
     // ou disparar alguma ação para atualizar os elementos no canvas
     console.log(`Propriedade ${property} alterada para:`, value)
   }
 
   return (
-    <div className="container mx-auto py-6">
-      <div className="mb-6">
-        <Link href="/" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
-          <ArrowLeft className="w-4 h-4 mr-1" />
+    <div className='container mx-auto py-6'>
+      <div className='mb-6'>
+        <Link href='/' className='flex items-center text-sm text-gray-600 hover:text-gray-900'>
+          <ArrowLeft className='w-4 h-4 mr-1' />
           Voltar para a página inicial
         </Link>
       </div>
-      
-      <div className="grid grid-cols-1 gap-6 mb-6">
+
+      <div className='grid grid-cols-1 gap-6 mb-6'>
         <Card>
           <CardHeader>
             <CardTitle>Editor Visual do Figma</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="flex space-x-2 mb-4">
+            <div className='flex space-x-2 mb-4'>
               <Input
-                placeholder="Cole a URL do seu arquivo Figma aqui"
+                placeholder='Cole a URL do seu arquivo Figma aqui'
                 value={figmaUrl}
                 onChange={(e) => setFigmaUrl(e.target.value)}
-                className="flex-1"
+                className='flex-1'
               />
-              <Button
-                onClick={fetchFigmaData}
-                disabled={loading}
-              >
+
+              <Button onClick={fetchFigmaData} disabled={loading}>
                 {loading ? 'Carregando...' : 'Carregar Design'}
               </Button>
             </div>
-            
+
             {error && (
-              <Alert variant="destructive" className="mb-4">
-                <AlertCircle className="h-4 w-4" />
+              <Alert variant='destructive' className='mb-4'>
+                <AlertCircle className='h-4 w-4' />
                 <AlertTitle>Erro</AlertTitle>
                 <AlertDescription>{error}</AlertDescription>
               </Alert>
@@ -145,16 +143,13 @@ export default function EditorPage() {
           </CardContent>
         </Card>
       </div>
-      
-      <div className="grid grid-cols-3 gap-6">
-        <div className="col-span-2">
-          <DynamicFigmaCanvasEditor
-            figmaNode={figmaData}
-            onElementSelect={handleElementSelect}
-          />
+
+      <div className='grid grid-cols-3 gap-6'>
+        <div className='col-span-2'>
+          <DynamicFigmaCanvasEditor figmaNode={figmaData} onElementSelect={handleElementSelect} />
         </div>
-        
-        <div className="col-span-1">
+
+        <div className='col-span-1'>
           <ElementPropertiesPanel
             selectedElement={selectedElement}
             onPropertyChange={handlePropertyChange}
@@ -163,4 +158,4 @@ export default function EditorPage() {
       </div>
     </div>
   )
-} 
+}

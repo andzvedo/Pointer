@@ -28,25 +28,27 @@ const FigmaCanvasEditor: React.FC<FigmaCanvasEditorProps> = ({ figmaNode, onElem
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const stageRef = useRef<any>(null)
   const transformerRef = useRef<any>(null)
-  
+
   // Converter o nó do Figma para elementos do canvas
   useEffect(() => {
     if (!figmaNode) return
-    
+
     // Função para converter nós do Figma em elementos do canvas
     const convertFigmaNodeToElements = (node: any, parentX = 0, parentY = 0): FigmaElement[] => {
       if (!node) return []
-      
+
       // Se for um único nó
       if (!Array.isArray(node)) {
         // Ignorar nós invisíveis
         if (node.visible === false) {
-          console.log(`Canvas: Ignorando elemento oculto ${node.name || 'sem nome'} (ID: ${node.id || 'sem ID'})`)
+          console.log(
+            `Canvas: Ignorando elemento oculto ${node.name || 'sem nome'} (ID: ${node.id || 'sem ID'})`,
+          )
           return []
         }
-        
+
         const boundingBox = node.absoluteBoundingBox || { x: 0, y: 0, width: 100, height: 100 }
-        
+
         const element: FigmaElement = {
           id: node.id || Math.random().toString(36).substr(2, 9),
           type: node.type || 'RECTANGLE',
@@ -55,21 +57,24 @@ const FigmaCanvasEditor: React.FC<FigmaCanvasEditorProps> = ({ figmaNode, onElem
           width: boundingBox.width || 100,
           height: boundingBox.height || 100,
           name: node.name || 'Unnamed Element',
-          fill: node.fills && node.fills.length > 0 ? 
-            `rgba(${node.fills[0].color?.r * 255 || 200}, ${node.fills[0].color?.g * 255 || 200}, ${node.fills[0].color?.b * 255 || 200}, ${node.fills[0].color?.a || 1})` : 
-            '#e0e0e0',
-          opacity: node.opacity !== undefined ? node.opacity : 1
+          fill:
+            node.fills && node.fills.length > 0
+              ? `rgba(${node.fills[0].color?.r * 255 || 200}, ${node.fills[0].color?.g * 255 || 200}, ${node.fills[0].color?.b * 255 || 200}, ${node.fills[0].color?.a || 1})`
+              : '#e0e0e0',
+          opacity: node.opacity !== undefined ? node.opacity : 1,
         }
-        
+
         // Processar filhos recursivamente
         const childElements: FigmaElement[] = []
         if (node.children && Array.isArray(node.children) && node.children.length > 0) {
           // Contar elementos ocultos para log
           const hiddenChildren = node.children.filter((child: any) => child.visible === false)
           if (hiddenChildren.length > 0) {
-            console.log(`Canvas: Ignorando ${hiddenChildren.length} elementos ocultos dentro de ${node.name || 'elemento sem nome'}`)
+            console.log(
+              `Canvas: Ignorando ${hiddenChildren.length} elementos ocultos dentro de ${node.name || 'elemento sem nome'}`,
+            )
           }
-          
+
           node.children.forEach((child: any) => {
             // Ignorar filhos invisíveis
             if (child.visible !== false) {
@@ -78,15 +83,15 @@ const FigmaCanvasEditor: React.FC<FigmaCanvasEditorProps> = ({ figmaNode, onElem
             }
           })
         }
-        
+
         // Adicionar filhos ao elemento
         if (childElements.length > 0) {
           element.children = childElements
         }
-        
+
         return [element]
       }
-      
+
       // Se for um array de nós
       const elements: FigmaElement[] = []
       // Contar elementos ocultos para log
@@ -96,7 +101,7 @@ const FigmaCanvasEditor: React.FC<FigmaCanvasEditorProps> = ({ figmaNode, onElem
           console.log(`Canvas: Ignorando ${hiddenItems.length} elementos ocultos no nível superior`)
         }
       }
-      
+
       node.forEach((item: any) => {
         // Ignorar itens invisíveis
         if (item.visible !== false) {
@@ -104,10 +109,10 @@ const FigmaCanvasEditor: React.FC<FigmaCanvasEditorProps> = ({ figmaNode, onElem
           elements.push(...convertedElements)
         }
       })
-      
+
       return elements
     }
-    
+
     // Converter e configurar elementos
     try {
       // Tentar diferentes propriedades para encontrar os dados do nó
@@ -117,7 +122,7 @@ const FigmaCanvasEditor: React.FC<FigmaCanvasEditorProps> = ({ figmaNode, onElem
       } else if (figmaNode.document) {
         nodeData = figmaNode.document
       }
-      
+
       const convertedElements = convertFigmaNodeToElements(nodeData)
       setElements(convertedElements)
       console.log('Converted elements:', convertedElements)
@@ -125,7 +130,7 @@ const FigmaCanvasEditor: React.FC<FigmaCanvasEditorProps> = ({ figmaNode, onElem
       console.error('Error converting Figma node to canvas elements:', error)
     }
   }, [figmaNode])
-  
+
   // Atualizar o transformador quando um elemento é selecionado
   useEffect(() => {
     if (selectedId && transformerRef.current) {
@@ -142,24 +147,24 @@ const FigmaCanvasEditor: React.FC<FigmaCanvasEditorProps> = ({ figmaNode, onElem
       transformerRef.current.getLayer().batchDraw()
     }
   }, [selectedId])
-  
+
   const handleStageClick = (e: KonvaEventObject<MouseEvent>) => {
     // Verificar se o clique foi no próprio stage e não em um elemento
     const clickedOnEmpty = e.target === e.currentTarget
-    
+
     if (clickedOnEmpty) {
       setSelectedId(null)
       return
     }
   }
-  
+
   const handleElementSelect = (id: string, element: FigmaElement) => {
     setSelectedId(id)
     if (onElementSelect) {
       onElementSelect(element)
     }
   }
-  
+
   // Renderizar elementos recursivamente
   const renderElements = (elements: FigmaElement[]) => {
     return elements.map((element) => (
@@ -178,40 +183,41 @@ const FigmaCanvasEditor: React.FC<FigmaCanvasEditorProps> = ({ figmaNode, onElem
           onClick={() => handleElementSelect(element.id, element)}
           onTap={() => handleElementSelect(element.id, element)}
         />
+
         {element.type === 'TEXT' && (
           <Text
             x={element.x + 5}
             y={element.y + element.height / 2 - 8}
             text={element.name}
             fontSize={16}
-            fill="#333"
+            fill='#333'
           />
         )}
         {element.children && renderElements(element.children)}
       </Group>
     ))
   }
-  
+
   return (
-    <div className="canvas-editor-container relative border border-gray-300 rounded-md overflow-hidden">
+    <div className='canvas-editor-container relative border border-gray-300 rounded-md overflow-hidden'>
       <Stage
         width={800}
         height={600}
         ref={stageRef}
         onClick={handleStageClick}
         onTap={handleStageClick}
-        className="bg-gray-50"
+        className='bg-gray-50'
       >
         <Layer>
           {elements.length > 0 ? (
             renderElements(elements)
           ) : (
-            <Text 
-              text="Nenhum elemento para exibir. Faça upload de um design do Figma."
+            <Text
+              text='Nenhum elemento para exibir. Faça upload de um design do Figma.'
               x={250}
               y={280}
               fontSize={16}
-              fill="#999"
+              fill='#999'
             />
           )}
           <Transformer
@@ -230,4 +236,4 @@ const FigmaCanvasEditor: React.FC<FigmaCanvasEditorProps> = ({ figmaNode, onElem
   )
 }
 
-export default FigmaCanvasEditor 
+export default FigmaCanvasEditor
