@@ -86,6 +86,9 @@ function filterNode(node: any): any {
   return filtered;
 }
 
+// Exportação para uso programático
+module.exports = { filterNode };
+
 // CLI
 if (require.main === module) {
   const [,, inputPath, outputPath] = process.argv;

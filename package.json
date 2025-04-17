@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "figma:filter": "ts-node tools/filterFigmaJson.ts tools/input-figma.json tools/output-figma-slim.json",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
