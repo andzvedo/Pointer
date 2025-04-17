@@ -1,5 +1,5 @@
-const { filterNode } = require('./filterFigmaJson');
-const fs = require('fs');
+import { filterNode } from './filterFigmaUtil';
+import * as fs from 'fs';
 
 describe('filterNode', () => {
   it('remove propriedades irrelevantes e mantém apenas as essenciais', () => {
