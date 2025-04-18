@@ -17,6 +17,10 @@ type PlatformType = (typeof SUPPORTED_PLATFORMS)[number]
 const FigmaEditor: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [figmaData, setFigmaData] = useState<any>(null)
+  const [filteredJson, setFilteredJson] = useState<any>(null)
+  const [astBlobUrl, setAstBlobUrl] = useState<string | null>(null)
+  const [rawBlobUrl, setRawBlobUrl] = useState<string | null>(null)
+  const [filteredBlobUrl, setFilteredBlobUrl] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [designAst, setDesignAst] = useState<any>(null)
   const [selectedPlatform, setSelectedPlatform] = useState<PlatformType>('generic')
@@ -92,12 +96,28 @@ const FigmaEditor: React.FC = () => {
       console.log('Dados recebidos do Figma:', Object.keys(data))
       setFigmaData(data)
 
+      // Gerar link para download do RAW JSON
+      const rawBlob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
+      setRawBlobUrl(URL.createObjectURL(rawBlob))
+
       try {
-        // Converter dados do Figma para AST
-        console.log('Convertendo dados do Figma para AST')
-        const ast = convertFigmaToAst(data, fileKey)
-        console.log('AST gerado com sucesso')
+        // Filtrar JSON (manter só propriedades essenciais)
+        // Se já houver um filtro utilitário, use-o aqui. Supondo filterNode recursivo:
+        // Se não houver, mantenha igual ao original por enquanto
+        let filtered = data
+        if (typeof window !== 'undefined' && (window as any).filterNode) {
+          filtered = (window as any).filterNode(data)
+        }
+        setFilteredJson(filtered)
+        const filteredBlob = new Blob([JSON.stringify(filtered, null, 2)], { type: 'application/json' })
+        setFilteredBlobUrl(URL.createObjectURL(filteredBlob))
+
+        // Converter dados filtrados para AST
+        console.log('Convertendo dados filtrados para AST')
+        const ast = convertFigmaToAst(filtered, fileKey)
         setDesignAst(ast)
+        const astBlob = new Blob([JSON.stringify(ast, null, 2)], { type: 'application/json' })
+        setAstBlobUrl(URL.createObjectURL(astBlob))
 
         // Gerar código de integração para a plataforma selecionada
         updateIntegrationCode(selectedPlatform)
@@ -130,29 +150,74 @@ const FigmaEditor: React.FC = () => {
 
         <ConceptExplanation />
 
+        {/* Novo: Upload manual de JSON filtrado */}
+        <div className="mb-6 flex flex-col items-center">
+          <label className="mb-2 font-medium">Ou carregue um arquivo JSON filtrado do Figma</label>
+          <input
+            type="file"
+            accept="application/json"
+            onChange={async (e) => {
+              const file = e.target.files?.[0]
+              if (!file) return
+              setIsLoading(true)
+              setError(null)
+              setDesignAst(null)
+              setIntegrationCode("")
+              setIntegrationInstructions("")
+              try {
+                const text = await file.text()
+                const json = JSON.parse(text)
+                setFigmaData(json)
+                // Converter para AST
+                const ast = convertFigmaToAst(json)
+                setDesignAst(ast)
+                updateIntegrationCode(selectedPlatform)
+              } catch (err) {
+                setError("Erro ao processar o arquivo JSON: " + (err instanceof Error ? err.message : "Erro desconhecido"))
+              } finally {
+                setIsLoading(false)
+              }
+            }}
+            className="border px-3 py-2 rounded shadow-sm"
+          />
+        </div>
+
         <FigmaUrlInput onUrlSubmit={handleUrlSubmit} isLoading={isLoading} />
 
         {error && <div className='mt-4 p-4 bg-red-100 text-red-700 rounded-lg'>{error}</div>}
 
+        {/* Botões para download dos arquivos processados */}
+        {(rawBlobUrl || filteredBlobUrl || astBlobUrl) && (
+          <div className="mt-8 flex flex-col items-center gap-3">
+            <h3 className="font-semibold mb-2">Downloads:</h3>
+            {rawBlobUrl && (
+              <a href={rawBlobUrl} download="raw-figma.json" className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300">Baixar RAW JSON</a>
+            )}
+            {filteredBlobUrl && (
+              <a href={filteredBlobUrl} download="filtered-figma.json" className="px-4 py-2 bg-blue-100 rounded hover:bg-blue-200">Baixar JSON Filtrado</a>
+            )}
+            {astBlobUrl && (
+              <a href={astBlobUrl} download="design-ast.json" className="px-4 py-2 bg-green-100 rounded hover:bg-green-200">Baixar AST</a>
+            )}
+          </div>
+        )}
+
         {designAst && (
-          <div className='mt-8'>
+          <>
             <div className='bg-white rounded-lg shadow-lg overflow-hidden mb-4'>
               <div className='border-b border-gray-200 p-4'>
                 <h2 className='text-xl font-bold'>Integração com Plataformas</h2>
                 <p className='text-gray-600 mt-1'>
                   Selecione a plataforma para a qual deseja exportar o contexto de design
                 </p>
-
                 <div className='flex space-x-2 mt-4'>
                   {SUPPORTED_PLATFORMS.map((platform) => (
                     <button
                       key={platform}
                       onClick={() => handlePlatformChange(platform)}
-                      className={`px-4 py-2 rounded-md ${
-                        selectedPlatform === platform
-                          ? 'bg-blue-500 text-white'
-                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                      }`}
+                      className={`px-4 py-2 rounded-md ${selectedPlatform === platform
+                        ? 'bg-blue-500 text-white'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
                     >
                       {platform.charAt(0).toUpperCase() + platform.slice(1)}
                     </button>
@@ -160,7 +225,6 @@ const FigmaEditor: React.FC = () => {
                 </div>
               </div>
             </div>
-
             <CodePreview
               mainCode={integrationCode}
               supplementaryContent={integrationInstructions}
@@ -168,7 +232,7 @@ const FigmaEditor: React.FC = () => {
               platformType={selectedPlatform}
               rawFigmaData={figmaData}
             />
-          </div>
+          </>
         )}
       </div>
     </div>
