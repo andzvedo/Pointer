@@ -26,6 +26,8 @@ const FigmaEditor: React.FC = () => {
   const [selectedPlatform, setSelectedPlatform] = useState<PlatformType>('generic')
   const [integrationCode, setIntegrationCode] = useState<string>('')
   const [integrationInstructions, setIntegrationInstructions] = useState<string>('')
+  const [isAssetsLoading, setIsAssetsLoading] = useState(false)
+  const [figmaUrl, setFigmaUrl] = useState<string | null>(null)
 
   // Efeito para verificar quando o componente é montado
   useEffect(() => {
@@ -63,6 +65,7 @@ const FigmaEditor: React.FC = () => {
 
   const handleUrlSubmit = async (url: string) => {
     console.log('handleUrlSubmit chamado com URL:', url)
+    setFigmaUrl(url)
     setIsLoading(true)
     setError(null)
     setDesignAst(null)
@@ -139,6 +142,33 @@ const FigmaEditor: React.FC = () => {
     setSelectedPlatform(platform)
   }
 
+  // Função para baixar o ZIP de assets+AST
+  const handleDownloadAssetsZip = async () => {
+    if (!figmaUrl) {
+      alert('Você precisa carregar um design Figma primeiro.')
+      return
+    }
+    setIsAssetsLoading(true)
+    try {
+      const encodedUrl = encodeURIComponent(figmaUrl)
+      const res = await fetch(`/api/figma-assets?figmaUrl=${encodedUrl}`)
+      if (!res.ok) throw new Error('Erro ao baixar o pacote de assets')
+      const blob = await res.blob()
+      const url = window.URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = 'design-assets.zip'
+      document.body.appendChild(a)
+      a.click()
+      a.remove()
+      window.URL.revokeObjectURL(url)
+    } catch (err) {
+      alert(err instanceof Error ? err.message : 'Erro desconhecido ao baixar assets')
+    } finally {
+      setIsAssetsLoading(false)
+    }
+  }
+
   return (
     <div className='min-h-screen bg-gray-50 py-8'>
       <div className='container mx-auto px-4'>
@@ -149,6 +179,19 @@ const FigmaEditor: React.FC = () => {
         </p>
 
         <ConceptExplanation />
+
+        {/* Botão para baixar ZIP de assets+AST */}
+        {figmaData && (
+          <div className="flex flex-col items-center gap-2 mt-4">
+            <button
+              className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50"
+              onClick={handleDownloadAssetsZip}
+              disabled={isAssetsLoading}
+            >
+              {isAssetsLoading ? 'Preparando ZIP...' : 'Baixar Pacote de Assets (ZIP)'}
+            </button>
+          </div>
+        )}
 
         {/* Novo: Upload manual de JSON filtrado */}
         <div className="mb-6 flex flex-col items-center">
