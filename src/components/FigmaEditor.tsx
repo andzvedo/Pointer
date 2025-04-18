@@ -94,9 +94,9 @@ const FigmaEditor: React.FC = () => {
 
       const data = await response.json()
       console.log('Dados recebidos do Figma:', Object.keys(data))
-      setFigmaData(data)
+      setFigmaData(data) // Sempre o JSON bruto
 
-      // Gerar link para download do RAW JSON
+      // Gerar link para download do RAW JSON (sempre do bruto)
       const rawBlob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
       setRawBlobUrl(URL.createObjectURL(rawBlob))
 
@@ -108,7 +108,7 @@ const FigmaEditor: React.FC = () => {
         if (typeof window !== 'undefined' && (window as any).filterNode) {
           filtered = (window as any).filterNode(data)
         }
-        setFilteredJson(filtered)
+        setFilteredJson(filtered) // Sempre o filtrado
         const filteredBlob = new Blob([JSON.stringify(filtered, null, 2)], { type: 'application/json' })
         setFilteredBlobUrl(URL.createObjectURL(filteredBlob))
 
