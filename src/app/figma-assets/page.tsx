@@ -70,7 +70,7 @@ export default function FigmaAssetsPage() {
           <div className="font-mono text-xs mb-2">Prévia do SVG:</div>
           <div
             className="border rounded bg-white flex items-center"
-            style={{ maxHeight: '70vh', overflow: 'auto' }}
+            style={{ maxHeight: '400px', overflow: 'auto' }}
             dangerouslySetInnerHTML={{ __html: svgContent }}
           />
           <div className="mt-0">
