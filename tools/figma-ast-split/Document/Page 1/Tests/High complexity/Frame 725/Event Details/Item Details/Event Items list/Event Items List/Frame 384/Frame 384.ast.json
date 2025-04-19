@@ -1,0 +1,117 @@
+{
+  "id": "I337:6098;3843:212062;3843:223400;3857:113477",
+  "name": "Frame 384",
+  "visible": false,
+  "type": "FRAME",
+  "scrollBehavior": "SCROLLS",
+  "children": [
+    {
+      "id": "I337:6098;3843:212062;3843:223400;3857:113478",
+      "name": "A semi-fondant cake that comes in any flavor and can be made with vanilla or chocolate bread and cream. It weighs at least 4 kilograms and is hand-delivered in a cardboard box. The cake's semi-fondant covering provides a smooth, elegant finish while allowing for more flexibility and a lighter texture compared to full fondant. This makes it an ideal choice for a variety of occasions, from birthdays and anniversaries to weddings and corporate events.",
+      "type": "TEXT",
+      "scrollBehavior": "SCROLLS",
+      "componentPropertyReferences": {
+        "characters": "Description#2873:1"
+      },
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0,
+            "g": 0.15294118225574493,
+            "b": 0.33725491166114807,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "OUTSIDE",
+      "styles": {
+        "fill": "296:2737",
+        "text": "296:2885"
+      },
+      "absoluteBoundingBox": {
+        "x": -13390.75,
+        "y": 12057,
+        "width": 858,
+        "height": 24
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 1,
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "HUG",
+      "characters": "A semi-fondant cake that comes in any flavor and can be made with vanilla or chocolate bread and cream. It weighs at least 4 kilograms and is hand-delivered in a cardboard box. The cake's semi-fondant covering provides a smooth, elegant finish while allowing for more flexibility and a lighter texture compared to full fondant. This makes it an ideal choice for a variety of occasions, from birthdays and anniversaries to weddings and corporate events.",
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "lineTypes": [
+        "NONE"
+      ],
+      "lineIndentations": [
+        0
+      ],
+      "style": {
+        "fontFamily": "Inter",
+        "fontPostScriptName": null,
+        "fontStyle": "Regular",
+        "fontWeight": 400,
+        "textAutoResize": "HEIGHT",
+        "textTruncation": "ENDING",
+        "maxLines": 1,
+        "fontSize": 14,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0.14,
+        "lineHeightPx": 24,
+        "lineHeightPercent": 141.64990234375,
+        "lineHeightPercentFontSize": 171.42857360839844,
+        "lineHeightUnit": "PIXELS"
+      },
+      "layoutVersion": 4,
+      "effects": [],
+      "interactions": []
+    }
+  ],
+  "blendMode": "PASS_THROUGH",
+  "clipsContent": false,
+  "background": [],
+  "fills": [],
+  "strokes": [],
+  "strokeWeight": 1,
+  "strokeAlign": "INSIDE",
+  "backgroundColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "layoutMode": "HORIZONTAL",
+  "itemSpacing": 8,
+  "primaryAxisSizingMode": "FIXED",
+  "primaryAxisAlignItems": "CENTER",
+  "layoutWrap": "NO_WRAP",
+  "absoluteBoundingBox": {
+    "x": -13390.75,
+    "y": 12057,
+    "width": 858,
+    "height": 24
+  },
+  "absoluteRenderBounds": null,
+  "constraints": {
+    "vertical": "TOP",
+    "horizontal": "LEFT"
+  },
+  "layoutAlign": "STRETCH",
+  "layoutGrow": 0,
+  "layoutSizingHorizontal": "FIXED",
+  "layoutSizingVertical": "HUG",
+  "effects": [],
+  "interactions": []
+}

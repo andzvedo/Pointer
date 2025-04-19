@@ -19,7 +19,11 @@ function extractFileKey(url: string): string | null {
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url)
   const figmaUrl = searchParams.get('figmaUrl')
-  const nodeId = searchParams.get('nodeId')
+  let nodeId = searchParams.get('nodeId')
+  // Permitir nodeId com '-' ou ':'
+  if (nodeId) {
+    nodeId = nodeId.replace(/-/g, ':')
+  }
   const figmaToken = process.env.FIGMA_TOKEN
 
   if (!figmaUrl || !nodeId || !figmaToken) {
@@ -43,6 +47,7 @@ export async function GET(request: NextRequest) {
   if (!svgUrl) {
     return new Response('SVG URL not found for node', { status: 404 })
   }
+  // Buscar SVG real do asset
   const svgRes = await fetch(svgUrl)
   if (!svgRes.ok) {
     return new Response('Could not fetch SVG file', { status: 500 })
@@ -54,4 +59,5 @@ export async function GET(request: NextRequest) {
       'Cache-Control': 'public, max-age=31536000',
     },
   })
+
 }

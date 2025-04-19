@@ -1,0 +1,80 @@
+{
+  "id": "1:5",
+  "name": "01",
+  "type": "FRAME",
+  "scrollBehavior": "SCROLLS",
+  "children": [
+    {
+      "id": "1:3",
+      "name": "image 1",
+      "type": "RECTANGLE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "26d06699dc1d2ed855d7026e5c6e388d76ea7d0b"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 0.5,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 875.75,
+        "y": 23277,
+        "width": 1440,
+        "height": 812
+      },
+      "absoluteRenderBounds": {
+        "x": 875.75,
+        "y": 23277,
+        "width": 1440,
+        "height": 812
+      },
+      "preserveRatio": true,
+      "targetAspectRatio": {
+        "x": 2880,
+        "y": 1624
+      },
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "CENTER"
+      },
+      "effects": [],
+      "interactions": []
+    }
+  ],
+  "blendMode": "PASS_THROUGH",
+  "clipsContent": false,
+  "background": [],
+  "fills": [],
+  "strokes": [],
+  "strokeWeight": 0.5,
+  "strokeAlign": "INSIDE",
+  "backgroundColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "absoluteBoundingBox": {
+    "x": 875.75,
+    "y": 23277,
+    "width": 1440,
+    "height": 812
+  },
+  "absoluteRenderBounds": {
+    "x": 875.75,
+    "y": 23277,
+    "width": 1440,
+    "height": 812
+  },
+  "constraints": {
+    "vertical": "TOP",
+    "horizontal": "LEFT"
+  },
+  "effects": [],
+  "interactions": []
+}

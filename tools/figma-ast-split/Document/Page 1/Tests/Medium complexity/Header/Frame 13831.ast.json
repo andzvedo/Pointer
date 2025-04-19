@@ -1,0 +1,165 @@
+{
+  "id": "I322:5807;3571:28290",
+  "name": "Frame 13831",
+  "type": "FRAME",
+  "scrollBehavior": "SCROLLS",
+  "children": [
+    {
+      "id": "I322:5807;3571:28291",
+      "name": "close button",
+      "type": "FRAME",
+      "scrollBehavior": "SCROLLS",
+      "children": [
+        {
+          "id": "I322:5807;3571:28292",
+          "name": "Vector",
+          "type": "VECTOR",
+          "scrollBehavior": "SCROLLS",
+          "blendMode": "PASS_THROUGH",
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.5254902243614197,
+                "g": 0.5568627715110779,
+                "b": 0.5882353186607361,
+                "a": 1
+              }
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "absoluteBoundingBox": {
+            "x": -14018.970703125,
+            "y": 10850.5146484375,
+            "width": 16.970666885375977,
+            "height": 16.970666885375977
+          },
+          "absoluteRenderBounds": {
+            "x": -14018.970703125,
+            "y": 10850.5146484375,
+            "width": 16.970666885375977,
+            "height": 16.970666885375977
+          },
+          "constraints": {
+            "vertical": "SCALE",
+            "horizontal": "SCALE"
+          },
+          "layoutAlign": "INHERIT",
+          "layoutGrow": 0,
+          "layoutSizingHorizontal": "FIXED",
+          "layoutSizingVertical": "FIXED",
+          "effects": [],
+          "interactions": []
+        }
+      ],
+      "blendMode": "PASS_THROUGH",
+      "clipsContent": true,
+      "background": [
+        {
+          "blendMode": "NORMAL",
+          "visible": false,
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "visible": false,
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "backgroundColor": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 0
+      },
+      "layoutMode": "VERTICAL",
+      "counterAxisAlignItems": "CENTER",
+      "primaryAxisAlignItems": "CENTER",
+      "layoutWrap": "NO_WRAP",
+      "absoluteBoundingBox": {
+        "x": -14018.970703125,
+        "y": 10850.5146484375,
+        "width": 16.970666885375977,
+        "height": 16.970666885375977
+      },
+      "absoluteRenderBounds": {
+        "x": -14018.970703125,
+        "y": 10850.5146484375,
+        "width": 16.970703125,
+        "height": 16.970703125
+      },
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "RIGHT"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 0,
+      "layoutSizingHorizontal": "HUG",
+      "layoutSizingVertical": "HUG",
+      "effects": [],
+      "interactions": []
+    }
+  ],
+  "blendMode": "PASS_THROUGH",
+  "clipsContent": false,
+  "background": [],
+  "fills": [],
+  "strokes": [],
+  "strokeWeight": 1,
+  "strokeAlign": "INSIDE",
+  "backgroundColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "layoutMode": "HORIZONTAL",
+  "itemSpacing": 10,
+  "paddingLeft": 10,
+  "paddingRight": 10,
+  "paddingTop": 15,
+  "paddingBottom": 15,
+  "layoutWrap": "NO_WRAP",
+  "absoluteBoundingBox": {
+    "x": -14028.970703125,
+    "y": 10835.5146484375,
+    "width": 36.970664978027344,
+    "height": 46.970664978027344
+  },
+  "absoluteRenderBounds": {
+    "x": -14028.970703125,
+    "y": 10835.5146484375,
+    "width": 36.970703125,
+    "height": 46.970703125
+  },
+  "constraints": {
+    "vertical": "TOP",
+    "horizontal": "LEFT"
+  },
+  "layoutAlign": "INHERIT",
+  "layoutGrow": 0,
+  "layoutSizingHorizontal": "HUG",
+  "layoutSizingVertical": "HUG",
+  "effects": [],
+  "interactions": []
+}

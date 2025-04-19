@@ -1,0 +1,86 @@
+{
+  "id": "I337:6092;2771:39879",
+  "name": "Frame 502",
+  "type": "FRAME",
+  "scrollBehavior": "SCROLLS",
+  "children": [
+    {
+      "id": "I337:6092;2771:39880",
+      "name": "Line 82",
+      "type": "LINE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.871141791343689,
+            "g": 0.8896424174308777,
+            "b": 0.9266439080238342,
+            "a": 1
+          }
+        }
+      ],
+      "strokeWeight": 2,
+      "strokeAlign": "CENTER",
+      "styles": {
+        "stroke": "296:2736"
+      },
+      "absoluteBoundingBox": {
+        "x": -13461,
+        "y": 11680,
+        "width": 980,
+        "height": 0
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "layoutAlign": "STRETCH",
+      "layoutGrow": 0,
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "FIXED",
+      "effects": [],
+      "interactions": []
+    }
+  ],
+  "blendMode": "PASS_THROUGH",
+  "clipsContent": false,
+  "background": [],
+  "fills": [],
+  "strokes": [],
+  "strokeWeight": 1,
+  "strokeAlign": "INSIDE",
+  "backgroundColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "layoutMode": "VERTICAL",
+  "counterAxisSizingMode": "FIXED",
+  "itemSpacing": 8,
+  "paddingLeft": 24,
+  "paddingRight": 24,
+  "layoutWrap": "NO_WRAP",
+  "absoluteBoundingBox": {
+    "x": -13485,
+    "y": 11680,
+    "width": 1028,
+    "height": 0
+  },
+  "absoluteRenderBounds": null,
+  "constraints": {
+    "vertical": "TOP",
+    "horizontal": "LEFT"
+  },
+  "layoutAlign": "STRETCH",
+  "layoutGrow": 0,
+  "layoutSizingHorizontal": "FILL",
+  "layoutSizingVertical": "HUG",
+  "effects": [],
+  "interactions": []
+}

@@ -1,0 +1,4474 @@
+{
+  "id": "215:35425",
+  "name": "Frame",
+  "type": "FRAME",
+  "scrollBehavior": "SCROLLS",
+  "children": [
+    {
+      "id": "215:35426",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 5946,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35427",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 5958.9599609375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35428",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 5971.919921875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35429",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 5984.8798828125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35430",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 5997.83984375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35431",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6010.7998046875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35432",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6023.759765625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35433",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6036.72021484375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35434",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6049.68017578125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35435",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6062.64013671875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35436",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6075.60009765625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35437",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6088.56005859375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35438",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6101.52001953125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35439",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6114.47998046875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35440",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6127.43994140625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35441",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6140.39990234375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35442",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6153.35986328125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35443",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6166.31982421875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35444",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6179.27978515625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35445",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6192.240234375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35446",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6205.2001953125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35447",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6218.16015625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35448",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6231.1201171875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35449",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6244.080078125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35450",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6257.0400390625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35451",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6270,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35452",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6282.9599609375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35453",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6295.919921875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35454",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6308.8798828125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35455",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6321.83984375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35456",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6334.7998046875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35457",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6347.759765625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35458",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6360.72021484375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35459",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6373.68017578125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35460",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6386.64013671875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35461",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6399.60009765625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35462",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6412.56005859375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35463",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6425.52001953125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35464",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6438.47998046875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35465",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6451.43994140625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35466",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6464.39990234375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35467",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6477.35986328125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35468",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6490.31982421875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35469",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6503.2802734375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35470",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6516.240234375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35471",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6529.2001953125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35472",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6542.16015625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35473",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6555.1201171875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35474",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6568.080078125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35475",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6581.0400390625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35476",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6594,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35477",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6606.9599609375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35478",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6619.919921875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35479",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6632.8798828125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35480",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6645.83984375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35481",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6658.7998046875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35482",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6671.759765625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35483",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6684.7197265625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35484",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6697.68017578125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35485",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6710.64013671875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35486",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6723.60009765625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35487",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6736.56005859375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35488",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6749.52001953125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35489",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6762.47998046875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35490",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6775.43994140625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35491",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6788.39990234375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35492",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6801.35986328125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35493",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6814.31982421875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35494",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6827.2802734375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35495",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6840.240234375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35496",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6853.2001953125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35497",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6866.16015625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35498",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6879.1201171875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35499",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6892.080078125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35500",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6905.0400390625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35501",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6918,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35502",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6930.9599609375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35503",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6943.919921875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35504",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6956.8798828125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35505",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6969.83984375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35506",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6982.7998046875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35507",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 6995.759765625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35508",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7008.7197265625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35509",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7021.68017578125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35510",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7034.64013671875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35511",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7047.60009765625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35512",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7060.56005859375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35513",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7073.52001953125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35514",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7086.47998046875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35515",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7099.43994140625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35516",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7112.39990234375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35517",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7125.35986328125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35518",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7138.31982421875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35519",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7151.2802734375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35520",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7164.240234375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35521",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7177.2001953125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35522",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7190.16015625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35523",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7203.1201171875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35524",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7216.080078125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35525",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7229.0400390625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35526",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7242,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35527",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7254.9599609375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35528",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7267.919921875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35529",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7280.8798828125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35530",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7293.83984375,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35531",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7306.7998046875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35532",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7319.759765625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35533",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7332.7197265625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35534",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7345.68017578125,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35535",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7358.64013671875,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    },
+    {
+      "id": "215:35536",
+      "name": "Ellipse",
+      "type": "ELLIPSE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8235294222831726,
+            "g": 0.8392156958580017,
+            "b": 0.8588235378265381,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1.440000057220459,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 7371.60009765625,
+        "y": 10130.0400390625,
+        "width": 2.880000114440918,
+        "height": 2.880000114440918
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "effects": [],
+      "arcData": {
+        "startingAngle": 0,
+        "endingAngle": 6.2831854820251465,
+        "innerRadius": 0
+      },
+      "interactions": []
+    }
+  ],
+  "blendMode": "PASS_THROUGH",
+  "clipsContent": true,
+  "background": [],
+  "fills": [],
+  "strokes": [],
+  "strokeWeight": 1.440000057220459,
+  "strokeAlign": "INSIDE",
+  "backgroundColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "absoluteBoundingBox": {
+    "x": 5946,
+    "y": 10130.0400390625,
+    "width": 1440,
+    "height": 12.960000038146973
+  },
+  "absoluteRenderBounds": null,
+  "constraints": {
+    "vertical": "TOP",
+    "horizontal": "LEFT"
+  },
+  "effects": [],
+  "interactions": []
+}

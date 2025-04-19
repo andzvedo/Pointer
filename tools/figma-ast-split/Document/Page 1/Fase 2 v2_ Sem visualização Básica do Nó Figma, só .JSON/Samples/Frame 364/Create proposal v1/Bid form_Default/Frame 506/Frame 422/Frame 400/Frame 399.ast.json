@@ -1,0 +1,112 @@
+{
+  "id": "I316:7871;3030:27837;2664:11234;2659:5923",
+  "name": "Frame 399",
+  "visible": false,
+  "type": "FRAME",
+  "scrollBehavior": "SCROLLS",
+  "children": [
+    {
+      "id": "I316:7871;3030:27837;2664:11234;2659:5922",
+      "name": "Host can cancel at any time without any penalty.",
+      "type": "TEXT",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.523934543132782,
+            "g": 0.577089786529541,
+            "b": 0.6802734136581421,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 4,
+      "strokeAlign": "OUTSIDE",
+      "styles": {
+        "fill": "296:2818",
+        "text": "296:3388"
+      },
+      "absoluteBoundingBox": {
+        "x": 18000,
+        "y": 12266,
+        "width": 425,
+        "height": 48
+      },
+      "absoluteRenderBounds": null,
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "layoutAlign": "INHERIT",
+      "layoutGrow": 1,
+      "layoutSizingHorizontal": "FILL",
+      "layoutSizingVertical": "HUG",
+      "characters": "Must cancel at least 72 hours before the delivery date to avoid any charges.",
+      "characterStyleOverrides": [],
+      "styleOverrideTable": {},
+      "lineTypes": [
+        "NONE"
+      ],
+      "lineIndentations": [
+        0
+      ],
+      "style": {
+        "fontFamily": "Inter",
+        "fontPostScriptName": null,
+        "fontStyle": "Regular",
+        "fontWeight": 400,
+        "textAutoResize": "HEIGHT",
+        "fontSize": 12,
+        "textAlignHorizontal": "LEFT",
+        "textAlignVertical": "TOP",
+        "letterSpacing": 0.12,
+        "lineHeightPx": 24,
+        "lineHeightPercent": 165.25820922851562,
+        "lineHeightPercentFontSize": 200,
+        "lineHeightUnit": "PIXELS"
+      },
+      "layoutVersion": 4,
+      "effects": [],
+      "interactions": []
+    }
+  ],
+  "blendMode": "PASS_THROUGH",
+  "clipsContent": false,
+  "background": [],
+  "fills": [],
+  "strokes": [],
+  "strokeWeight": 1,
+  "strokeAlign": "INSIDE",
+  "backgroundColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "layoutMode": "HORIZONTAL",
+  "itemSpacing": 8,
+  "primaryAxisSizingMode": "FIXED",
+  "paddingLeft": 28,
+  "layoutWrap": "NO_WRAP",
+  "absoluteBoundingBox": {
+    "x": 17972,
+    "y": 12266,
+    "width": 453,
+    "height": 48
+  },
+  "absoluteRenderBounds": null,
+  "constraints": {
+    "vertical": "TOP",
+    "horizontal": "LEFT"
+  },
+  "layoutAlign": "STRETCH",
+  "layoutGrow": 0,
+  "layoutSizingHorizontal": "FIXED",
+  "layoutSizingVertical": "HUG",
+  "effects": [],
+  "interactions": []
+}

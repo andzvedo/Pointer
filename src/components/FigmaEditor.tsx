@@ -193,37 +193,6 @@ const FigmaEditor: React.FC = () => {
           </div>
         )}
 
-        {/* Novo: Upload manual de JSON filtrado */}
-        <div className="mb-6 flex flex-col items-center">
-          <label className="mb-2 font-medium">Ou carregue um arquivo JSON filtrado do Figma</label>
-          <input
-            type="file"
-            accept="application/json"
-            onChange={async (e) => {
-              const file = e.target.files?.[0]
-              if (!file) return
-              setIsLoading(true)
-              setError(null)
-              setDesignAst(null)
-              setIntegrationCode("")
-              setIntegrationInstructions("")
-              try {
-                const text = await file.text()
-                const json = JSON.parse(text)
-                setFigmaData(json)
-                // Converter para AST
-                const ast = convertFigmaToAst(json)
-                setDesignAst(ast)
-                updateIntegrationCode(selectedPlatform)
-              } catch (err) {
-                setError("Erro ao processar o arquivo JSON: " + (err instanceof Error ? err.message : "Erro desconhecido"))
-              } finally {
-                setIsLoading(false)
-              }
-            }}
-            className="border px-3 py-2 rounded shadow-sm"
-          />
-        </div>
 
         <FigmaUrlInput onUrlSubmit={handleUrlSubmit} isLoading={isLoading} />
 
