@@ -90,7 +90,16 @@ Usuário insere a URL do arquivo Figma.
 - PNG: `tools/UI Version 1/Mockup/PNG/1-Entry Point_1.png`
 - SVG: `tools/UI Version 1/Mockup/SVG/1-Entry Point_1.svg`
 - XML: `tools/UI Version 1/Mockup/XML/1-Entry Point_1.xml`
-- AST (todos os detalhes de nodes, estilos e hierarquia): `tools/UI Version 1/Structure/design-ast.json` (procure por "FigmaUrlInput", "SubmitButton", "SendIcon")
+- AST (todos os detalhes de nodes, estilos e hierarquia): `tools/UI Version 1/Structure/design-ast.json`
+  - **Como buscar nodes relevantes:**
+    - Procure por `"name": "FigmaUrlInput"`, `"name": "SubmitButton"`, `"name": "SendIcon"`.
+    - Exemplo de comando terminal:
+      ```bash
+      grep -n '"name": "FigmaUrlInput"' tools/UI\ Version\ 1/Structure/design-ast.json
+      ```
+    - Os nodes de cada tela costumam estar próximos do frame correspondente (ex: "Entry Point", "Screen 1").
+    - Use um editor com busca incremental para navegar rapidamente entre os resultados.
+
 - Fluxo completo: `tools/UI Version 1/Mockup/SVG/Fluxo completo.svg`, `tools/UI Version 1/Mockup/XML/Fluxo completo.xml`
 
 ---
@@ -127,7 +136,14 @@ Indicar que a URL está sendo validada/processada.
 - PNG: `tools/UI Version 1/Mockup/PNG/2.png`
 - SVG: `tools/UI Version 1/Mockup/SVG/2.svg`
 - XML: (fluxo completo)
-- AST: `tools/UI Version 1/Structure/design-ast.json` (procure por "LoadingSpinner", "FigmaUrlInput", "SubmitButton")
+- AST: `tools/UI Version 1/Structure/design-ast.json`
+  - **Como buscar nodes relevantes:**
+    - Procure por `"name": "LoadingSpinner"`, `"name": "FigmaUrlInput"`, `"name": "SubmitButton"`.
+    - Exemplo de comando:
+      ```bash
+      grep -n '"name": "LoadingSpinner"' tools/UI\ Version\ 1/Structure/design-ast.json
+      ```
+
 - Fluxo completo: `tools/UI Version 1/Mockup/SVG/Fluxo completo.svg`, `tools/UI Version 1/Mockup/XML/Fluxo completo.xml`
 
 ---
@@ -166,7 +182,14 @@ Exibir mensagem de erro caso a URL seja inválida.
 - PNG: `tools/UI Version 1/Mockup/PNG/3.png`
 - SVG: `tools/UI Version 1/Mockup/SVG/3.svg`
 - XML: (fluxo completo)
-- AST: `tools/UI Version 1/Structure/design-ast.json` (procure por "ErrorMessage", "FigmaUrlInput", "SubmitButton")
+- AST: `tools/UI Version 1/Structure/design-ast.json`
+  - **Como buscar nodes relevantes:**
+    - Procure por `"name": "ErrorMessage"`, `"name": "FigmaUrlInput"`, `"name": "SubmitButton"`.
+    - Exemplo de comando:
+      ```bash
+      grep -n '"name": "ErrorMessage"' tools/UI\ Version\ 1/Structure/design-ast.json
+      ```
+
 - Fluxo completo: `tools/UI Version 1/Mockup/SVG/Fluxo completo.svg`, `tools/UI Version 1/Mockup/XML/Fluxo completo.xml`
 
 ---
@@ -207,7 +230,15 @@ Indicar que a URL foi aceita e os dados extraídos com sucesso.
 - PNG: `tools/UI Version 1/Mockup/PNG/4.png`
 - SVG: `tools/UI Version 1/Mockup/SVG/4.svg`
 - XML: (fluxo completo)
-- AST: `tools/UI Version 1/Structure/design-ast.json` (procure por "SuccessIcon", "SuccessMessage", "FigmaUrlInput")
+- AST: `tools/UI Version 1/Structure/design-ast.json`
+  - **Como buscar nodes relevantes:**
+    - Procure por `"name": "SuccessIcon"`, `"name": "SuccessMessage"`, `"name": "FigmaUrlInput"`.
+    - Exemplo de comando:
+      ```bash
+      grep -n '"name": "SuccessIcon"' tools/UI\ Version\ 1/Structure/design-ast.json
+      ```
+    - Se não encontrar, busque por nomes próximos ou pelo nome do frame/tela (ex: "Success", "Screen 4").
+
 - Fluxo completo: `tools/UI Version 1/Mockup/SVG/Fluxo completo.svg`, `tools/UI Version 1/Mockup/XML/Fluxo completo.xml`
 
 ---
@@ -249,7 +280,14 @@ Mostrar ao usuário os dados extraídos do arquivo Figma.
 - PNG: `tools/UI Version 1/Mockup/PNG/5.png`
 - SVG: `tools/UI Version 1/Mockup/SVG/5.svg`
 - XML: (fluxo completo)
-- AST: `tools/UI Version 1/Structure/design-ast.json` (procure por "ComponentList", "ComponentItem", "CopyButton")
+- AST: `tools/UI Version 1/Structure/design-ast.json`
+  - **Como buscar nodes relevantes:**
+    - Procure por `"name": "ComponentList"`, `"name": "ComponentItem"`, `"name": "CopyButton"`.
+    - Exemplo de comando:
+      ```bash
+      grep -n '"name": "ComponentList"' tools/UI\ Version\ 1/Structure/design-ast.json
+      ```
+
 - Fluxo completo: `tools/UI Version 1/Mockup/SVG/Fluxo completo.svg`, `tools/UI Version 1/Mockup/XML/Fluxo completo.xml`
 
 ---
@@ -286,7 +324,14 @@ Permitir ao usuário visualizar os SVGs/componentes extraídos.
 - PNG: `tools/UI Version 1/Mockup/PNG/6.png`
 - SVG: `tools/UI Version 1/Mockup/SVG/6.svg`
 - XML: (fluxo completo)
-- AST: `tools/UI Version 1/Structure/design-ast.json` (procure por "PreviewArea", "DownloadButton", "CopySVGButton")
+- AST: `tools/UI Version 1/Structure/design-ast.json`
+  - **Como buscar nodes relevantes:**
+    - Procure por `"name": "PreviewArea"`, `"name": "DownloadButton"`, `"name": "CopySVGButton"`.
+    - Exemplo de comando:
+      ```bash
+      grep -n '"name": "PreviewArea"' tools/UI\ Version\ 1/Structure/design-ast.json
+      ```
+
 - Fluxo completo: `tools/UI Version 1/Mockup/SVG/Fluxo completo.svg`, `tools/UI Version 1/Mockup/XML/Fluxo completo.xml`
 
 ---
@@ -327,7 +372,14 @@ Exibir o SVG final/exportável e ações finais.
 - PNG: `tools/UI Version 1/Mockup/PNG/7.png`
 - SVG: `tools/UI Version 1/Mockup/SVG/7.svg`
 - XML: (fluxo completo)
-- AST: `tools/UI Version 1/Structure/design-ast.json` (procure por "FinalSVGArea", "ExportButton")
+- AST: `tools/UI Version 1/Structure/design-ast.json`
+  - **Como buscar nodes relevantes:**
+    - Procure por `"name": "FinalSVGArea"`, `"name": "ExportButton"`.
+    - Exemplo de comando:
+      ```bash
+      grep -n '"name": "FinalSVGArea"' tools/UI\ Version\ 1/Structure/design-ast.json
+      ```
+
 - Fluxo completo: `tools/UI Version 1/Mockup/SVG/Fluxo completo.svg`, `tools/UI Version 1/Mockup/XML/Fluxo completo.xml`
 
 ---
