@@ -1,3 +1,41 @@
 <!-- figma-plugin/ui.html -->
 <h2>Pointer.design Sync Plugin</h2>
-<p>UI do Plugin Carregada!</p> 
+<p>UI do Plugin Carregada!</p>
+
+<button id="process-button">Processar Seleção</button>
+
+<hr style="margin: 15px 0;">
+
+<h3>AST Gerada:</h3>
+<pre id="output" style="background-color: #f0f0f0; padding: 10px; border-radius: 4px; white-space: pre-wrap; word-wrap: break-word; max-height: 300px; overflow-y: auto;">
+(Nenhuma AST gerada ainda)
+</pre>
+
+<!-- Script para comunicação -->
+<script>
+  const processButton = document.getElementById('process-button');
+  const outputArea = document.getElementById('output');
+
+  // Envia mensagem para o core do plugin quando o botão é clicado
+  processButton.onclick = () => {
+    outputArea.textContent = 'Processando...'; // Feedback visual
+    parent.postMessage({ pluginMessage: { type: 'processSelection' } }, '*');
+  }
+
+  // Recebe mensagens do core do plugin
+  window.onmessage = (event) => {
+    const message = event.data.pluginMessage;
+    if (message && message.type === 'astGenerated') {
+      console.log("UI: AST recebida:", message.payload);
+      // Exibe a AST formatada como JSON string na área de output
+      outputArea.textContent = JSON.stringify(message.payload, null, 2);
+    } else if (message && message.type === 'initialData') {
+        console.log("UI: Dados iniciais recebidos:", message.payload);
+        // Poderia exibir status aqui, se necessário
+    }
+    // Adicionar outros tipos de mensagem se necessário
+  }
+
+  // Opcional: Informar ao core que a UI está pronta
+  // parent.postMessage({ pluginMessage: { type: 'uiReady' } }, '*');
+</script> 

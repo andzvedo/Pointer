@@ -4,11 +4,13 @@ import React, { useState, useEffect } from 'react'
 import FigmaUrlInput from './FigmaUrlInput'
 import CodePreview from './CodePreview'
 import ConceptExplanation from './ConceptExplanation'
+/* // Removendo importação - lógica movida para o plugin
 import {
   convertFigmaToAst,
   formatAstForIntegration,
   generateIntegrationInstructions,
-} from '../lib/figmaToAst'
+} from '../lib/figmaToAst' 
+*/
 
 // Plataformas de integração suportadas
 const SUPPORTED_PLATFORMS = ['cursor', 'windsurf', 'generic'] as const
@@ -53,15 +55,22 @@ const FigmaEditor: React.FC = () => {
   // Função para atualizar o código de integração e instruções
   const updateIntegrationCode = (platform: PlatformType) => {
     if (!designAst) return
-
+    
+    console.warn("updateIntegrationCode: Lógica de formatação movida para o plugin ou backend.");
+    // A formatação e as instruções virão via WebSocket
+    /* // Código antigo removido
     const formattedCode = formatAstForIntegration(designAst, platform)
     const instructions = generateIntegrationInstructions(platform)
-
     setIntegrationCode(formattedCode)
     setIntegrationInstructions(instructions)
+    */
+    // Placeholder enquanto não temos WebSocket
+    setIntegrationCode(`// Código para ${platform} será recebido via WebSocket`);
+    setIntegrationInstructions(`## Instruções para ${platform}\n\nAs instruções formatadas serão recebidas via WebSocket.`);
   }
 
   const handleUrlSubmit = async (url: string) => {
+    // ... (início da função)
     console.log('handleUrlSubmit chamado com URL:', url)
     setIsLoading(true)
     setError(null)
@@ -69,6 +78,12 @@ const FigmaEditor: React.FC = () => {
     setIntegrationCode('')
     setIntegrationInstructions('')
 
+    // ESTA FUNÇÃO SERÁ REESCRITA/REMOVIDA
+    // A busca de dados e geração de AST agora acontece no plugin.
+    // A comunicação será via WebSocket.
+    // Mantendo a estrutura básica por enquanto, mas comentando a lógica principal.
+    
+    /* // Lógica antiga de fetch e processamento comentada
     try {
       const fileKey = extractFileKeyFromUrl(url)
       console.log('FileKey extraído no handleUrlSubmit:', fileKey)
@@ -78,11 +93,8 @@ const FigmaEditor: React.FC = () => {
           'URL do Figma inválida. A URL deve conter /file/ ou /design/ seguido pelo ID do arquivo.',
         )
       }
-
-      // Codificar a URL para evitar problemas com caracteres especiais
       const encodedUrl = encodeURIComponent(url)
       console.log('Fazendo requisição para:', `/api/figma?figmaUrl=${encodedUrl}`)
-
       const response = await fetch(`/api/figma?figmaUrl=${encodedUrl}`)
       console.log('Resposta recebida. Status:', response.status)
 
@@ -91,36 +103,32 @@ const FigmaEditor: React.FC = () => {
         console.error('Erro da API:', errorData)
         throw new Error(errorData.error || 'Erro ao carregar dados do Figma')
       }
-
       const data = await response.json()
       console.log('Dados recebidos do Figma:', Object.keys(data))
-      setFigmaData(data) // Sempre o JSON bruto
+      setFigmaData(data) 
 
-      // Gerar link para download do RAW JSON (sempre do bruto)
+      // Gerar link para download do RAW JSON
       const rawBlob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
       setRawBlobUrl(URL.createObjectURL(rawBlob))
 
       try {
-        // Filtrar JSON (manter só propriedades essenciais)
-        // Se já houver um filtro utilitário, use-o aqui. Supondo filterNode recursivo:
-        // Se não houver, mantenha igual ao original por enquanto
         let filtered = data
         if (typeof window !== 'undefined' && (window as any).filterNode) {
           filtered = (window as any).filterNode(data)
         }
-        setFilteredJson(filtered) // Sempre o filtrado
+        setFilteredJson(filtered)
         const filteredBlob = new Blob([JSON.stringify(filtered, null, 2)], { type: 'application/json' })
         setFilteredBlobUrl(URL.createObjectURL(filteredBlob))
 
         // Converter dados filtrados para AST
         console.log('Convertendo dados filtrados para AST')
-        const ast = convertFigmaToAst(filtered, fileKey)
+        const ast = convertFigmaToAst(filtered, fileKey) // Chamada removida
         setDesignAst(ast)
         const astBlob = new Blob([JSON.stringify(ast, null, 2)], { type: 'application/json' })
         setAstBlobUrl(URL.createObjectURL(astBlob))
 
         // Gerar código de integração para a plataforma selecionada
-        updateIntegrationCode(selectedPlatform)
+        updateIntegrationCode(selectedPlatform) // Chamada removida indiretamente
       } catch (astError) {
         console.error('Erro ao gerar AST:', astError)
         throw new Error('Erro ao processar os dados do Figma para o formato estruturado')
@@ -133,6 +141,11 @@ const FigmaEditor: React.FC = () => {
       console.log('Finalizando processamento, isLoading = false')
       setIsLoading(false)
     }
+    */
+    
+    // Simulação de erro/aviso enquanto a lógica está desativada
+    setError("Lógica de busca via API desativada. Use o plugin Figma.");
+    setIsLoading(false);
   }
 
   const handlePlatformChange = (platform: PlatformType) => {
@@ -168,12 +181,15 @@ const FigmaEditor: React.FC = () => {
                 const text = await file.text()
                 const json = JSON.parse(text)
                 setFigmaData(json)
-                // Converter para AST
+                // Converter para AST (REMOVIDO/COMENTADO)
+                /*
                 const ast = convertFigmaToAst(json)
                 setDesignAst(ast)
                 updateIntegrationCode(selectedPlatform)
+                */
+               setError("Processamento de JSON manual desativado temporariamente.");
               } catch (err) {
-                setError("Erro ao processar o arquivo JSON: " + (err instanceof Error ? err.message : "Erro desconhecido"))
+                 // ... (tratamento de erro)
               } finally {
                 setIsLoading(false)
               }
