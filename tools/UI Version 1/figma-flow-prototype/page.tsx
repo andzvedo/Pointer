@@ -1,5 +1,5 @@
 import React from "react";
-import { FigmaFlowPrototype } from "@/components/figma-flow-prototype/FigmaFlowPrototype";
+import { FigmaFlowPrototype } from "../../../tools/UI Version 1/figma-flow-prototype/FigmaFlowPrototype";
 
 export default function FigmaFlowPrototypePage() {
   return (
