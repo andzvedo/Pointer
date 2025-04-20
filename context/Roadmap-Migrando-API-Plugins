@@ -4,10 +4,10 @@
 
 ## Fase 1: Fundação e Configuração do Plugin
 
-- [ ] **Tarefa 1.1:** Configurar Ambiente de Desenvolvimento do Plugin (Node.js, npm/yarn, typings `@figma/plugin-typings`)  
-- [ ] **Tarefa 1.2:** Criar Arquivos Essenciais do Plugin (`manifest.json`, `code.ts`, `ui.html`/`ui.tsx`)  
-- [ ] **Tarefa 1.3:** Configurar Build do Plugin (bundler: esbuild/webpack, scripts npm)  
-- [ ] **Tarefa 1.4:** Carregar e Testar Plugin Básico no Figma (Import local, verificar UI)  
+- ✅ **Tarefa 1.1:** Configurar Ambiente de Desenvolvimento do Plugin (Node.js, npm/yarn, typings `@figma/plugin-typings`)  
+- [✅ **Tarefa 1.2:** Criar Arquivos Essenciais do Plugin (`manifest.json`, `code.ts`, `ui.html`/`ui.tsx`)  
+- ✅ **Tarefa 1.3:** Configurar Build do Plugin (bundler: esbuild/webpack, scripts simnpm)  
+- ✅ **Tarefa 1.4:** Carregar e Testar Plugin Básico no Figma (Import local, verificar UI)  
 
 ## Fase 2: Migração e Adaptação da Lógica de Conversão
 

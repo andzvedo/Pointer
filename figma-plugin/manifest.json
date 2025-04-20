@@ -1,0 +1,8 @@
+{
+  "name": "Pointer.design Sync",
+  "id": "GET_ID_FROM_FIGMA_ON_IMPORT",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma"]
+} 
