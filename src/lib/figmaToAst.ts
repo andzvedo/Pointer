@@ -346,7 +346,12 @@ function extractVectorData(node: FigmaNode): any {
 function convertNodeToAst(
   node: FigmaNode, 
   parentPath: string[] = []
-): DesignASTNode {
+): DesignASTNode | null {
+  // Verifica se o nó está oculto (visible === false)
+  if (node.visible === false) {
+    return null; // Pula nós ocultos
+  }
+  
   // Gera um ID único para o nó AST
   const astId = `ast-${node.id.replace(':', '-')}`;
   
@@ -381,9 +386,14 @@ function convertNodeToAst(
   
   // Processar nós filhos, se existirem
   if (node.children && node.children.length > 0) {
-    astNode.children = node.children.map((child: FigmaNode) => 
-      convertNodeToAst(child, currentPath)
-    );
+    // Filtra os nós filhos ocultos antes de processá-los
+    const visibleChildren = node.children
+      .map((child: FigmaNode) => convertNodeToAst(child, currentPath))
+      .filter((child: DesignASTNode | null): child is DesignASTNode => child !== null);
+    
+    if (visibleChildren.length > 0) {
+      astNode.children = visibleChildren;
+    }
   }
 
   return astNode;
@@ -413,8 +423,11 @@ export function convertFigmaToAst(figmaData: any, figmaFileKey?: string): Design
       figmaPath: [figmaData.name || 'Figma Document'],
     },
     // Convertemos todos os frames/artboards do documento, não apenas o primeiro
+    // Filtramos os nós ocultos
     children: rootNode.children ? 
-      rootNode.children.map((child: FigmaNode) => convertNodeToAst(child, [figmaData.name || 'Figma Document'])) 
+      rootNode.children
+        .map((child: FigmaNode) => convertNodeToAst(child, [figmaData.name || 'Figma Document']))
+        .filter((child: DesignASTNode | null): child is DesignASTNode => child !== null)
       : []
   };
 

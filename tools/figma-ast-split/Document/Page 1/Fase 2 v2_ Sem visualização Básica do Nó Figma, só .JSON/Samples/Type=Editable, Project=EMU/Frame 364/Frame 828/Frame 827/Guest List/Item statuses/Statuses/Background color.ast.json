@@ -1,0 +1,101 @@
+{
+  "id": "I299:8216;41:2154;3006:35701",
+  "name": "Background color",
+  "visible": false,
+  "type": "FRAME",
+  "scrollBehavior": "SCROLLS",
+  "componentPropertyReferences": {
+    "visible": "Background color#3006:3"
+  },
+  "children": [],
+  "blendMode": "PASS_THROUGH",
+  "clipsContent": false,
+  "background": [
+    {
+      "blendMode": "NORMAL",
+      "type": "SOLID",
+      "color": {
+        "r": 0.9725490212440491,
+        "g": 0.95686274766922,
+        "b": 0.8588235378265381,
+        "a": 1
+      }
+    }
+  ],
+  "fills": [
+    {
+      "blendMode": "NORMAL",
+      "type": "SOLID",
+      "color": {
+        "r": 0.9725490212440491,
+        "g": 0.95686274766922,
+        "b": 0.8588235378265381,
+        "a": 1
+      }
+    }
+  ],
+  "strokes": [
+    {
+      "blendMode": "NORMAL",
+      "type": "SOLID",
+      "color": {
+        "r": 0.9439615607261658,
+        "g": 0.8494521379470825,
+        "b": 0.35327884554862976,
+        "a": 1
+      }
+    },
+    {
+      "opacity": 0.20000000298023224,
+      "blendMode": "NORMAL",
+      "visible": false,
+      "type": "SOLID",
+      "color": {
+        "r": 0,
+        "g": 0,
+        "b": 0,
+        "a": 1
+      }
+    }
+  ],
+  "cornerRadius": 100,
+  "cornerSmoothing": 0,
+  "strokeWeight": 0,
+  "strokeAlign": "INSIDE",
+  "backgroundColor": {
+    "r": 0.9725490212440491,
+    "g": 0.95686274766922,
+    "b": 0.8588235378265381,
+    "a": 1
+  },
+  "styles": {
+    "fills": "296:3310",
+    "fill": "296:3310"
+  },
+  "layoutMode": "HORIZONTAL",
+  "counterAxisSizingMode": "FIXED",
+  "itemSpacing": 4,
+  "primaryAxisSizingMode": "FIXED",
+  "counterAxisAlignItems": "CENTER",
+  "paddingLeft": 4,
+  "paddingRight": 4,
+  "layoutWrap": "NO_WRAP",
+  "absoluteBoundingBox": {
+    "x": 12091,
+    "y": 11317,
+    "width": 86,
+    "height": 24
+  },
+  "absoluteRenderBounds": null,
+  "constraints": {
+    "vertical": "TOP_BOTTOM",
+    "horizontal": "LEFT_RIGHT"
+  },
+  "layoutAlign": "INHERIT",
+  "layoutGrow": 0,
+  "layoutPositioning": "ABSOLUTE",
+  "layoutSizingHorizontal": "FIXED",
+  "layoutSizingVertical": "FIXED",
+  "effects": [],
+  "interactions": []
+}

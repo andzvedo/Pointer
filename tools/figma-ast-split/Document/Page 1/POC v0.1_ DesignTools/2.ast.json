@@ -1,0 +1,80 @@
+{
+  "id": "2:6",
+  "name": "2",
+  "type": "FRAME",
+  "scrollBehavior": "SCROLLS",
+  "children": [
+    {
+      "id": "2:7",
+      "name": "Captura de Tela 2025-03-07 às 19.50.15",
+      "type": "RECTANGLE",
+      "scrollBehavior": "SCROLLS",
+      "blendMode": "PASS_THROUGH",
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "IMAGE",
+          "scaleMode": "FILL",
+          "imageRef": "edb2650cd0c94a17eff2a76f244872aa4cef8531"
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 0.5,
+      "strokeAlign": "INSIDE",
+      "absoluteBoundingBox": {
+        "x": 2461.75,
+        "y": 23277,
+        "width": 1440,
+        "height": 812
+      },
+      "absoluteRenderBounds": {
+        "x": 2461.75,
+        "y": 23277,
+        "width": 1440,
+        "height": 812
+      },
+      "preserveRatio": true,
+      "targetAspectRatio": {
+        "x": 2880,
+        "y": 1624
+      },
+      "constraints": {
+        "vertical": "SCALE",
+        "horizontal": "CENTER"
+      },
+      "effects": [],
+      "interactions": []
+    }
+  ],
+  "blendMode": "PASS_THROUGH",
+  "clipsContent": false,
+  "background": [],
+  "fills": [],
+  "strokes": [],
+  "strokeWeight": 0.5,
+  "strokeAlign": "INSIDE",
+  "backgroundColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "absoluteBoundingBox": {
+    "x": 2461.75,
+    "y": 23277,
+    "width": 1440,
+    "height": 812
+  },
+  "absoluteRenderBounds": {
+    "x": 2461.75,
+    "y": 23277,
+    "width": 1440,
+    "height": 812
+  },
+  "constraints": {
+    "vertical": "TOP",
+    "horizontal": "LEFT"
+  },
+  "effects": [],
+  "interactions": []
+}

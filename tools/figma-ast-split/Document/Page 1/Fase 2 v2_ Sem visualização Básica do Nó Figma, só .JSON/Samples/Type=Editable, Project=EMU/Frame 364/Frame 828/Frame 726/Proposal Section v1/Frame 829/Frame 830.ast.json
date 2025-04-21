@@ -1,0 +1,96 @@
+{
+  "id": "299:8210",
+  "name": "Frame 830",
+  "type": "FRAME",
+  "scrollBehavior": "SCROLLS",
+  "children": [
+    {
+      "id": "299:8211",
+      "name": "Line 108",
+      "type": "LINE",
+      "scrollBehavior": "SCROLLS",
+      "rotation": 1.5707963705062884,
+      "blendMode": "PASS_THROUGH",
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.871141791343689,
+            "g": 0.8896424174308777,
+            "b": 0.9266439080238342,
+            "a": 1
+          }
+        }
+      ],
+      "strokeWeight": 1,
+      "strokeAlign": "CENTER",
+      "styles": {
+        "stroke": "296:2736"
+      },
+      "absoluteBoundingBox": {
+        "x": 12955.999998601235,
+        "y": 11157,
+        "width": 0.0000013987646525492892,
+        "height": 32
+      },
+      "absoluteRenderBounds": {
+        "x": 12956,
+        "y": 11157,
+        "width": 1,
+        "height": 32
+      },
+      "constraints": {
+        "vertical": "TOP",
+        "horizontal": "LEFT"
+      },
+      "layoutAlign": "STRETCH",
+      "layoutGrow": 0,
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FILL",
+      "effects": [],
+      "interactions": []
+    }
+  ],
+  "blendMode": "PASS_THROUGH",
+  "clipsContent": false,
+  "background": [],
+  "fills": [],
+  "strokes": [],
+  "strokeWeight": 1,
+  "strokeAlign": "INSIDE",
+  "backgroundColor": {
+    "r": 0,
+    "g": 0,
+    "b": 0,
+    "a": 0
+  },
+  "layoutMode": "HORIZONTAL",
+  "counterAxisSizingMode": "FIXED",
+  "itemSpacing": 16,
+  "counterAxisAlignItems": "CENTER",
+  "layoutWrap": "NO_WRAP",
+  "absoluteBoundingBox": {
+    "x": 12956,
+    "y": 11157,
+    "width": 0.0000013987646525492892,
+    "height": 32
+  },
+  "absoluteRenderBounds": {
+    "x": 12956,
+    "y": 11157,
+    "width": 1,
+    "height": 32
+  },
+  "constraints": {
+    "vertical": "TOP",
+    "horizontal": "LEFT"
+  },
+  "layoutAlign": "STRETCH",
+  "layoutGrow": 0,
+  "layoutSizingHorizontal": "HUG",
+  "layoutSizingVertical": "FILL",
+  "effects": [],
+  "interactions": []
+}
