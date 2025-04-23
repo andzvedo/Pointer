@@ -1,0 +1,40 @@
+# Plano de Migração para API de Plugins do Figma
+
+**Objetivo Principal:** Substituir a integração via API REST por um Plugin Figma + WebSockets para tempo real e contexto aprimorado.
+
+## Fase 1: Fundação e Configuração do Plugin ✅
+
+- ✅ **Tarefa 1.1:** Configurar Ambiente de Desenvolvimento do Plugin (Node.js, npm/yarn, typings `@figma/plugin-typings`)  
+- ✅ **Tarefa 1.2:** Criar Arquivos Essenciais do Plugin (`manifest.json`, `code.ts`, `ui.html`/`ui.tsx`)  
+- ✅ **Tarefa 1.3:** Configurar Build do Plugin (bundler: esbuild/webpack, scripts simnpm)  
+- ✅ **Tarefa 1.4:** Carregar e Testar Plugin Básico no Figma (Import local, verificar UI)  
+
+##   ✅
+
+- ✅ **Tarefa 2.1:** Mover Lógica de Conversão (`figmaToAst.ts`) para `code.ts` do plugin  
+- ✅ **Tarefa 2.2:** Adaptar Funções de Extração para a API de Plugins (Trabalhar com `SceneNode` em vez de JSON REST)  
+- ✅ **Tarefa 2.3:** Implementar Extração Inicial no Plugin (UI -> code.ts -> AST -> UI via `postMessage`)  
+
+## Fase 3: Implementação da Comunicação via WebSocket
+
+- [ ] **Tarefa 3.1:** Configurar Servidor WebSocket (Node.js + ws/Socket.IO, lógica de conexão e retransmissão)  
+- [ ] **Tarefa 3.2:** Conectar Plugin UI ao WebSocket (Estabelecer conexão, enviar AST)  
+- [ ] **Tarefa 3.3:** Conectar Aplicação React ao WebSocket (Estabelecer conexão, receber AST)  
+
+## Fase 4: Integração com o Frontend React
+
+- [ ] **Tarefa 4.1:** Remover Lógica Antiga da Aplicação React (API Route, Input de link)  
+- [ ] **Tarefa 4.2:** Gerenciar Estado com Dados do WebSocket (Atualizar estado React com AST recebida)  
+- [ ] **Tarefa 4.3:** Atualizar Componente `CodePreview` (Passar dados do WebSocket, garantir downloads)  
+
+## Fase 5: Implementação da Funcionalidade em Tempo Real
+
+- [ ] **Tarefa 5.1:** Implementar Listeners de Mudança no Plugin (`figma.on('documentchange')`, `figma.on('selectionchange')`)  
+- [ ] **Tarefa 5.2:** Disparar Atualizações em Mudanças (Re-processar -> Enviar AST -> WebSocket)  
+- [ ] **Tarefa 5.3:** Otimização (Debouncing, processamento granular - opcional)  
+
+## Fase 6: Coleta de Contexto Adicional e Refinamento
+
+- ✅ **Tarefa 6.1:** Expandir Extração de Dados no Plugin (Prototipagem, variantes, estilos, etc.)  
+- ✅ **Tarefa 6.2:** Testes e Tratamento de Erros (Cenários diversos, feedback visual)  
+- [ ] **Tarefa 6.3:** Documentação (Arquitetura, uso) 

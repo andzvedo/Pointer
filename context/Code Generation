@@ -1,0 +1,89 @@
+
+## Canvas: Pointer.design – Plataforma de Design-to-Code
+
+Converta Design em contexto para LLM
+
+### 1. Visão & Objetivo
+- **Visão:**
+  - Criar uma plataforma unificada que conecte ferramentas de design (ex.: Figma) à geração de código frontend real.
+  - Servir de ponte entre designers e desenvolvedores com uma camada intermediária (AST/Mitosis) para facilitar a sincronização e edição bidirecional (visual e via código).
+
+- **Objetivos:**
+  - Importar dados de design (Figma API, outras fontes JSON/DSLs).
+  - Converter esses dados em um AST universal utilizando Mitosis como padrão intermediário.
+  - Permitir edição visual e textual de componentes, mantendo a sincronização entre os dois modos.
+  - Gerar código (React, HTML/CSS, etc.) a partir do AST e exportar para diversos destinos (GitHub, Figma, etc.).
+
+### 2. Componentes-Chave do Sistema
+- **Fontes:**
+  - Figma API/JSON
+  - Outras APIs/JSON/DSLs
+
+- **Adaptadores de Entrada:**
+  - Adaptador Figma → AST
+  - Adaptadores Genéricos → AST
+
+- **Núcleo da Plataforma:**
+  - AST Intermediário (Mitosis)
+  - Editor Visual + Editor de Código
+  - Codegen (Mitosis)
+
+- **Adaptadores de Saída:**
+  - AST → Figma JSON
+  - AST → Outras fontes
+
+- **Destinos:**
+  - Repositórios GitHub
+  - Design atualizado no Figma
+  - Outras fontes atualizadas
+
+### 3. Pipeline de Dados & Fluxo
+- Fluxo:
+  - Fontes → Adaptadores de Entrada
+  - Adaptadores → AST Intermediário (Mitosis)
+  - AST → Editor Visual + Editor de Código + Codegen
+  - Codegen + Adaptadores de Saída → Destinos finais (GitHub, Figma, etc.)
+
+### 4. Implementação do Mitosis (AST)
+- Entrada e Conversão:
+  - API do Figma → JSON
+  - JSON → AST com Mitosis
+
+- Representação Interna:
+  - AST como fonte de verdade
+  - Debug e wrappers
+
+- Editor Bidirecional:
+  - Atualiza AST visualmente e vice-versa
+  - Integração com renderização (React)
+
+### 5. Geração de Código (Codegen)
+- Objetivo:
+  - Transformar AST em código frontend reutilizável
+
+- Processo:
+  1. Integração com @builder.io/mitosis
+  2. AST → CodePreview (React/TSX)
+  3. Interface para exportação
+  4. Integração com GitHub
+
+- Roadmap para Targets:
+  - React/TSX: MVP
+  - Vue, Svelte, HTML/CSS: Futuro
+
+### 6. Roadmap e Entregas Iniciais (MVP)
+- Importar arquivo Figma por URL ✅
+- Converter JSON em AST ✅ Parcial
+- Visualização do AST ✅ Parcial
+- Editor Visual + Editor de Código ⏳ Em curso
+- Preview de código (React) ✅ Básico
+- Exportar para GitHub ⏳ Futuro
+
+### 7. Principais Métricas de Sucesso
+- Precisão na conversão do design → AST
+- Sincronização entre editor visual e AST
+- Volume de exportações para repositórios e Figma
+- Satisfação de desenvolvedores e designers
+
+### 8. Considerações Finais
+O projeto visa ser uma plataforma robusta e escalável para transformar design em código real, com um ciclo de edição bidirecional completo. Este documento serve como PRD de referência para implementação técnica e evolução do produto.
