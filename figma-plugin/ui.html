@@ -7,9 +7,14 @@
 <hr style="margin: 15px 0;">
 
 <h3>AST Gerada:</h3>
-<pre id="output" style="background-color: #f0f0f0; padding: 10px; border-radius: 4px; white-space: pre-wrap; word-wrap: break-word; max-height: 300px; overflow-y: auto;">
+<div style="position: relative;">
+  <button id="copy-button" style="position: absolute; top: 5px; right: 5px; padding: 4px 8px; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; font-size: 12px; z-index: 10;">
+    Copiar
+  </button>
+  <pre id="output" style="background-color: #f0f0f0; padding: 10px; border-radius: 4px; white-space: pre-wrap; word-wrap: break-word; max-height: 300px; overflow-y: auto; padding-top: 30px;">
 (Nenhuma AST gerada ainda)
-</pre>
+  </pre>
+</div>
 
 <!-- Script para comunicação -->
 <script>
@@ -20,6 +25,40 @@
   processButton.onclick = () => {
     outputArea.textContent = 'Processando...'; // Feedback visual
     parent.postMessage({ pluginMessage: { type: 'processSelection' } }, '*');
+  }
+
+  // Configuração do botão de cópia
+  const copyButton = document.getElementById('copy-button');
+  copyButton.onclick = () => {
+    const textToCopy = outputArea.textContent;
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        // Feedback visual de sucesso
+        const originalText = copyButton.textContent;
+        copyButton.textContent = 'Copiado!';
+        copyButton.style.backgroundColor = '#4CAF50';
+        copyButton.style.color = 'white';
+        
+        // Restaurar o estado original após 2 segundos
+        setTimeout(() => {
+          copyButton.textContent = originalText;
+          copyButton.style.backgroundColor = '#f0f0f0';
+          copyButton.style.color = 'black';
+        }, 2000);
+      })
+      .catch(err => {
+        console.error('Erro ao copiar texto: ', err);
+        copyButton.textContent = 'Erro!';
+        copyButton.style.backgroundColor = '#f44336';
+        copyButton.style.color = 'white';
+        
+        // Restaurar o estado original após 2 segundos
+        setTimeout(() => {
+          copyButton.textContent = 'Copiar';
+          copyButton.style.backgroundColor = '#f0f0f0';
+          copyButton.style.color = 'black';
+        }, 2000);
+      });
   }
 
   // Recebe mensagens do core do plugin

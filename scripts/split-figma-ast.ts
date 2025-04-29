@@ -2,6 +2,7 @@
  * Script para dividir o AST do Figma em arquivos menores
  * Este script pega o AST completo exportado pelo fetch-figma-ast.ts
  * e o divide em arquivos menores para cada COMPONENT e FRAME
+ * Modificado para funcionar com o formato Events and Items Overview.JSON
  */
 
 const fs = require('fs');
@@ -13,16 +14,26 @@ interface FigmaNode {
   name: string;
   type: string;
   children?: FigmaNode[];
+  properties?: any;
+  styles?: any;
   [key: string]: any; // Para outras propriedades que podem existir
 }
 
+// Interface para o formato específico do Events and Items Overview.JSON
+interface FigmaDocument {
+  version: string;
+  source: string;
+  name: string;
+  rootNode: FigmaNode;
+}
+
 // Configurações
-const AST_PATH = path.resolve(__dirname, '../public/images/design-ast.json');
+const AST_PATH = path.resolve(__dirname, '../public/images/Events and Items Overview.JSON');
 const OUTPUT_DIR = path.resolve(__dirname, '../tools/figma-ast-split');
 const INDEX_FILE = path.resolve(OUTPUT_DIR, 'index.json');
 
 // Tipos de nós que serão salvos como arquivos separados
-const SAVE_NODE_TYPES = ['COMPONENT', 'FRAME', 'COMPONENT_SET', 'INSTANCE'];
+const SAVE_NODE_TYPES = ['COMPONENT', 'FRAME', 'COMPONENT_SET', 'INSTANCE', 'component', 'frame', 'component-set', 'instance', 'selection-root'];
 
 // Estatísticas para o relatório final
 const stats = {
@@ -104,6 +115,9 @@ function traverse(
   
   stats.totalNodes++;
   
+  // Log para debug
+  console.log(`Processando nó: ${node.name || 'sem nome'}, tipo: ${node.type}`);
+  
   // Sanitiza o nome do nó para uso em caminhos
   const nodeName = node.name ? sanitizeName(node.name) : 'unnamed';
   
@@ -147,13 +161,21 @@ function main(): void {
     ensureDir(OUTPUT_DIR);
     
     // Lê o AST
-    const ast: FigmaNode = JSON.parse(fs.readFileSync(AST_PATH, 'utf-8'));
+    const fileContent = fs.readFileSync(AST_PATH, 'utf-8');
+    const figmaDoc: FigmaDocument = JSON.parse(fileContent);
+    
+    console.log(`📄 Documento carregado: ${figmaDoc.name}`);
     
     // Mapa para armazenar os IDs dos nós e seus caminhos relativos
     const nodeMap = new Map<string, string>();
     
-    // Processa o AST
-    traverse(ast, [], nodeMap);
+    // Processa o AST começando pelo rootNode
+    if (figmaDoc.rootNode) {
+      console.log(`🌳 Processando rootNode: ${figmaDoc.rootNode.name || 'sem nome'}`);
+      traverse(figmaDoc.rootNode, [], nodeMap);
+    } else {
+      console.error('❌ Estrutura inválida: rootNode não encontrado');
+    }
     
     // Cria um índice de todos os nós
     createNodeIndex(nodeMap);

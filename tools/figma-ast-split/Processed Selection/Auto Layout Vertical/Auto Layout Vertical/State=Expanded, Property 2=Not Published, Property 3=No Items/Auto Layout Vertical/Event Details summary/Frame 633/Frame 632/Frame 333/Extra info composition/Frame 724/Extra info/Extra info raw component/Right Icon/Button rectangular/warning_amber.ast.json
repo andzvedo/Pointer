@@ -1,0 +1,459 @@
+{
+  "type": "instance",
+  "name": "warning_amber",
+  "id": "I337:6099;3843:210939;3688:84195",
+  "properties": {
+    "isInstance": true,
+    "componentId": "337:5874",
+    "componentName": "warning_amber",
+    "componentProperties": {},
+    "visible": true,
+    "constraints": {
+      "horizontal": "MIN",
+      "vertical": "MIN"
+    },
+    "suggestedClassName": "warning_amber",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 16,
+    "height": 16,
+    "x": 4,
+    "y": 4,
+    "borderRadius": 0,
+    "opacity": 1
+  },
+  "metadata": {
+    "figmaId": "I337:6099;3843:210939;3688:84195",
+    "figmaType": "INSTANCE",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+      "Auto Layout Vertical",
+      "Event Details summary",
+      "Frame 633",
+      "Frame 632",
+      "Frame 333",
+      "Extra info composition",
+      "Frame 724",
+      "Extra info",
+      "Extra info raw component",
+      "Right Icon",
+      "Button rectangular",
+      "warning_amber"
+    ]
+  },
+  "children": [
+    {
+      "type": "vector",
+      "name": "Vector",
+      "id": "I337:6099;3843:210939;3688:84195;2919:27190",
+      "properties": {
+        "visible": true,
+        "constraints": {
+          "horizontal": "SCALE",
+          "vertical": "SCALE"
+        },
+        "suggestedClassName": "vector",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 15,
+        "height": 13,
+        "x": 1,
+        "y": 1,
+        "backgroundColor": {
+          "r": 205,
+          "g": 13,
+          "b": 13,
+          "a": 1
+        },
+        "backgroundColorHex": "#cd0d0d",
+        "borderRadius": 0,
+        "opacity": 1
+      },
+      "metadata": {
+        "figmaId": "I337:6099;3843:210939;3688:84195;2919:27190",
+        "figmaType": "VECTOR",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Not Published, Property 3=No Items",
+          "Auto Layout Vertical",
+          "Event Details summary",
+          "Frame 633",
+          "Frame 632",
+          "Frame 333",
+          "Extra info composition",
+          "Frame 724",
+          "Extra info",
+          "Extra info raw component",
+          "Right Icon",
+          "Button rectangular",
+          "warning_amber",
+          "Vector"
+        ]
+      },
+      "vector": {
+        "network": {
+          "vertices": [
+            {
+              "x": 7.3333330154418945,
+              "y": 2.659999914169308,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 12.353333255594407,
+              "y": 11.333333617762515,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 2.313333093180807,
+              "y": 11.333333617762515,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 7.3333330154418945,
+              "y": 0,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 0,
+              "y": 12.666666984558105,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 14.666666030883789,
+              "y": 12.666666984558105,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 7.99999965320934,
+              "y": 9.333333567569131,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 6.666666377674449,
+              "y": 9.333333567569131,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 6.666666377674449,
+              "y": 10.66666693436472,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 7.99999965320934,
+              "y": 10.66666693436472,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 7.99999965320934,
+              "y": 5.33333346718236,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 6.666666377674449,
+              "y": 5.33333346718236,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 6.666666377674449,
+              "y": 8.00000020077354,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            },
+            {
+              "x": 7.99999965320934,
+              "y": 8.00000020077354,
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "cornerRadius": 0,
+              "handleMirroring": "NONE"
+            }
+          ],
+          "segments": [
+            {
+              "start": 0,
+              "end": 1,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 1,
+              "end": 2,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 2,
+              "end": 0,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 3,
+              "end": 4,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 4,
+              "end": 5,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 5,
+              "end": 3,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 6,
+              "end": 7,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 7,
+              "end": 8,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 8,
+              "end": 9,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 9,
+              "end": 6,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 10,
+              "end": 11,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 11,
+              "end": 12,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 12,
+              "end": 13,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            },
+            {
+              "start": 13,
+              "end": 10,
+              "tangentStart": {
+                "x": 0,
+                "y": 0
+              },
+              "tangentEnd": {
+                "x": 0,
+                "y": 0
+              }
+            }
+          ],
+          "regions": [
+            {
+              "windingRule": "NONZERO",
+              "loops": [
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  3,
+                  4,
+                  5
+                ],
+                [
+                  6,
+                  7,
+                  8,
+                  9
+                ],
+                [
+                  10,
+                  11,
+                  12,
+                  13
+                ]
+              ],
+              "fillStyleId": "S:c026ba043e9d6f0f32fc2beefa93fe6dfa2382df,2955:20",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "visible": true,
+                  "opacity": 1,
+                  "blendMode": "NORMAL",
+                  "color": {
+                    "r": 0.8049479126930237,
+                    "g": 0.04995550960302353,
+                    "b": 0.04995550960302353
+                  },
+                  "boundVariables": {}
+                }
+              ]
+            }
+          ]
+        },
+        "vectorPaths": [
+          {
+            "windingRule": "NONZERO",
+            "data": "M 7.3333330154418945 2.659999914169308 L 12.353333255594407 11.333333617762515 L 2.313333093180807 11.333333617762515 L 7.3333330154418945 2.659999914169308 Z M 7.3333330154418945 0 L 0 12.666666984558105 L 14.666666030883789 12.666666984558105 L 7.3333330154418945 0 Z M 7.99999965320934 9.333333567569131 L 6.666666377674449 9.333333567569131 L 6.666666377674449 10.66666693436472 L 7.99999965320934 10.66666693436472 L 7.99999965320934 9.333333567569131 Z M 7.99999965320934 5.33333346718236 L 6.666666377674449 5.33333346718236 L 6.666666377674449 8.00000020077354 L 7.99999965320934 8.00000020077354 L 7.99999965320934 5.33333346718236 Z"
+          }
+        ],
+        "fillStyles": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "color": {
+              "r": 205,
+              "g": 13,
+              "b": 13,
+              "a": 1
+            }
+          }
+        ],
+        "strokeStyles": [],
+        "strokeProperties": null
+      }
+    }
+  ]
+}

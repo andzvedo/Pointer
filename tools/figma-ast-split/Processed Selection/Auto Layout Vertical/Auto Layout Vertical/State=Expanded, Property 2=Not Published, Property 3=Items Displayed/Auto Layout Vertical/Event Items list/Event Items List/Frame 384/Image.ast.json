@@ -1,0 +1,320 @@
+{
+  "type": "instance",
+  "name": "Image",
+  "id": "I337:6097;3843:212061;3843:223400;3857:113470",
+  "properties": {
+    "isInstance": true,
+    "componentId": "296:3274",
+    "componentName": "Property 1=Thumbnail + Numbers",
+    "componentProperties": {
+      "Property 1": {
+        "value": "Thumbnail + Numbers",
+        "type": "VARIANT",
+        "boundVariables": {}
+      }
+    },
+    "visible": true,
+    "constraints": {
+      "horizontal": "MIN",
+      "vertical": "MIN"
+    },
+    "suggestedClassName": "image",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 46,
+    "height": 40,
+    "x": 0,
+    "y": 0,
+    "borderRadius": 0,
+    "opacity": 1
+  },
+  "metadata": {
+    "figmaId": "I337:6097;3843:212061;3843:223400;3857:113470",
+    "figmaType": "INSTANCE",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Not Published, Property 3=Items Displayed",
+      "Auto Layout Vertical",
+      "Event Items list",
+      "Event Items List",
+      "Frame 384",
+      "Image"
+    ]
+  },
+  "children": [
+    {
+      "type": "boolean_operation",
+      "name": "Image",
+      "id": "I337:6097;3843:212061;3843:223400;3857:113470;3421:64676",
+      "properties": {
+        "visible": true,
+        "suggestedClassName": "image",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 38,
+        "height": 40,
+        "x": 0,
+        "y": 0,
+        "border": {
+          "width": 1,
+          "style": "INSIDE",
+          "color": {
+            "r": 222,
+            "g": 227,
+            "b": 236,
+            "a": 1
+          }
+        },
+        "borderRadius": 0,
+        "opacity": 1
+      },
+      "metadata": {
+        "figmaId": "I337:6097;3843:212061;3843:223400;3857:113470;3421:64676",
+        "figmaType": "BOOLEAN_OPERATION",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Not Published, Property 3=Items Displayed",
+          "Auto Layout Vertical",
+          "Event Items list",
+          "Event Items List",
+          "Frame 384",
+          "Image",
+          "Image"
+        ]
+      },
+      "children": [
+        {
+          "type": "rectangle",
+          "name": "1",
+          "id": "I337:6097;3843:212061;3843:223400;3857:113470;3421:64677",
+          "properties": {
+            "visible": true,
+            "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "STRETCH"
+            },
+            "suggestedClassName": "1",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 38,
+            "height": 40,
+            "x": 0,
+            "y": 0,
+            "backgroundColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 1
+            },
+            "backgroundColorHex": "#ffffff",
+            "borderRadius": 4,
+            "opacity": 1
+          },
+          "metadata": {
+            "figmaId": "I337:6097;3843:212061;3843:223400;3857:113470;3421:64677",
+            "figmaType": "RECTANGLE",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Not Published, Property 3=Items Displayed",
+              "Auto Layout Vertical",
+              "Event Items list",
+              "Event Items List",
+              "Frame 384",
+              "Image",
+              "Image",
+              "1"
+            ]
+          }
+        },
+        {
+          "type": "ellipse",
+          "name": "Ellipse 59",
+          "id": "I337:6097;3843:212061;3843:223400;3857:113470;3421:64678",
+          "properties": {
+            "visible": true,
+            "constraints": {
+              "horizontal": "MAX",
+              "vertical": "MAX"
+            },
+            "suggestedClassName": "ellipse-59",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 24,
+            "height": 24,
+            "x": 26,
+            "y": 24,
+            "backgroundColor": {
+              "r": 217,
+              "g": 217,
+              "b": 217,
+              "a": 1
+            },
+            "backgroundColorHex": "#d9d9d9",
+            "borderRadius": 0,
+            "opacity": 1
+          },
+          "metadata": {
+            "figmaId": "I337:6097;3843:212061;3843:223400;3857:113470;3421:64678",
+            "figmaType": "ELLIPSE",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Not Published, Property 3=Items Displayed",
+              "Auto Layout Vertical",
+              "Event Items list",
+              "Event Items List",
+              "Frame 384",
+              "Image",
+              "Image",
+              "Ellipse 59"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "name": "Number",
+      "id": "I337:6097;3843:212061;3843:223400;3857:113470;3421:64679",
+      "properties": {
+        "visible": true,
+        "constraints": {
+          "horizontal": "MAX",
+          "vertical": "MAX"
+        },
+        "suggestedClassName": "number",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 24,
+        "height": 24,
+        "x": 26,
+        "y": 24,
+        "borderRadius": 100,
+        "opacity": 1,
+        "layout": {
+          "mode": "VERTICAL",
+          "primaryAxisAlignItems": "CENTER",
+          "counterAxisAlignItems": "CENTER",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "itemSpacing": 8
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6097;3843:212061;3843:223400;3857:113470;3421:64679",
+        "figmaType": "FRAME",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Not Published, Property 3=Items Displayed",
+          "Auto Layout Vertical",
+          "Event Items list",
+          "Event Items List",
+          "Frame 384",
+          "Image",
+          "Number"
+        ]
+      },
+      "children": [
+        {
+          "type": "text",
+          "name": "+2",
+          "id": "I337:6097;3843:212061;3843:223400;3857:113470;3421:64680",
+          "properties": {
+            "text": "+2",
+            "visible": true,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "-2",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 16,
+            "height": 24,
+            "x": 4,
+            "y": 0,
+            "backgroundColor": {
+              "r": 98,
+              "g": 121,
+              "b": 149,
+              "a": 1
+            },
+            "backgroundColorHex": "#627995",
+            "opacity": 1,
+            "typography": {
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": 600,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 24
+              },
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 1
+              },
+              "textAlign": "CENTER",
+              "verticalAlign": "CENTER",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE",
+              "color": {
+                "r": 98,
+                "g": 121,
+                "b": 149,
+                "a": 1
+              }
+            }
+          },
+          "metadata": {
+            "figmaId": "I337:6097;3843:212061;3843:223400;3857:113470;3421:64680",
+            "figmaType": "TEXT",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Not Published, Property 3=Items Displayed",
+              "Auto Layout Vertical",
+              "Event Items list",
+              "Event Items List",
+              "Frame 384",
+              "Image",
+              "Number",
+              "+2"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

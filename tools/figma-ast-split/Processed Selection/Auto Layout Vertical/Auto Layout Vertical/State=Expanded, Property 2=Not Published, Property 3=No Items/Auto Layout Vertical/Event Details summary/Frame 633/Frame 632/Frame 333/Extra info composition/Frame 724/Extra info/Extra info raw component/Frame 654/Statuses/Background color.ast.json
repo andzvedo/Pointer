@@ -1,0 +1,66 @@
+{
+  "type": "frame",
+  "name": "Background color",
+  "id": "I337:6099;3843:130755;3392:126956;3203:113475;3006:35701",
+  "properties": {
+    "visible": false,
+    "constraints": {
+      "horizontal": "STRETCH",
+      "vertical": "STRETCH"
+    },
+    "suggestedClassName": "background-color",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 86,
+    "height": 24,
+    "x": 0,
+    "y": 0,
+    "backgroundColor": {
+      "r": 248,
+      "g": 244,
+      "b": 219,
+      "a": 1
+    },
+    "backgroundColorHex": "#f8f4db",
+    "borderRadius": 100,
+    "opacity": 1,
+    "layout": {
+      "mode": "HORIZONTAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "CENTER",
+      "padding": {
+        "top": 0,
+        "right": 4,
+        "bottom": 0,
+        "left": 4
+      },
+      "itemSpacing": 4
+    }
+  },
+  "metadata": {
+    "figmaId": "I337:6099;3843:130755;3392:126956;3203:113475;3006:35701",
+    "figmaType": "FRAME",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+      "Auto Layout Vertical",
+      "Event Details summary",
+      "Frame 633",
+      "Frame 632",
+      "Frame 333",
+      "Extra info composition",
+      "Frame 724",
+      "Extra info",
+      "Extra info raw component",
+      "Frame 654",
+      "Statuses",
+      "Background color"
+    ]
+  },
+  "children": []
+}

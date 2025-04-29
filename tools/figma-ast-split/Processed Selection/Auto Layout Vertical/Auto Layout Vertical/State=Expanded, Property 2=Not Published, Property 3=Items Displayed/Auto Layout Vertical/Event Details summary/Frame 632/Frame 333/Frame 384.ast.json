@@ -1,0 +1,123 @@
+{
+  "type": "frame",
+  "name": "Frame 384",
+  "id": "I337:6097;3843:210959",
+  "properties": {
+    "visible": true,
+    "constraints": {
+      "horizontal": "MIN",
+      "vertical": "MIN"
+    },
+    "suggestedClassName": "frame-384",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 1028,
+    "height": 24,
+    "x": 0,
+    "y": 2,
+    "borderRadius": 0,
+    "opacity": 1,
+    "layout": {
+      "mode": "HORIZONTAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "itemSpacing": 8
+    }
+  },
+  "metadata": {
+    "figmaId": "I337:6097;3843:210959",
+    "figmaType": "FRAME",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Not Published, Property 3=Items Displayed",
+      "Auto Layout Vertical",
+      "Event Details summary",
+      "Frame 632",
+      "Frame 333",
+      "Frame 384"
+    ]
+  },
+  "children": [
+    {
+      "type": "text",
+      "name": "John and Jane's Wedding is a formal event featuring a traditional marriage ceremony followed by a grand reception. The celebration will include elegant decor, a sit-down dinner, live music, and various entertainment activities, designed to create a memorable and joyous experience for all guests.",
+      "id": "I337:6097;3843:210960",
+      "properties": {
+        "text": "John and Jane's Wedding is a formal event featuring a traditional marriage ceremony followed by a grand reception. The celebration will include elegant decor, a sit-down dinner, live music, and various entertainment activities, designed to create a memorable and joyous experience for all guests.",
+        "visible": true,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "john-and-jane-s-wedding-is-a-formal-event-featuring-a-traditional-marriage-ceremony-followed-by-a-grand-reception--the-celebration-will-include-elegant-decor--a-sit-down-dinner--live-music--and-various-entertainment-activities--designed-to-create-a-memorable-and-joyous-experience-for-all-guests-",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 1028,
+        "height": 24,
+        "x": 0,
+        "y": 0,
+        "backgroundColor": {
+          "r": 0,
+          "g": 39,
+          "b": 86,
+          "a": 1
+        },
+        "backgroundColorHex": "#002756",
+        "opacity": 1,
+        "typography": {
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 1
+          },
+          "textAlign": "LEFT",
+          "verticalAlign": "TOP",
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "color": {
+            "r": 0,
+            "g": 39,
+            "b": 86,
+            "a": 1
+          }
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6097;3843:210960",
+        "figmaType": "TEXT",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Not Published, Property 3=Items Displayed",
+          "Auto Layout Vertical",
+          "Event Details summary",
+          "Frame 632",
+          "Frame 333",
+          "Frame 384",
+          "John and Jane's Wedding is a formal event featuring a traditional marriage ceremony followed by a grand reception. The celebration will include elegant decor, a sit-down dinner, live music, and various entertainment activities, designed to create a memorable and joyous experience for all guests."
+        ]
+      }
+    }
+  ]
+}

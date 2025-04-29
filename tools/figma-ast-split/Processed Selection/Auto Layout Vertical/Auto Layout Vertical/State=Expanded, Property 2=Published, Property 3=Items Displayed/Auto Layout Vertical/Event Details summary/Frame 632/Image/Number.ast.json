@@ -1,0 +1,123 @@
+{
+  "type": "frame",
+  "name": "Number",
+  "id": "I337:6098;3843:211082;3421:64679",
+  "properties": {
+    "visible": true,
+    "constraints": {
+      "horizontal": "MAX",
+      "vertical": "MAX"
+    },
+    "suggestedClassName": "number",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 24,
+    "height": 24,
+    "x": 50,
+    "y": 44,
+    "borderRadius": 100,
+    "opacity": 1,
+    "layout": {
+      "mode": "VERTICAL",
+      "primaryAxisAlignItems": "CENTER",
+      "counterAxisAlignItems": "CENTER",
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "itemSpacing": 8
+    }
+  },
+  "metadata": {
+    "figmaId": "I337:6098;3843:211082;3421:64679",
+    "figmaType": "FRAME",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+      "Auto Layout Vertical",
+      "Event Details summary",
+      "Frame 632",
+      "Image",
+      "Number"
+    ]
+  },
+  "children": [
+    {
+      "type": "text",
+      "name": "+2",
+      "id": "I337:6098;3843:211082;3421:64680",
+      "properties": {
+        "text": "+2",
+        "visible": true,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "-2",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 16,
+        "height": 24,
+        "x": 4,
+        "y": 0,
+        "backgroundColor": {
+          "r": 98,
+          "g": 121,
+          "b": 149,
+          "a": 1
+        },
+        "backgroundColorHex": "#627995",
+        "opacity": 1,
+        "typography": {
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": 600,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 1
+          },
+          "textAlign": "CENTER",
+          "verticalAlign": "CENTER",
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "color": {
+            "r": 98,
+            "g": 121,
+            "b": 149,
+            "a": 1
+          }
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6098;3843:211082;3421:64680",
+        "figmaType": "TEXT",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+          "Auto Layout Vertical",
+          "Event Details summary",
+          "Frame 632",
+          "Image",
+          "Number",
+          "+2"
+        ]
+      }
+    }
+  ]
+}

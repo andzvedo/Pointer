@@ -1,0 +1,1517 @@
+{
+  "type": "instance",
+  "name": "No proposal received",
+  "id": "I337:6098;3843:211078;3849:94326;3405:46098",
+  "properties": {
+    "isInstance": true,
+    "componentId": "296:3155",
+    "componentName": "Type=Text, State=Default, Size=Small, Style=Secundary color",
+    "componentProperties": {
+      "Right Icon#3405:61": {
+        "value": true,
+        "type": "BOOLEAN"
+      },
+      "Left Icon#2838:0": {
+        "value": false,
+        "type": "BOOLEAN"
+      },
+      "Label#1798:0": {
+        "value": "No proposal received",
+        "type": "TEXT"
+      },
+      "Type": {
+        "value": "Text",
+        "type": "VARIANT",
+        "boundVariables": {}
+      },
+      "State": {
+        "value": "Default",
+        "type": "VARIANT",
+        "boundVariables": {}
+      },
+      "Size": {
+        "value": "Small",
+        "type": "VARIANT",
+        "boundVariables": {}
+      },
+      "Style": {
+        "value": "Secundary color",
+        "type": "VARIANT",
+        "boundVariables": {}
+      }
+    },
+    "visible": false,
+    "constraints": {
+      "horizontal": "MIN",
+      "vertical": "MIN"
+    },
+    "suggestedClassName": "no-proposal-received",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 198,
+    "height": 32,
+    "x": 101,
+    "y": 0,
+    "backgroundGradient": {
+      "type": "radial",
+      "gradientTransform": [
+        [
+          2.4053047219447544e-14,
+          0.472222238779068,
+          0.4999999403953552
+        ],
+        [
+          -0.5773017406463623,
+          2.179311164716329e-15,
+          0.7886508703231812
+        ]
+      ],
+      "stops": [
+        {
+          "position": 0,
+          "color": {
+            "r": 252,
+            "g": 227,
+            "b": 0,
+            "a": 1
+          }
+        },
+        {
+          "position": 1,
+          "color": {
+            "r": 254,
+            "g": 255,
+            "b": 197,
+            "a": 1
+          }
+        }
+      ]
+    },
+    "border": {
+      "width": 1,
+      "style": "INSIDE",
+      "color": {
+        "r": 55,
+        "g": 30,
+        "b": 158,
+        "a": 0.30000001192092896
+      }
+    },
+    "borderRadius": 4,
+    "opacity": 1,
+    "layout": {
+      "mode": "HORIZONTAL",
+      "primaryAxisAlignItems": "CENTER",
+      "counterAxisAlignItems": "CENTER",
+      "padding": {
+        "top": 4,
+        "right": 12,
+        "bottom": 4,
+        "left": 12
+      },
+      "itemSpacing": 8
+    }
+  },
+  "metadata": {
+    "figmaId": "I337:6098;3843:211078;3849:94326;3405:46098",
+    "figmaType": "INSTANCE",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+      "Type=Inactive Bids Section",
+      "Actions 2",
+      "No proposal received"
+    ]
+  },
+  "children": [
+    {
+      "type": "instance",
+      "name": "Icons",
+      "id": "I337:6098;3843:211078;3849:94326;3405:46098;2838:61794",
+      "properties": {
+        "isInstance": true,
+        "componentId": "296:2954",
+        "componentName": "Property 1=Info",
+        "componentProperties": {
+          "Property 1": {
+            "value": "Info",
+            "type": "VARIANT",
+            "boundVariables": {}
+          }
+        },
+        "visible": false,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "icons",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 16,
+        "height": 16,
+        "x": 12,
+        "y": 8,
+        "borderRadius": 0,
+        "opacity": 1
+      },
+      "metadata": {
+        "figmaId": "I337:6098;3843:211078;3849:94326;3405:46098;2838:61794",
+        "figmaType": "INSTANCE",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+          "Type=Inactive Bids Section",
+          "Actions 2",
+          "No proposal received",
+          "Icons"
+        ]
+      },
+      "children": [
+        {
+          "type": "group",
+          "name": "Group",
+          "id": "I337:6098;3843:211078;3849:94326;3405:46098;2838:61794;2697:8930",
+          "properties": {
+            "visible": true,
+            "suggestedClassName": "group",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 16,
+            "height": 16,
+            "x": 0,
+            "y": 0,
+            "opacity": 1
+          },
+          "metadata": {
+            "figmaId": "I337:6098;3843:211078;3849:94326;3405:46098;2838:61794;2697:8930",
+            "figmaType": "GROUP",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+              "Type=Inactive Bids Section",
+              "Actions 2",
+              "No proposal received",
+              "Icons",
+              "Group"
+            ]
+          },
+          "children": [
+            {
+              "type": "vector",
+              "name": "Vector",
+              "id": "I337:6098;3843:211078;3849:94326;3405:46098;2838:61794;2697:8931",
+              "properties": {
+                "visible": true,
+                "constraints": {
+                  "horizontal": "SCALE",
+                  "vertical": "SCALE"
+                },
+                "suggestedClassName": "vector",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 16,
+                "height": 16,
+                "x": 0,
+                "y": 0,
+                "borderRadius": 0,
+                "opacity": 1
+              },
+              "metadata": {
+                "figmaId": "I337:6098;3843:211078;3849:94326;3405:46098;2838:61794;2697:8931",
+                "figmaType": "VECTOR",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                  "Type=Inactive Bids Section",
+                  "Actions 2",
+                  "No proposal received",
+                  "Icons",
+                  "Group",
+                  "Vector"
+                ]
+              },
+              "vector": {
+                "network": {
+                  "vertices": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 16,
+                      "y": 0,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 16,
+                      "y": 16,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 0,
+                      "y": 16,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    }
+                  ],
+                  "segments": [
+                    {
+                      "start": 0,
+                      "end": 1,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 1,
+                      "end": 2,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 2,
+                      "end": 3,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 3,
+                      "end": 0,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    }
+                  ],
+                  "regions": [
+                    {
+                      "windingRule": "NONZERO",
+                      "loops": [
+                        [
+                          0,
+                          1,
+                          2,
+                          3
+                        ]
+                      ],
+                      "fillStyleId": "",
+                      "fills": []
+                    }
+                  ]
+                },
+                "vectorPaths": [
+                  {
+                    "windingRule": "NONZERO",
+                    "data": "M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z"
+                  }
+                ],
+                "fillStyles": [],
+                "strokeStyles": [],
+                "strokeProperties": null
+              }
+            },
+            {
+              "type": "vector",
+              "name": "Vector",
+              "id": "I337:6098;3843:211078;3849:94326;3405:46098;2838:61794;2697:8932",
+              "properties": {
+                "visible": true,
+                "constraints": {
+                  "horizontal": "SCALE",
+                  "vertical": "SCALE"
+                },
+                "suggestedClassName": "vector",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 13,
+                "height": 13,
+                "x": 1,
+                "y": 1,
+                "backgroundColor": {
+                  "r": 98,
+                  "g": 121,
+                  "b": 149,
+                  "a": 1
+                },
+                "backgroundColorHex": "#627995",
+                "borderRadius": 0,
+                "opacity": 1
+              },
+              "metadata": {
+                "figmaId": "I337:6098;3843:211078;3849:94326;3405:46098;2838:61794;2697:8932",
+                "figmaType": "VECTOR",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                  "Type=Inactive Bids Section",
+                  "Actions 2",
+                  "No proposal received",
+                  "Icons",
+                  "Group",
+                  "Vector"
+                ]
+              },
+              "vector": {
+                "network": {
+                  "vertices": [
+                    {
+                      "x": 6.000000286102295,
+                      "y": 3.3333334922790527,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 7.333333683013915,
+                      "y": 3.3333334922790527,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 7.333333683013915,
+                      "y": 4.666666889190673,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.000000286102295,
+                      "y": 4.666666889190673,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.000000286102295,
+                      "y": 6.000000286102295,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 7.333333683013915,
+                      "y": 6.000000286102295,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 7.333333683013915,
+                      "y": 10.000000476837158,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.000000286102295,
+                      "y": 10.000000476837158,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.6666669845581055,
+                      "y": 0,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 0,
+                      "y": 6.6666669845581055,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.6666669845581055,
+                      "y": 13.333333969116211,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 13.333333969116211,
+                      "y": 6.6666669845581055,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.6666669845581055,
+                      "y": 12.00000057220459,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 1.333333396911621,
+                      "y": 6.6666669845581055,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.6666669845581055,
+                      "y": 1.333333396911621,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 12.00000057220459,
+                      "y": 6.6666669845581055,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    }
+                  ],
+                  "segments": [
+                    {
+                      "start": 0,
+                      "end": 1,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 1,
+                      "end": 2,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 2,
+                      "end": 3,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 3,
+                      "end": 0,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 4,
+                      "end": 5,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 5,
+                      "end": 6,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 6,
+                      "end": 7,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 7,
+                      "end": 4,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 8,
+                      "end": 9,
+                      "tangentStart": {
+                        "x": -3.680000162760416,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": -3.680000162760416
+                      }
+                    },
+                    {
+                      "start": 9,
+                      "end": 10,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 3.680000162760416
+                      },
+                      "tangentEnd": {
+                        "x": -3.680000162760416,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 10,
+                      "end": 11,
+                      "tangentStart": {
+                        "x": 3.680000162760416,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 3.680000162760416
+                      }
+                    },
+                    {
+                      "start": 11,
+                      "end": 8,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": -3.680000162760416
+                      },
+                      "tangentEnd": {
+                        "x": 3.680000162760416,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 12,
+                      "end": 13,
+                      "tangentStart": {
+                        "x": -2.9400000384648592,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 2.9400000384648592
+                      }
+                    },
+                    {
+                      "start": 13,
+                      "end": 14,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": -2.9400000384648592
+                      },
+                      "tangentEnd": {
+                        "x": -2.9400000384648592,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 14,
+                      "end": 15,
+                      "tangentStart": {
+                        "x": 2.9400000384648592,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": -2.9400000384648592
+                      }
+                    },
+                    {
+                      "start": 15,
+                      "end": 12,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 2.9400000384648592
+                      },
+                      "tangentEnd": {
+                        "x": 2.9400000384648592,
+                        "y": 0
+                      }
+                    }
+                  ],
+                  "regions": [
+                    {
+                      "windingRule": "NONZERO",
+                      "loops": [
+                        [
+                          0,
+                          1,
+                          2,
+                          3
+                        ],
+                        [
+                          4,
+                          5,
+                          6,
+                          7
+                        ],
+                        [
+                          8,
+                          9,
+                          10,
+                          11
+                        ],
+                        [
+                          12,
+                          13,
+                          14,
+                          15
+                        ]
+                      ],
+                      "fillStyleId": "S:c45b0aca44e24c6b6ebf597d543825db0465e619,2955:53",
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 0.38268789649009705,
+                            "g": 0.4736708402633667,
+                            "b": 0.5833170413970947
+                          },
+                          "boundVariables": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "vectorPaths": [
+                  {
+                    "windingRule": "NONZERO",
+                    "data": "M 6.000000286102295 3.3333334922790527 L 7.333333683013915 3.3333334922790527 L 7.333333683013915 4.666666889190673 L 6.000000286102295 4.666666889190673 L 6.000000286102295 3.3333334922790527 Z M 6.000000286102295 6.000000286102295 L 7.333333683013915 6.000000286102295 L 7.333333683013915 10.000000476837158 L 6.000000286102295 10.000000476837158 L 6.000000286102295 6.000000286102295 Z M 6.6666669845581055 0 C 2.9866668217976895 0 0 2.9866668217976895 0 6.6666669845581055 C 0 10.346667147318522 2.9866668217976895 13.333333969116211 6.6666669845581055 13.333333969116211 C 10.346667147318522 13.333333969116211 13.333333969116211 10.346667147318522 13.333333969116211 6.6666669845581055 C 13.333333969116211 2.9866668217976895 10.346667147318522 0 6.6666669845581055 0 Z M 6.6666669845581055 12.00000057220459 C 3.7266669460932462 12.00000057220459 1.333333396911621 9.606667023022965 1.333333396911621 6.6666669845581055 C 1.333333396911621 3.7266669460932462 3.7266669460932462 1.333333396911621 6.6666669845581055 1.333333396911621 C 9.606667023022965 1.333333396911621 12.00000057220459 3.7266669460932462 12.00000057220459 6.6666669845581055 C 12.00000057220459 9.606667023022965 9.606667023022965 12.00000057220459 6.6666669845581055 12.00000057220459 Z"
+                  }
+                ],
+                "fillStyles": [
+                  {
+                    "type": "SOLID",
+                    "visible": true,
+                    "opacity": 1,
+                    "color": {
+                      "r": 98,
+                      "g": 121,
+                      "b": 149,
+                      "a": 1
+                    }
+                  }
+                ],
+                "strokeStyles": [],
+                "strokeProperties": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Title",
+      "id": "I337:6098;3843:211078;3849:94326;3405:46098;2838:61795",
+      "properties": {
+        "text": "No proposal received",
+        "visible": true,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "title",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 126,
+        "height": 24,
+        "x": -11,
+        "y": 4,
+        "backgroundColor": {
+          "r": 98,
+          "g": 121,
+          "b": 149,
+          "a": 1
+        },
+        "backgroundColorHex": "#627995",
+        "opacity": 1,
+        "typography": {
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": 600,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 1
+          },
+          "textAlign": "CENTER",
+          "verticalAlign": "TOP",
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "color": {
+            "r": 98,
+            "g": 121,
+            "b": 149,
+            "a": 1
+          }
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6098;3843:211078;3849:94326;3405:46098;2838:61795",
+        "figmaType": "TEXT",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+          "Type=Inactive Bids Section",
+          "Actions 2",
+          "No proposal received",
+          "Title"
+        ]
+      }
+    },
+    {
+      "type": "instance",
+      "name": "info",
+      "id": "I337:6098;3843:211078;3849:94326;3405:46098;3405:57419",
+      "properties": {
+        "isInstance": true,
+        "componentId": "296:3230",
+        "componentName": "info",
+        "componentProperties": {},
+        "visible": true,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "info",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 16,
+        "height": 16,
+        "x": 76,
+        "y": 8,
+        "borderRadius": 0,
+        "opacity": 1
+      },
+      "metadata": {
+        "figmaId": "I337:6098;3843:211078;3849:94326;3405:46098;3405:57419",
+        "figmaType": "INSTANCE",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+          "Type=Inactive Bids Section",
+          "Actions 2",
+          "No proposal received",
+          "info"
+        ]
+      },
+      "children": [
+        {
+          "type": "vector",
+          "name": "Vector",
+          "id": "I337:6098;3843:211078;3849:94326;3405:46098;3405:57419;2919:26527",
+          "properties": {
+            "visible": true,
+            "constraints": {
+              "horizontal": "SCALE",
+              "vertical": "SCALE"
+            },
+            "suggestedClassName": "vector",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 16,
+            "height": 16,
+            "x": 0,
+            "y": 0,
+            "borderRadius": 0,
+            "opacity": 1
+          },
+          "metadata": {
+            "figmaId": "I337:6098;3843:211078;3849:94326;3405:46098;3405:57419;2919:26527",
+            "figmaType": "VECTOR",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+              "Type=Inactive Bids Section",
+              "Actions 2",
+              "No proposal received",
+              "info",
+              "Vector"
+            ]
+          },
+          "vector": {
+            "network": {
+              "vertices": [
+                {
+                  "x": 0,
+                  "y": 0,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 16,
+                  "y": 0,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 16,
+                  "y": 16,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 0,
+                  "y": 16,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                }
+              ],
+              "segments": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 1,
+                  "end": 2,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 2,
+                  "end": 3,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 3,
+                  "end": 0,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                }
+              ],
+              "regions": [
+                {
+                  "windingRule": "NONZERO",
+                  "loops": [
+                    [
+                      0,
+                      1,
+                      2,
+                      3
+                    ]
+                  ],
+                  "fillStyleId": "",
+                  "fills": []
+                }
+              ]
+            },
+            "vectorPaths": [
+              {
+                "windingRule": "NONZERO",
+                "data": "M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z"
+              }
+            ],
+            "fillStyles": [],
+            "strokeStyles": [],
+            "strokeProperties": null
+          }
+        },
+        {
+          "type": "vector",
+          "name": "Vector",
+          "id": "I337:6098;3843:211078;3849:94326;3405:46098;3405:57419;2919:26528",
+          "properties": {
+            "visible": true,
+            "constraints": {
+              "horizontal": "SCALE",
+              "vertical": "SCALE"
+            },
+            "suggestedClassName": "vector",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 13,
+            "height": 13,
+            "x": 1,
+            "y": 1,
+            "backgroundColor": {
+              "r": 98,
+              "g": 121,
+              "b": 149,
+              "a": 1
+            },
+            "backgroundColorHex": "#627995",
+            "borderRadius": 0,
+            "opacity": 1
+          },
+          "metadata": {
+            "figmaId": "I337:6098;3843:211078;3849:94326;3405:46098;3405:57419;2919:26528",
+            "figmaType": "VECTOR",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+              "Type=Inactive Bids Section",
+              "Actions 2",
+              "No proposal received",
+              "info",
+              "Vector"
+            ]
+          },
+          "vector": {
+            "network": {
+              "vertices": [
+                {
+                  "x": 6.000000286102295,
+                  "y": 3.3333334922790527,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 7.333333683013915,
+                  "y": 3.3333334922790527,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 7.333333683013915,
+                  "y": 4.666666889190673,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 6.000000286102295,
+                  "y": 4.666666889190673,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 6.000000286102295,
+                  "y": 6.000000286102295,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 7.333333683013915,
+                  "y": 6.000000286102295,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 7.333333683013915,
+                  "y": 10.000000476837158,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 6.000000286102295,
+                  "y": 10.000000476837158,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 6.6666669845581055,
+                  "y": 0,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 0,
+                  "y": 6.6666669845581055,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 6.6666669845581055,
+                  "y": 13.333333969116211,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 13.333333969116211,
+                  "y": 6.6666669845581055,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 6.6666669845581055,
+                  "y": 12.00000057220459,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 1.333333396911621,
+                  "y": 6.6666669845581055,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 6.6666669845581055,
+                  "y": 1.333333396911621,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                },
+                {
+                  "x": 12.00000057220459,
+                  "y": 6.6666669845581055,
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "cornerRadius": 0,
+                  "handleMirroring": "NONE"
+                }
+              ],
+              "segments": [
+                {
+                  "start": 0,
+                  "end": 1,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 1,
+                  "end": 2,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 2,
+                  "end": 3,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 3,
+                  "end": 0,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 4,
+                  "end": 5,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 5,
+                  "end": 6,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 6,
+                  "end": 7,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 7,
+                  "end": 4,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 8,
+                  "end": 9,
+                  "tangentStart": {
+                    "x": -3.680000162760416,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": -3.680000162760416
+                  }
+                },
+                {
+                  "start": 9,
+                  "end": 10,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 3.680000162760416
+                  },
+                  "tangentEnd": {
+                    "x": -3.680000162760416,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 10,
+                  "end": 11,
+                  "tangentStart": {
+                    "x": 3.680000162760416,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 3.680000162760416
+                  }
+                },
+                {
+                  "start": 11,
+                  "end": 8,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": -3.680000162760416
+                  },
+                  "tangentEnd": {
+                    "x": 3.680000162760416,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 12,
+                  "end": 13,
+                  "tangentStart": {
+                    "x": -2.9400000384648592,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": 2.9400000384648592
+                  }
+                },
+                {
+                  "start": 13,
+                  "end": 14,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": -2.9400000384648592
+                  },
+                  "tangentEnd": {
+                    "x": -2.9400000384648592,
+                    "y": 0
+                  }
+                },
+                {
+                  "start": 14,
+                  "end": 15,
+                  "tangentStart": {
+                    "x": 2.9400000384648592,
+                    "y": 0
+                  },
+                  "tangentEnd": {
+                    "x": 0,
+                    "y": -2.9400000384648592
+                  }
+                },
+                {
+                  "start": 15,
+                  "end": 12,
+                  "tangentStart": {
+                    "x": 0,
+                    "y": 2.9400000384648592
+                  },
+                  "tangentEnd": {
+                    "x": 2.9400000384648592,
+                    "y": 0
+                  }
+                }
+              ],
+              "regions": [
+                {
+                  "windingRule": "NONZERO",
+                  "loops": [
+                    [
+                      0,
+                      1,
+                      2,
+                      3
+                    ],
+                    [
+                      4,
+                      5,
+                      6,
+                      7
+                    ],
+                    [
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    [
+                      12,
+                      13,
+                      14,
+                      15
+                    ]
+                  ],
+                  "fillStyleId": "S:c45b0aca44e24c6b6ebf597d543825db0465e619,2955:53",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "visible": true,
+                      "opacity": 1,
+                      "blendMode": "NORMAL",
+                      "color": {
+                        "r": 0.38268789649009705,
+                        "g": 0.4736708402633667,
+                        "b": 0.5833170413970947
+                      },
+                      "boundVariables": {}
+                    }
+                  ]
+                }
+              ]
+            },
+            "vectorPaths": [
+              {
+                "windingRule": "NONZERO",
+                "data": "M 6.000000286102295 3.3333334922790527 L 7.333333683013915 3.3333334922790527 L 7.333333683013915 4.666666889190673 L 6.000000286102295 4.666666889190673 L 6.000000286102295 3.3333334922790527 Z M 6.000000286102295 6.000000286102295 L 7.333333683013915 6.000000286102295 L 7.333333683013915 10.000000476837158 L 6.000000286102295 10.000000476837158 L 6.000000286102295 6.000000286102295 Z M 6.6666669845581055 0 C 2.9866668217976895 0 0 2.9866668217976895 0 6.6666669845581055 C 0 10.346667147318522 2.9866668217976895 13.333333969116211 6.6666669845581055 13.333333969116211 C 10.346667147318522 13.333333969116211 13.333333969116211 10.346667147318522 13.333333969116211 6.6666669845581055 C 13.333333969116211 2.9866668217976895 10.346667147318522 0 6.6666669845581055 0 Z M 6.6666669845581055 12.00000057220459 C 3.7266669460932462 12.00000057220459 1.333333396911621 9.606667023022965 1.333333396911621 6.6666669845581055 C 1.333333396911621 3.7266669460932462 3.7266669460932462 1.333333396911621 6.6666669845581055 1.333333396911621 C 9.606667023022965 1.333333396911621 12.00000057220459 3.7266669460932462 12.00000057220459 6.6666669845581055 C 12.00000057220459 9.606667023022965 9.606667023022965 12.00000057220459 6.6666669845581055 12.00000057220459 Z"
+              }
+            ],
+            "fillStyles": [
+              {
+                "type": "SOLID",
+                "visible": true,
+                "opacity": 1,
+                "color": {
+                  "r": 98,
+                  "g": 121,
+                  "b": 149,
+                  "a": 1
+                }
+              }
+            ],
+            "strokeStyles": [],
+            "strokeProperties": null
+          }
+        }
+      ]
+    }
+  ]
+}

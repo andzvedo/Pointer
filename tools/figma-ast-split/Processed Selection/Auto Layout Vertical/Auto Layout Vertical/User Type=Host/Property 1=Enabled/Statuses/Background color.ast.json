@@ -1,0 +1,57 @@
+{
+  "type": "frame",
+  "name": "Background color",
+  "id": "I337:6095;3557:177773;3006:37504;2990:24409",
+  "properties": {
+    "visible": false,
+    "constraints": {
+      "horizontal": "STRETCH",
+      "vertical": "STRETCH"
+    },
+    "suggestedClassName": "background-color",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 57,
+    "height": 24,
+    "x": 0,
+    "y": 0,
+    "backgroundColor": {
+      "r": 228,
+      "g": 245,
+      "b": 252,
+      "a": 1
+    },
+    "backgroundColorHex": "#e4f5fc",
+    "borderRadius": 100,
+    "opacity": 1,
+    "layout": {
+      "mode": "HORIZONTAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "CENTER",
+      "padding": {
+        "top": 0,
+        "right": 4,
+        "bottom": 0,
+        "left": 4
+      },
+      "itemSpacing": 4
+    }
+  },
+  "metadata": {
+    "figmaId": "I337:6095;3557:177773;3006:37504;2990:24409",
+    "figmaType": "FRAME",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "User Type=Host",
+      "Property 1=Enabled",
+      "Statuses",
+      "Background color"
+    ]
+  },
+  "children": []
+}

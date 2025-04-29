@@ -1,0 +1,3291 @@
+{
+  "type": "instance",
+  "name": "Extra info",
+  "id": "I337:6099;3843:130677",
+  "properties": {
+    "isInstance": true,
+    "componentId": "296:3463",
+    "componentName": "Property 1=Delivery address, Property 2=Inline",
+    "componentProperties": {
+      "High emphasis text#3471:0": {
+        "value": "47 W 13th St, New York, NY 10011, USA",
+        "type": "TEXT"
+      },
+      "Property 1": {
+        "value": "Delivery address",
+        "type": "VARIANT",
+        "boundVariables": {}
+      },
+      "Property 2": {
+        "value": "Inline",
+        "type": "VARIANT",
+        "boundVariables": {}
+      }
+    },
+    "visible": true,
+    "constraints": {
+      "horizontal": "MIN",
+      "vertical": "MIN"
+    },
+    "suggestedClassName": "extra-info",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 323,
+    "height": 24,
+    "x": 314,
+    "y": 0,
+    "backgroundColor": {
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 1
+    },
+    "backgroundColorHex": "#ffffff",
+    "borderRadius": 0,
+    "opacity": 1,
+    "layout": {
+      "mode": "HORIZONTAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "itemSpacing": 0
+    }
+  },
+  "metadata": {
+    "figmaId": "I337:6099;3843:130677",
+    "figmaType": "INSTANCE",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+      "Auto Layout Vertical",
+      "Event Details summary",
+      "Frame 633",
+      "Frame 632",
+      "Frame 333",
+      "Extra info composition",
+      "Extra info"
+    ]
+  },
+  "children": [
+    {
+      "type": "instance",
+      "name": "Extra info raw component",
+      "id": "I337:6099;3843:130677;3392:114750",
+      "properties": {
+        "isInstance": true,
+        "componentId": "296:3400",
+        "componentName": "Type=Inline",
+        "componentProperties": {
+          "Left icon down#3392:83": {
+            "value": false,
+            "type": "BOOLEAN"
+          },
+          "Host name#3204:27": {
+            "value": false,
+            "type": "BOOLEAN"
+          },
+          "User Name#3399:198": {
+            "value": false,
+            "type": "BOOLEAN"
+          },
+          "Right Icon down#3204:21": {
+            "value": true,
+            "type": "BOOLEAN"
+          },
+          "High emphasis text#3205:33": {
+            "value": "47 W 13th St, New York, NY 10011, USA",
+            "type": "TEXT"
+          },
+          "Low emphasis#3203:18": {
+            "value": false,
+            "type": "BOOLEAN"
+          },
+          "Left icon up#3392:80": {
+            "value": true,
+            "type": "BOOLEAN"
+          },
+          "High emphasis Text#3203:15": {
+            "value": true,
+            "type": "BOOLEAN"
+          },
+          "Item Status#3203:9": {
+            "value": false,
+            "type": "BOOLEAN"
+          },
+          "Right Icon Up#3204:24": {
+            "value": true,
+            "type": "BOOLEAN"
+          },
+          "Right icon#3203:6": {
+            "value": true,
+            "type": "BOOLEAN"
+          },
+          "Badge#3843:21": {
+            "value": false,
+            "type": "BOOLEAN"
+          },
+          "Low emphasis text#3205:30": {
+            "value": "Address",
+            "type": "TEXT"
+          },
+          "Left icon#3203:3": {
+            "value": true,
+            "type": "BOOLEAN"
+          },
+          "Type": {
+            "value": "Inline",
+            "type": "VARIANT",
+            "boundVariables": {}
+          }
+        },
+        "visible": true,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "extra-info-raw-component",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 323,
+        "height": 24,
+        "x": 0,
+        "y": 0,
+        "borderRadius": 0,
+        "opacity": 1,
+        "layout": {
+          "mode": "HORIZONTAL",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "CENTER",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "itemSpacing": 8
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6099;3843:130677;3392:114750",
+        "figmaType": "INSTANCE",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Not Published, Property 3=No Items",
+          "Auto Layout Vertical",
+          "Event Details summary",
+          "Frame 633",
+          "Frame 632",
+          "Frame 333",
+          "Extra info composition",
+          "Extra info",
+          "Extra info raw component"
+        ]
+      },
+      "children": [
+        {
+          "type": "frame",
+          "name": "Frame 653",
+          "id": "I337:6099;3843:130677;3392:114750;3203:113470",
+          "properties": {
+            "visible": true,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "frame-653",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 16,
+            "height": 24,
+            "x": 0,
+            "y": 0,
+            "borderRadius": 0,
+            "opacity": 1,
+            "layout": {
+              "mode": "HORIZONTAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "CENTER",
+              "padding": {
+                "top": 2,
+                "right": 0,
+                "bottom": 2,
+                "left": 0
+              },
+              "itemSpacing": 8
+            }
+          },
+          "metadata": {
+            "figmaId": "I337:6099;3843:130677;3392:114750;3203:113470",
+            "figmaType": "FRAME",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Not Published, Property 3=No Items",
+              "Auto Layout Vertical",
+              "Event Details summary",
+              "Frame 633",
+              "Frame 632",
+              "Frame 333",
+              "Extra info composition",
+              "Extra info",
+              "Extra info raw component",
+              "Frame 653"
+            ]
+          },
+          "children": [
+            {
+              "type": "instance",
+              "name": "Left icon",
+              "id": "I337:6099;3843:130677;3392:114750;3203:113471",
+              "properties": {
+                "isInstance": true,
+                "componentId": "296:3448",
+                "componentName": "pin_drop",
+                "componentProperties": {},
+                "visible": true,
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "suggestedClassName": "left-icon",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 16,
+                "height": 16,
+                "x": 0,
+                "y": 4,
+                "borderRadius": 0,
+                "opacity": 1
+              },
+              "metadata": {
+                "figmaId": "I337:6099;3843:130677;3392:114750;3203:113471",
+                "figmaType": "INSTANCE",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 633",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Frame 653",
+                  "Left icon"
+                ]
+              },
+              "children": [
+                {
+                  "type": "vector",
+                  "name": "Vector",
+                  "id": "I337:6099;3843:130677;3392:114750;3203:113471;2919:29737",
+                  "properties": {
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "SCALE",
+                      "vertical": "SCALE"
+                    },
+                    "suggestedClassName": "vector",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 16,
+                    "height": 16,
+                    "x": 0,
+                    "y": 0,
+                    "borderRadius": 0,
+                    "opacity": 1
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6099;3843:130677;3392:114750;3203:113471;2919:29737",
+                    "figmaType": "VECTOR",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 633",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Frame 653",
+                      "Left icon",
+                      "Vector"
+                    ]
+                  },
+                  "vector": {
+                    "network": {
+                      "vertices": [
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 16,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 16,
+                          "y": 16,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 0,
+                          "y": 16,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        }
+                      ],
+                      "segments": [
+                        {
+                          "start": 0,
+                          "end": 1,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 1,
+                          "end": 2,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 2,
+                          "end": 3,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 3,
+                          "end": 0,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        }
+                      ],
+                      "regions": [
+                        {
+                          "windingRule": "NONZERO",
+                          "loops": [
+                            [
+                              0,
+                              1,
+                              2,
+                              3
+                            ]
+                          ],
+                          "fillStyleId": "",
+                          "fills": []
+                        }
+                      ]
+                    },
+                    "vectorPaths": [
+                      {
+                        "windingRule": "NONZERO",
+                        "data": "M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z"
+                      }
+                    ],
+                    "fillStyles": [],
+                    "strokeStyles": [],
+                    "strokeProperties": null
+                  }
+                },
+                {
+                  "type": "vector",
+                  "name": "Vector",
+                  "id": "I337:6099;3843:130677;3392:114750;3203:113471;2919:29738",
+                  "properties": {
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "SCALE",
+                      "vertical": "SCALE"
+                    },
+                    "suggestedClassName": "vector",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 9,
+                    "height": 11,
+                    "x": 3,
+                    "y": 1,
+                    "backgroundColor": {
+                      "r": 134,
+                      "g": 147,
+                      "b": 173,
+                      "a": 1
+                    },
+                    "backgroundColorHex": "#8693ad",
+                    "borderRadius": 0,
+                    "opacity": 1
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6099;3843:130677;3392:114750;3203:113471;2919:29738",
+                    "figmaType": "VECTOR",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 633",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Frame 653",
+                      "Left icon",
+                      "Vector"
+                    ]
+                  },
+                  "vector": {
+                    "network": {
+                      "vertices": [
+                        {
+                          "x": 4.6666669845581055,
+                          "y": 1.3333334081313188,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 8.000000544956752,
+                          "y": 4.7666666797563,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 4.6666669845581055,
+                          "y": 9.646666750066395,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 1.3333334241594588,
+                          "y": 4.7666666797563,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 4.6666669845581055,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 0,
+                          "y": 4.7666666797563,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 4.6666669845581055,
+                          "y": 11.333333969116211,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 9.333333969116211,
+                          "y": 4.7666666797563,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        }
+                      ],
+                      "segments": [
+                        {
+                          "start": 0,
+                          "end": 1,
+                          "tangentStart": {
+                            "x": 1.286666719345817,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": -2.5000001402462226
+                          }
+                        },
+                        {
+                          "start": 1,
+                          "end": 2,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 1.4400001380022864
+                          },
+                          "tangentEnd": {
+                            "x": 2.1866667965480246,
+                            "y": -1.7666668293522887
+                          }
+                        },
+                        {
+                          "start": 2,
+                          "end": 3,
+                          "tangentStart": {
+                            "x": -2.1866667965480246,
+                            "y": -1.7666668293522887
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 1.433333477319459
+                          }
+                        },
+                        {
+                          "start": 3,
+                          "end": 0,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": -2.5000001402462226
+                          },
+                          "tangentEnd": {
+                            "x": -1.286666719345817,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 4,
+                          "end": 5,
+                          "tangentStart": {
+                            "x": -2.1800001357850567,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": -3.1266668802149176
+                          }
+                        },
+                        {
+                          "start": 5,
+                          "end": 6,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 2.080000040390908
+                          },
+                          "tangentEnd": {
+                            "x": -3.1133335962749698,
+                            "y": -2.293333500132843
+                          }
+                        },
+                        {
+                          "start": 6,
+                          "end": 7,
+                          "tangentStart": {
+                            "x": 3.1133335962749698,
+                            "y": -2.293333500132843
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 2.080000040390908
+                          }
+                        },
+                        {
+                          "start": 7,
+                          "end": 4,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": -3.1266668802149176
+                          },
+                          "tangentEnd": {
+                            "x": 2.1800001357850567,
+                            "y": 0
+                          }
+                        }
+                      ],
+                      "regions": [
+                        {
+                          "windingRule": "NONZERO",
+                          "loops": [
+                            [
+                              0,
+                              1,
+                              2,
+                              3
+                            ],
+                            [
+                              4,
+                              5,
+                              6,
+                              7
+                            ]
+                          ],
+                          "fillStyleId": "S:254105e72dacee40b3df35a66456a836427781b5,3617:3",
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 0.523934543132782,
+                                "g": 0.577089786529541,
+                                "b": 0.6802734136581421
+                              },
+                              "boundVariables": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "vectorPaths": [
+                      {
+                        "windingRule": "NONZERO",
+                        "data": "M 4.6666669845581055 1.3333334081313188 C 5.9533337039039225 1.3333334081313188 8.000000544956752 2.2666665395100773 8.000000544956752 4.7666666797563 C 8.000000544956752 6.206666817758586 6.85333378110613 7.879999920714106 4.6666669845581055 9.646666750066395 C 2.480000188010081 7.879999920714106 1.3333334241594588 6.200000157075759 1.3333334241594588 4.7666666797563 C 1.3333334241594588 2.2666665395100773 3.3800002652122885 1.3333334081313188 4.6666669845581055 1.3333334081313188 Z M 4.6666669845581055 0 C 2.4866668487730488 0 0 1.6399997995413824 0 4.7666666797563 C 0 6.8466667201472085 1.5533333882831357 9.040000468983369 4.6666669845581055 11.333333969116211 C 7.780000580833075 9.040000468983369 9.333333969116211 6.8466667201472085 9.333333969116211 4.7666666797563 C 9.333333969116211 1.6399997995413824 6.846667120343162 0 4.6666669845581055 0 Z"
+                      }
+                    ],
+                    "fillStyles": [
+                      {
+                        "type": "SOLID",
+                        "visible": true,
+                        "opacity": 1,
+                        "color": {
+                          "r": 134,
+                          "g": 147,
+                          "b": 173,
+                          "a": 1
+                        }
+                      }
+                    ],
+                    "strokeStyles": [],
+                    "strokeProperties": null
+                  }
+                },
+                {
+                  "type": "vector",
+                  "name": "Vector",
+                  "id": "I337:6099;3843:130677;3392:114750;3203:113471;2919:29739",
+                  "properties": {
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "SCALE",
+                      "vertical": "SCALE"
+                    },
+                    "suggestedClassName": "vector",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 9,
+                    "height": 10,
+                    "x": 3,
+                    "y": 5,
+                    "backgroundColor": {
+                      "r": 134,
+                      "g": 147,
+                      "b": 173,
+                      "a": 1
+                    },
+                    "backgroundColorHex": "#8693ad",
+                    "borderRadius": 0,
+                    "opacity": 1
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6099;3843:130677;3392:114750;3203:113471;2919:29739",
+                    "figmaType": "VECTOR",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 633",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Frame 653",
+                      "Left icon",
+                      "Vector"
+                    ]
+                  },
+                  "vector": {
+                    "network": {
+                      "vertices": [
+                        {
+                          "x": 4.6666669845581055,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 3.333333560398647,
+                          "y": 1.3333333333333333,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 4.6666669845581055,
+                          "y": 2.6666666666666665,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 5.609475835809852,
+                          "y": 2.276142120361328,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 6.000000408717565,
+                          "y": 1.3333333333333333,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 5.609475835809852,
+                          "y": 0.3905242284138997,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 4.6666669845581055,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 0,
+                          "y": 8.666666666666666,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 9.333333969116211,
+                          "y": 8.666666666666666,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 9.333333969116211,
+                          "y": 10,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 0,
+                          "y": 10,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        }
+                      ],
+                      "segments": [
+                        {
+                          "start": 0,
+                          "end": 1,
+                          "tangentStart": {
+                            "x": -0.7333333991822754,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": -0.7333333492279053
+                          }
+                        },
+                        {
+                          "start": 1,
+                          "end": 2,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0.7333333492279053
+                          },
+                          "tangentEnd": {
+                            "x": -0.7333333991822754,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 2,
+                          "end": 3,
+                          "tangentStart": {
+                            "x": 0.3536220235112962,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": -0.25004851534583444,
+                            "y": 0.2500484983126322
+                          }
+                        },
+                        {
+                          "start": 3,
+                          "end": 4,
+                          "tangentStart": {
+                            "x": 0.25004851534583444,
+                            "y": -0.2500484983126322
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0.3536219994227091
+                          }
+                        },
+                        {
+                          "start": 4,
+                          "end": 5,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": -0.3536219994227091
+                          },
+                          "tangentEnd": {
+                            "x": 0.25004851534583444,
+                            "y": 0.2500484983126322
+                          }
+                        },
+                        {
+                          "start": 5,
+                          "end": 6,
+                          "tangentStart": {
+                            "x": -0.25004851534583444,
+                            "y": -0.2500484983126322
+                          },
+                          "tangentEnd": {
+                            "x": 0.3536220235112962,
+                            "y": 1.1842378929335002e-15
+                          }
+                        },
+                        {
+                          "start": 6,
+                          "end": 0,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 7,
+                          "end": 8,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 8,
+                          "end": 9,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 9,
+                          "end": 10,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 10,
+                          "end": 7,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        }
+                      ],
+                      "regions": [
+                        {
+                          "windingRule": "NONZERO",
+                          "loops": [
+                            [
+                              0,
+                              1,
+                              2,
+                              3,
+                              4,
+                              5,
+                              6
+                            ],
+                            [
+                              7,
+                              8,
+                              9,
+                              10
+                            ]
+                          ],
+                          "fillStyleId": "S:254105e72dacee40b3df35a66456a836427781b5,3617:3",
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 0.523934543132782,
+                                "g": 0.577089786529541,
+                                "b": 0.6802734136581421
+                              },
+                              "boundVariables": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "vectorPaths": [
+                      {
+                        "windingRule": "NONZERO",
+                        "data": "M 4.6666669845581055 0 C 3.93333358537583 0 3.333333560398647 0.599999984105428 3.333333560398647 1.3333333333333333 C 3.333333560398647 2.0666666825612383 3.93333358537583 2.6666666666666665 4.6666669845581055 2.6666666666666665 C 5.020289008069402 2.6666666666666665 5.359427320464018 2.52619061867396 5.609475835809852 2.276142120361328 C 5.859524351155686 2.026093622048696 6.000000408717565 1.6869553327560425 6.000000408717565 1.3333333333333333 C 6.000000408717565 0.9797113339106241 5.859524351155686 0.640572726726532 5.609475835809852 0.3905242284138997 C 5.359427320464018 0.14047573010126752 5.020289008069402 1.1842378929335002e-15 4.6666669845581055 0 L 4.6666669845581055 0 Z M 0 8.666666666666666 L 9.333333969116211 8.666666666666666 L 9.333333969116211 10 L 0 10 L 0 8.666666666666666 Z"
+                      }
+                    ],
+                    "fillStyles": [
+                      {
+                        "type": "SOLID",
+                        "visible": true,
+                        "opacity": 1,
+                        "color": {
+                          "r": 134,
+                          "g": 147,
+                          "b": 173,
+                          "a": 1
+                        }
+                      }
+                    ],
+                    "strokeStyles": [],
+                    "strokeProperties": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Badge",
+          "id": "I337:6099;3843:130677;3392:114750;3843:198548",
+          "properties": {
+            "visible": false,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "badge",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 20,
+            "height": 24,
+            "x": 24,
+            "y": 0,
+            "borderRadius": 0,
+            "opacity": 1,
+            "layout": {
+              "mode": "HORIZONTAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "CENTER",
+              "padding": {
+                "top": 2,
+                "right": 0,
+                "bottom": 2,
+                "left": 0
+              },
+              "itemSpacing": 8
+            }
+          },
+          "metadata": {
+            "figmaId": "I337:6099;3843:130677;3392:114750;3843:198548",
+            "figmaType": "FRAME",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Not Published, Property 3=No Items",
+              "Auto Layout Vertical",
+              "Event Details summary",
+              "Frame 633",
+              "Frame 632",
+              "Frame 333",
+              "Extra info composition",
+              "Extra info",
+              "Extra info raw component",
+              "Badge"
+            ]
+          },
+          "children": [
+            {
+              "type": "instance",
+              "name": "Badge",
+              "id": "I337:6099;3843:130677;3392:114750;3843:198549",
+              "properties": {
+                "isInstance": true,
+                "componentId": "296:2823",
+                "componentName": "Property 1=Default",
+                "componentProperties": {
+                  "Label#4012:7": {
+                    "value": "Label",
+                    "type": "TEXT"
+                  },
+                  "Value#3665:0": {
+                    "value": "4",
+                    "type": "TEXT"
+                  },
+                  "Property 1": {
+                    "value": "Default",
+                    "type": "VARIANT",
+                    "boundVariables": {}
+                  }
+                },
+                "visible": true,
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "suggestedClassName": "badge",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 20,
+                "height": 24,
+                "x": 0,
+                "y": 2,
+                "backgroundColor": {
+                  "r": 239,
+                  "g": 240,
+                  "b": 246,
+                  "a": 1
+                },
+                "backgroundColorHex": "#eff0f6",
+                "borderRadius": 14,
+                "opacity": 1,
+                "layout": {
+                  "mode": "HORIZONTAL",
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "padding": {
+                    "top": 2,
+                    "right": 6,
+                    "bottom": 2,
+                    "left": 6
+                  },
+                  "itemSpacing": 8
+                }
+              },
+              "metadata": {
+                "figmaId": "I337:6099;3843:130677;3392:114750;3843:198549",
+                "figmaType": "INSTANCE",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 633",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Badge",
+                  "Badge"
+                ]
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "name": "48",
+                  "id": "I337:6099;3843:130677;3392:114750;3843:198549;3528:67195",
+                  "properties": {
+                    "text": "4",
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    },
+                    "suggestedClassName": "48",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 8,
+                    "height": 20,
+                    "x": 6,
+                    "y": 2,
+                    "backgroundColor": {
+                      "r": 98,
+                      "g": 121,
+                      "b": 149,
+                      "a": 1
+                    },
+                    "backgroundColorHex": "#627995",
+                    "opacity": 1,
+                    "typography": {
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": 500,
+                      "lineHeight": {
+                        "unit": "PIXELS",
+                        "value": 20
+                      },
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 2
+                      },
+                      "textAlign": "CENTER",
+                      "verticalAlign": "TOP",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE",
+                      "color": {
+                        "r": 98,
+                        "g": 121,
+                        "b": 149,
+                        "a": 1
+                      }
+                    }
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6099;3843:130677;3392:114750;3843:198549;3528:67195",
+                    "figmaType": "TEXT",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 633",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Badge",
+                      "Badge",
+                      "48"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Frame 654",
+          "id": "I337:6099;3843:130677;3392:114750;3203:113472",
+          "properties": {
+            "visible": true,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "frame-654",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 267,
+            "height": 24,
+            "x": 24,
+            "y": 0,
+            "borderRadius": 0,
+            "opacity": 1,
+            "layout": {
+              "mode": "HORIZONTAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "CENTER",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "itemSpacing": 4
+            }
+          },
+          "metadata": {
+            "figmaId": "I337:6099;3843:130677;3392:114750;3203:113472",
+            "figmaType": "FRAME",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Not Published, Property 3=No Items",
+              "Auto Layout Vertical",
+              "Event Details summary",
+              "Frame 633",
+              "Frame 632",
+              "Frame 333",
+              "Extra info composition",
+              "Extra info",
+              "Extra info raw component",
+              "Frame 654"
+            ]
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "In two weeks",
+              "id": "I337:6099;3843:130677;3392:114750;3203:113473",
+              "properties": {
+                "text": "Address",
+                "visible": false,
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "suggestedClassName": "in-two-weeks",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 56,
+                "height": 24,
+                "x": 0,
+                "y": 0,
+                "backgroundColor": {
+                  "r": 98,
+                  "g": 121,
+                  "b": 149,
+                  "a": 1
+                },
+                "backgroundColorHex": "#627995",
+                "opacity": 1,
+                "typography": {
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": 400,
+                  "lineHeight": {
+                    "unit": "PIXELS",
+                    "value": 24
+                  },
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 1
+                  },
+                  "textAlign": "LEFT",
+                  "verticalAlign": "CENTER",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE",
+                  "color": {
+                    "r": 98,
+                    "g": 121,
+                    "b": 149,
+                    "a": 1
+                  }
+                }
+              },
+              "metadata": {
+                "figmaId": "I337:6099;3843:130677;3392:114750;3203:113473",
+                "figmaType": "TEXT",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 633",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Frame 654",
+                  "In two weeks"
+                ]
+              }
+            },
+            {
+              "type": "text",
+              "name": "July 16th",
+              "id": "I337:6099;3843:130677;3392:114750;3203:113474",
+              "properties": {
+                "text": "47 W 13th St, New York, NY 10011, USA",
+                "visible": true,
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "suggestedClassName": "july-16th",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 267,
+                "height": 24,
+                "x": 0,
+                "y": 0,
+                "backgroundColor": {
+                  "r": 0,
+                  "g": 39,
+                  "b": 86,
+                  "a": 1
+                },
+                "backgroundColorHex": "#002756",
+                "opacity": 1,
+                "typography": {
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": 400,
+                  "lineHeight": {
+                    "unit": "PIXELS",
+                    "value": 24
+                  },
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 1
+                  },
+                  "textAlign": "LEFT",
+                  "verticalAlign": "TOP",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE",
+                  "color": {
+                    "r": 0,
+                    "g": 39,
+                    "b": 86,
+                    "a": 1
+                  }
+                }
+              },
+              "metadata": {
+                "figmaId": "I337:6099;3843:130677;3392:114750;3203:113474",
+                "figmaType": "TEXT",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 633",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Frame 654",
+                  "July 16th"
+                ]
+              }
+            },
+            {
+              "type": "instance",
+              "name": "Statuses",
+              "id": "I337:6099;3843:130677;3392:114750;3203:113475",
+              "properties": {
+                "isInstance": true,
+                "componentId": "296:3329",
+                "componentName": "Type=Declined, Size=Small",
+                "componentProperties": {
+                  "Background color#3006:3": {
+                    "value": false,
+                    "type": "BOOLEAN"
+                  },
+                  "Text#2949:0": {
+                    "value": "Label",
+                    "type": "TEXT"
+                  },
+                  "Type": {
+                    "value": "Declined",
+                    "type": "VARIANT",
+                    "boundVariables": {}
+                  },
+                  "Size": {
+                    "value": "Small",
+                    "type": "VARIANT",
+                    "boundVariables": {}
+                  }
+                },
+                "visible": false,
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "suggestedClassName": "statuses",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 86,
+                "height": 24,
+                "x": 174,
+                "y": 0,
+                "borderRadius": 0,
+                "opacity": 1,
+                "layout": {
+                  "mode": "HORIZONTAL",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "CENTER",
+                  "padding": {
+                    "top": 0,
+                    "right": 8,
+                    "bottom": 0,
+                    "left": 6
+                  },
+                  "itemSpacing": 4
+                }
+              },
+              "metadata": {
+                "figmaId": "I337:6099;3843:130677;3392:114750;3203:113475",
+                "figmaType": "INSTANCE",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 633",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Frame 654",
+                  "Statuses"
+                ]
+              },
+              "children": [
+                {
+                  "type": "instance",
+                  "name": "remove_circle_outline",
+                  "id": "I337:6099;3843:130677;3392:114750;3203:113475;2990:24400",
+                  "properties": {
+                    "isInstance": true,
+                    "componentId": "296:3306",
+                    "componentName": "remove_circle_outline",
+                    "componentProperties": {},
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    },
+                    "suggestedClassName": "remove_circle_outline",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 16,
+                    "height": 16,
+                    "x": 6,
+                    "y": 4,
+                    "borderRadius": 0,
+                    "opacity": 1
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6099;3843:130677;3392:114750;3203:113475;2990:24400",
+                    "figmaType": "INSTANCE",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 633",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Frame 654",
+                      "Statuses",
+                      "remove_circle_outline"
+                    ]
+                  },
+                  "children": [
+                    {
+                      "type": "vector",
+                      "name": "Vector",
+                      "id": "I337:6099;3843:130677;3392:114750;3203:113475;2990:24400;2919:28003",
+                      "properties": {
+                        "visible": true,
+                        "constraints": {
+                          "horizontal": "SCALE",
+                          "vertical": "SCALE"
+                        },
+                        "suggestedClassName": "vector",
+                        "locked": false,
+                        "isMask": false,
+                        "exportSettings": []
+                      },
+                      "styles": {
+                        "width": 16,
+                        "height": 16,
+                        "x": 0,
+                        "y": 0,
+                        "borderRadius": 0,
+                        "opacity": 1
+                      },
+                      "metadata": {
+                        "figmaId": "I337:6099;3843:130677;3392:114750;3203:113475;2990:24400;2919:28003",
+                        "figmaType": "VECTOR",
+                        "figmaPath": [
+                          "MVP",
+                          "Auto Layout Vertical",
+                          "Auto Layout Vertical",
+                          "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                          "Auto Layout Vertical",
+                          "Event Details summary",
+                          "Frame 633",
+                          "Frame 632",
+                          "Frame 333",
+                          "Extra info composition",
+                          "Extra info",
+                          "Extra info raw component",
+                          "Frame 654",
+                          "Statuses",
+                          "remove_circle_outline",
+                          "Vector"
+                        ]
+                      },
+                      "vector": {
+                        "network": {
+                          "vertices": [
+                            {
+                              "x": 0,
+                              "y": 0,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 16,
+                              "y": 0,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 16,
+                              "y": 16,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 0,
+                              "y": 16,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            }
+                          ],
+                          "segments": [
+                            {
+                              "start": 0,
+                              "end": 1,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 1,
+                              "end": 2,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 2,
+                              "end": 3,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 3,
+                              "end": 0,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            }
+                          ],
+                          "regions": [
+                            {
+                              "windingRule": "NONZERO",
+                              "loops": [
+                                [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                                ]
+                              ],
+                              "fillStyleId": "",
+                              "fills": []
+                            }
+                          ]
+                        },
+                        "vectorPaths": [
+                          {
+                            "windingRule": "NONZERO",
+                            "data": "M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z"
+                          }
+                        ],
+                        "fillStyles": [],
+                        "strokeStyles": [],
+                        "strokeProperties": null
+                      }
+                    },
+                    {
+                      "type": "vector",
+                      "name": "Vector",
+                      "id": "I337:6099;3843:130677;3392:114750;3203:113475;2990:24400;2919:28004",
+                      "properties": {
+                        "visible": true,
+                        "constraints": {
+                          "horizontal": "SCALE",
+                          "vertical": "SCALE"
+                        },
+                        "suggestedClassName": "vector",
+                        "locked": false,
+                        "isMask": false,
+                        "exportSettings": []
+                      },
+                      "styles": {
+                        "width": 13,
+                        "height": 13,
+                        "x": 1,
+                        "y": 1,
+                        "backgroundColor": {
+                          "r": 185,
+                          "g": 156,
+                          "b": 4,
+                          "a": 1
+                        },
+                        "backgroundColorHex": "#b99c04",
+                        "borderRadius": 0,
+                        "opacity": 1
+                      },
+                      "metadata": {
+                        "figmaId": "I337:6099;3843:130677;3392:114750;3203:113475;2990:24400;2919:28004",
+                        "figmaType": "VECTOR",
+                        "figmaPath": [
+                          "MVP",
+                          "Auto Layout Vertical",
+                          "Auto Layout Vertical",
+                          "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                          "Auto Layout Vertical",
+                          "Event Details summary",
+                          "Frame 633",
+                          "Frame 632",
+                          "Frame 333",
+                          "Extra info composition",
+                          "Extra info",
+                          "Extra info raw component",
+                          "Frame 654",
+                          "Statuses",
+                          "remove_circle_outline",
+                          "Vector"
+                        ]
+                      },
+                      "vector": {
+                        "network": {
+                          "vertices": [
+                            {
+                              "x": 3.3333334922790527,
+                              "y": 6.000000286102295,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 3.3333334922790527,
+                              "y": 7.333333683013915,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 10.000000476837158,
+                              "y": 7.333333683013915,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 10.000000476837158,
+                              "y": 6.000000286102295,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 6.6666669845581055,
+                              "y": 0,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 0,
+                              "y": 6.6666669845581055,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 6.6666669845581055,
+                              "y": 13.333333969116211,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 13.333333969116211,
+                              "y": 6.6666669845581055,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 6.6666669845581055,
+                              "y": 12.00000057220459,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 1.333333396911621,
+                              "y": 6.6666669845581055,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 6.6666669845581055,
+                              "y": 1.333333396911621,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 12.00000057220459,
+                              "y": 6.6666669845581055,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            }
+                          ],
+                          "segments": [
+                            {
+                              "start": 0,
+                              "end": 1,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 1,
+                              "end": 2,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 2,
+                              "end": 3,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 3,
+                              "end": 0,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 4,
+                              "end": 5,
+                              "tangentStart": {
+                                "x": -3.680000162760416,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": -3.680000162760416
+                              }
+                            },
+                            {
+                              "start": 5,
+                              "end": 6,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 3.680000162760416
+                              },
+                              "tangentEnd": {
+                                "x": -3.680000162760416,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 6,
+                              "end": 7,
+                              "tangentStart": {
+                                "x": 3.680000162760416,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 3.680000162760416
+                              }
+                            },
+                            {
+                              "start": 7,
+                              "end": 4,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": -3.680000162760416
+                              },
+                              "tangentEnd": {
+                                "x": 3.680000162760416,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 8,
+                              "end": 9,
+                              "tangentStart": {
+                                "x": -2.9400000384648592,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 2.9400000384648592
+                              }
+                            },
+                            {
+                              "start": 9,
+                              "end": 10,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": -2.9400000384648592
+                              },
+                              "tangentEnd": {
+                                "x": -2.9400000384648592,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 10,
+                              "end": 11,
+                              "tangentStart": {
+                                "x": 2.9400000384648592,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": -2.9400000384648592
+                              }
+                            },
+                            {
+                              "start": 11,
+                              "end": 8,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 2.9400000384648592
+                              },
+                              "tangentEnd": {
+                                "x": 2.9400000384648592,
+                                "y": 0
+                              }
+                            }
+                          ],
+                          "regions": [
+                            {
+                              "windingRule": "NONZERO",
+                              "loops": [
+                                [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                                ],
+                                [
+                                  4,
+                                  5,
+                                  6,
+                                  7
+                                ],
+                                [
+                                  8,
+                                  9,
+                                  10,
+                                  11
+                                ]
+                              ],
+                              "fillStyleId": "S:6d405b1512cebfccac995d4f3424dadf79747894,3076:2",
+                              "fills": [
+                                {
+                                  "type": "SOLID",
+                                  "visible": true,
+                                  "opacity": 1,
+                                  "blendMode": "NORMAL",
+                                  "color": {
+                                    "r": 0.7265462279319763,
+                                    "g": 0.6127452254295349,
+                                    "b": 0.015290108509361744
+                                  },
+                                  "boundVariables": {}
+                                },
+                                {
+                                  "type": "SOLID",
+                                  "visible": true,
+                                  "opacity": 0.30000001192092896,
+                                  "blendMode": "NORMAL",
+                                  "color": {
+                                    "r": 0,
+                                    "g": 0,
+                                    "b": 0
+                                  },
+                                  "boundVariables": {}
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "vectorPaths": [
+                          {
+                            "windingRule": "NONZERO",
+                            "data": "M 3.3333334922790527 6.000000286102295 L 3.3333334922790527 7.333333683013915 L 10.000000476837158 7.333333683013915 L 10.000000476837158 6.000000286102295 L 3.3333334922790527 6.000000286102295 Z M 6.6666669845581055 0 C 2.9866668217976895 0 0 2.9866668217976895 0 6.6666669845581055 C 0 10.346667147318522 2.9866668217976895 13.333333969116211 6.6666669845581055 13.333333969116211 C 10.346667147318522 13.333333969116211 13.333333969116211 10.346667147318522 13.333333969116211 6.6666669845581055 C 13.333333969116211 2.9866668217976895 10.346667147318522 0 6.6666669845581055 0 Z M 6.6666669845581055 12.00000057220459 C 3.7266669460932462 12.00000057220459 1.333333396911621 9.606667023022965 1.333333396911621 6.6666669845581055 C 1.333333396911621 3.7266669460932462 3.7266669460932462 1.333333396911621 6.6666669845581055 1.333333396911621 C 9.606667023022965 1.333333396911621 12.00000057220459 3.7266669460932462 12.00000057220459 6.6666669845581055 C 12.00000057220459 9.606667023022965 9.606667023022965 12.00000057220459 6.6666669845581055 12.00000057220459 Z"
+                          }
+                        ],
+                        "fillStyles": [
+                          {
+                            "type": "SOLID",
+                            "visible": true,
+                            "opacity": 1,
+                            "color": {
+                              "r": 185,
+                              "g": 156,
+                              "b": 4,
+                              "a": 1
+                            }
+                          },
+                          {
+                            "type": "SOLID",
+                            "visible": true,
+                            "opacity": 0.30000001192092896,
+                            "color": {
+                              "r": 0,
+                              "g": 0,
+                              "b": 0,
+                              "a": 0.30000001192092896
+                            }
+                          }
+                        ],
+                        "strokeStyles": [],
+                        "strokeProperties": null
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "name": "Declined",
+                  "id": "I337:6099;3843:130677;3392:114750;3203:113475;2990:24401",
+                  "properties": {
+                    "text": "Declined",
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    },
+                    "suggestedClassName": "declined",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 52,
+                    "height": 24,
+                    "x": 26,
+                    "y": 0,
+                    "backgroundColor": {
+                      "r": 185,
+                      "g": 156,
+                      "b": 4,
+                      "a": 1
+                    },
+                    "backgroundColorHex": "#b99c04",
+                    "opacity": 1,
+                    "typography": {
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": 500,
+                      "lineHeight": {
+                        "unit": "PIXELS",
+                        "value": 24
+                      },
+                      "letterSpacing": {
+                        "unit": "PERCENT",
+                        "value": 2
+                      },
+                      "textAlign": "LEFT",
+                      "verticalAlign": "CENTER",
+                      "textCase": "ORIGINAL",
+                      "textDecoration": "NONE",
+                      "color": {
+                        "r": 185,
+                        "g": 156,
+                        "b": 4,
+                        "a": 1
+                      }
+                    }
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6099;3843:130677;3392:114750;3203:113475;2990:24401",
+                    "figmaType": "TEXT",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 633",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Frame 654",
+                      "Statuses",
+                      "Declined"
+                    ]
+                  }
+                },
+                {
+                  "type": "frame",
+                  "name": "Background color",
+                  "id": "I337:6099;3843:130677;3392:114750;3203:113475;3006:35701",
+                  "properties": {
+                    "visible": false,
+                    "constraints": {
+                      "horizontal": "STRETCH",
+                      "vertical": "STRETCH"
+                    },
+                    "suggestedClassName": "background-color",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 86,
+                    "height": 24,
+                    "x": 0,
+                    "y": 0,
+                    "backgroundColor": {
+                      "r": 248,
+                      "g": 244,
+                      "b": 219,
+                      "a": 1
+                    },
+                    "backgroundColorHex": "#f8f4db",
+                    "borderRadius": 100,
+                    "opacity": 1,
+                    "layout": {
+                      "mode": "HORIZONTAL",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "CENTER",
+                      "padding": {
+                        "top": 0,
+                        "right": 4,
+                        "bottom": 0,
+                        "left": 4
+                      },
+                      "itemSpacing": 4
+                    }
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6099;3843:130677;3392:114750;3203:113475;3006:35701",
+                    "figmaType": "FRAME",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 633",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Frame 654",
+                      "Statuses",
+                      "Background color"
+                    ]
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Right Icon",
+          "id": "I337:6099;3843:130677;3392:114750;3203:113476",
+          "properties": {
+            "visible": true,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "right-icon",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 24,
+            "height": 24,
+            "x": 299,
+            "y": 0,
+            "borderRadius": 0,
+            "opacity": 1,
+            "layout": {
+              "mode": "HORIZONTAL",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "padding": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "itemSpacing": 8
+            }
+          },
+          "metadata": {
+            "figmaId": "I337:6099;3843:130677;3392:114750;3203:113476",
+            "figmaType": "FRAME",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Not Published, Property 3=No Items",
+              "Auto Layout Vertical",
+              "Event Details summary",
+              "Frame 633",
+              "Frame 632",
+              "Frame 333",
+              "Extra info composition",
+              "Extra info",
+              "Extra info raw component",
+              "Right Icon"
+            ]
+          },
+          "children": [
+            {
+              "type": "instance",
+              "name": "Button rectangular",
+              "id": "I337:6099;3843:130677;3392:114750;3203:113477",
+              "properties": {
+                "isInstance": true,
+                "componentId": "296:3205",
+                "componentName": "Type=Icon only, State=Default, Size=Very Small, Style=Secundary color",
+                "componentProperties": {
+                  "Right Icon#3405:61": {
+                    "value": false,
+                    "type": "BOOLEAN"
+                  },
+                  "Left Icon#2838:0": {
+                    "value": true,
+                    "type": "BOOLEAN"
+                  },
+                  "Label#1798:0": {
+                    "value": "Save",
+                    "type": "TEXT"
+                  },
+                  "Type": {
+                    "value": "Icon only",
+                    "type": "VARIANT",
+                    "boundVariables": {}
+                  },
+                  "State": {
+                    "value": "Default",
+                    "type": "VARIANT",
+                    "boundVariables": {}
+                  },
+                  "Size": {
+                    "value": "Very Small",
+                    "type": "VARIANT",
+                    "boundVariables": {}
+                  },
+                  "Style": {
+                    "value": "Secundary color",
+                    "type": "VARIANT",
+                    "boundVariables": {}
+                  }
+                },
+                "visible": true,
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "suggestedClassName": "button-rectangular",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 24,
+                "height": 24,
+                "x": 0,
+                "y": 0,
+                "backgroundGradient": {
+                  "type": "radial",
+                  "gradientTransform": [
+                    [
+                      2.4053047219447544e-14,
+                      0.472222238779068,
+                      0.4999999403953552
+                    ],
+                    [
+                      -0.5773017406463623,
+                      2.179311164716329e-15,
+                      0.7886508703231812
+                    ]
+                  ],
+                  "stops": [
+                    {
+                      "position": 0,
+                      "color": {
+                        "r": 252,
+                        "g": 227,
+                        "b": 0,
+                        "a": 1
+                      }
+                    },
+                    {
+                      "position": 1,
+                      "color": {
+                        "r": 254,
+                        "g": 255,
+                        "b": 197,
+                        "a": 1
+                      }
+                    }
+                  ]
+                },
+                "border": {
+                  "width": 1,
+                  "style": "INSIDE",
+                  "color": {
+                    "r": 55,
+                    "g": 30,
+                    "b": 158,
+                    "a": 0.30000001192092896
+                  }
+                },
+                "borderRadius": 4,
+                "opacity": 1,
+                "layout": {
+                  "mode": "HORIZONTAL",
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "padding": {
+                    "top": 4,
+                    "right": 4,
+                    "bottom": 4,
+                    "left": 4
+                  },
+                  "itemSpacing": 8
+                }
+              },
+              "metadata": {
+                "figmaId": "I337:6099;3843:130677;3392:114750;3203:113477",
+                "figmaType": "INSTANCE",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 633",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Right Icon",
+                  "Button rectangular"
+                ]
+              },
+              "children": [
+                {
+                  "type": "instance",
+                  "name": "open_in_new",
+                  "id": "I337:6099;3843:130677;3392:114750;3203:113477;3688:84195",
+                  "properties": {
+                    "isInstance": true,
+                    "componentId": "296:3439",
+                    "componentName": "open_in_new",
+                    "componentProperties": {},
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "MIN",
+                      "vertical": "MIN"
+                    },
+                    "suggestedClassName": "open_in_new",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 16,
+                    "height": 16,
+                    "x": 4,
+                    "y": 4,
+                    "borderRadius": 0,
+                    "opacity": 1
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6099;3843:130677;3392:114750;3203:113477;3688:84195",
+                    "figmaType": "INSTANCE",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 633",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Right Icon",
+                      "Button rectangular",
+                      "open_in_new"
+                    ]
+                  },
+                  "children": [
+                    {
+                      "type": "vector",
+                      "name": "Vector",
+                      "id": "I337:6099;3843:130677;3392:114750;3203:113477;3688:84195;2919:26653",
+                      "properties": {
+                        "visible": true,
+                        "constraints": {
+                          "horizontal": "SCALE",
+                          "vertical": "SCALE"
+                        },
+                        "suggestedClassName": "vector",
+                        "locked": false,
+                        "isMask": false,
+                        "exportSettings": []
+                      },
+                      "styles": {
+                        "width": 16,
+                        "height": 16,
+                        "x": 0,
+                        "y": 0,
+                        "borderRadius": 0,
+                        "opacity": 1
+                      },
+                      "metadata": {
+                        "figmaId": "I337:6099;3843:130677;3392:114750;3203:113477;3688:84195;2919:26653",
+                        "figmaType": "VECTOR",
+                        "figmaPath": [
+                          "MVP",
+                          "Auto Layout Vertical",
+                          "Auto Layout Vertical",
+                          "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                          "Auto Layout Vertical",
+                          "Event Details summary",
+                          "Frame 633",
+                          "Frame 632",
+                          "Frame 333",
+                          "Extra info composition",
+                          "Extra info",
+                          "Extra info raw component",
+                          "Right Icon",
+                          "Button rectangular",
+                          "open_in_new",
+                          "Vector"
+                        ]
+                      },
+                      "vector": {
+                        "network": {
+                          "vertices": [
+                            {
+                              "x": 0,
+                              "y": 0,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 16,
+                              "y": 0,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 16,
+                              "y": 16,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 0,
+                              "y": 16,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            }
+                          ],
+                          "segments": [
+                            {
+                              "start": 0,
+                              "end": 1,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 1,
+                              "end": 2,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 2,
+                              "end": 3,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 3,
+                              "end": 0,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            }
+                          ],
+                          "regions": [
+                            {
+                              "windingRule": "NONZERO",
+                              "loops": [
+                                [
+                                  0,
+                                  1,
+                                  2,
+                                  3
+                                ]
+                              ],
+                              "fillStyleId": "",
+                              "fills": []
+                            }
+                          ]
+                        },
+                        "vectorPaths": [
+                          {
+                            "windingRule": "NONZERO",
+                            "data": "M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z"
+                          }
+                        ],
+                        "fillStyles": [],
+                        "strokeStyles": [],
+                        "strokeProperties": null
+                      }
+                    },
+                    {
+                      "type": "vector",
+                      "name": "Vector",
+                      "id": "I337:6099;3843:130677;3392:114750;3203:113477;3688:84195;2919:26654",
+                      "properties": {
+                        "visible": true,
+                        "constraints": {
+                          "horizontal": "SCALE",
+                          "vertical": "SCALE"
+                        },
+                        "suggestedClassName": "vector",
+                        "locked": false,
+                        "isMask": false,
+                        "exportSettings": []
+                      },
+                      "styles": {
+                        "width": 12,
+                        "height": 12,
+                        "x": 2,
+                        "y": 2,
+                        "backgroundColor": {
+                          "r": 98,
+                          "g": 121,
+                          "b": 149,
+                          "a": 1
+                        },
+                        "backgroundColorHex": "#627995",
+                        "borderRadius": 0,
+                        "opacity": 1
+                      },
+                      "metadata": {
+                        "figmaId": "I337:6099;3843:130677;3392:114750;3203:113477;3688:84195;2919:26654",
+                        "figmaType": "VECTOR",
+                        "figmaPath": [
+                          "MVP",
+                          "Auto Layout Vertical",
+                          "Auto Layout Vertical",
+                          "State=Expanded, Property 2=Not Published, Property 3=No Items",
+                          "Auto Layout Vertical",
+                          "Event Details summary",
+                          "Frame 633",
+                          "Frame 632",
+                          "Frame 333",
+                          "Extra info composition",
+                          "Extra info",
+                          "Extra info raw component",
+                          "Right Icon",
+                          "Button rectangular",
+                          "open_in_new",
+                          "Vector"
+                        ]
+                      },
+                      "vector": {
+                        "network": {
+                          "vertices": [
+                            {
+                              "x": 10.666666666666666,
+                              "y": 10.666666666666666,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 1.3333333333333333,
+                              "y": 10.666666666666666,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 1.3333333333333333,
+                              "y": 1.3333333333333333,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 6,
+                              "y": 1.3333333333333333,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 6,
+                              "y": 0,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 1.3333333333333333,
+                              "y": 0,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 0,
+                              "y": 1.3333333333333333,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 0,
+                              "y": 10.666666666666666,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 1.3333333333333333,
+                              "y": 12,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 10.666666666666666,
+                              "y": 12,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 12,
+                              "y": 10.666666666666666,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 12,
+                              "y": 6,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 10.666666666666666,
+                              "y": 6,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 7.333333333333333,
+                              "y": 0,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 7.333333333333333,
+                              "y": 1.3333333333333333,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 9.726666768391926,
+                              "y": 1.3333333333333333,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 3.1733334859212237,
+                              "y": 7.886666615804036,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 4.113333384195963,
+                              "y": 8.826666514078775,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 10.666666666666666,
+                              "y": 2.2733332316080728,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 10.666666666666666,
+                              "y": 4.666666666666666,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 12,
+                              "y": 4.666666666666666,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            },
+                            {
+                              "x": 12,
+                              "y": 0,
+                              "strokeCap": "NONE",
+                              "strokeJoin": "MITER",
+                              "cornerRadius": 0,
+                              "handleMirroring": "NONE"
+                            }
+                          ],
+                          "segments": [
+                            {
+                              "start": 0,
+                              "end": 1,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 1,
+                              "end": 2,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 2,
+                              "end": 3,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 3,
+                              "end": 4,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 4,
+                              "end": 5,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 5,
+                              "end": 6,
+                              "tangentStart": {
+                                "x": -0.7400000095367432,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": -0.7333333492279053
+                              }
+                            },
+                            {
+                              "start": 6,
+                              "end": 7,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 7,
+                              "end": 8,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0.7333333492279053
+                              },
+                              "tangentEnd": {
+                                "x": -0.7400000095367432,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 8,
+                              "end": 9,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 9,
+                              "end": 10,
+                              "tangentStart": {
+                                "x": 0.7333333492279053,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0.7333333492279053
+                              }
+                            },
+                            {
+                              "start": 10,
+                              "end": 11,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 11,
+                              "end": 12,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 12,
+                              "end": 0,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 13,
+                              "end": 14,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 14,
+                              "end": 15,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 15,
+                              "end": 16,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 16,
+                              "end": 17,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 17,
+                              "end": 18,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 18,
+                              "end": 19,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 19,
+                              "end": 20,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 20,
+                              "end": 21,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            },
+                            {
+                              "start": 21,
+                              "end": 13,
+                              "tangentStart": {
+                                "x": 0,
+                                "y": 0
+                              },
+                              "tangentEnd": {
+                                "x": 0,
+                                "y": 0
+                              }
+                            }
+                          ],
+                          "regions": [
+                            {
+                              "windingRule": "NONZERO",
+                              "loops": [
+                                [
+                                  0,
+                                  1,
+                                  2,
+                                  3,
+                                  4,
+                                  5,
+                                  6,
+                                  7,
+                                  8,
+                                  9,
+                                  10,
+                                  11,
+                                  12
+                                ],
+                                [
+                                  13,
+                                  14,
+                                  15,
+                                  16,
+                                  17,
+                                  18,
+                                  19,
+                                  20,
+                                  21
+                                ]
+                              ],
+                              "fillStyleId": "S:c45b0aca44e24c6b6ebf597d543825db0465e619,2955:53",
+                              "fills": [
+                                {
+                                  "type": "SOLID",
+                                  "visible": true,
+                                  "opacity": 1,
+                                  "blendMode": "NORMAL",
+                                  "color": {
+                                    "r": 0.38268789649009705,
+                                    "g": 0.4736708402633667,
+                                    "b": 0.5833170413970947
+                                  },
+                                  "boundVariables": {}
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "vectorPaths": [
+                          {
+                            "windingRule": "NONZERO",
+                            "data": "M 10.666666666666666 10.666666666666666 L 1.3333333333333333 10.666666666666666 L 1.3333333333333333 1.3333333333333333 L 6 1.3333333333333333 L 6 0 L 1.3333333333333333 0 C 0.5933333237965901 0 0 0.599999984105428 0 1.3333333333333333 L 0 10.666666666666666 C 0 11.400000015894571 0.5933333237965901 12 1.3333333333333333 12 L 10.666666666666666 12 C 11.400000015894571 12 12 11.400000015894571 12 10.666666666666666 L 12 6 L 10.666666666666666 6 L 10.666666666666666 10.666666666666666 Z M 7.333333333333333 0 L 7.333333333333333 1.3333333333333333 L 9.726666768391926 1.3333333333333333 L 3.1733334859212237 7.886666615804036 L 4.113333384195963 8.826666514078775 L 10.666666666666666 2.2733332316080728 L 10.666666666666666 4.666666666666666 L 12 4.666666666666666 L 12 0 L 7.333333333333333 0 Z"
+                          }
+                        ],
+                        "fillStyles": [
+                          {
+                            "type": "SOLID",
+                            "visible": true,
+                            "opacity": 1,
+                            "color": {
+                              "r": 98,
+                              "g": 121,
+                              "b": 149,
+                              "a": 1
+                            }
+                          }
+                        ],
+                        "strokeStyles": [],
+                        "strokeProperties": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

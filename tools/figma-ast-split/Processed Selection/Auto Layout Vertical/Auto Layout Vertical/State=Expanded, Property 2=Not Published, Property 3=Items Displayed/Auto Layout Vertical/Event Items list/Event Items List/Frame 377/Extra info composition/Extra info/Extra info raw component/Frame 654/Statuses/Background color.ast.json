@@ -1,0 +1,64 @@
+{
+  "type": "frame",
+  "name": "Background color",
+  "id": "I337:6097;3843:212061;3843:223400;3857:113481;3397:127432;3392:127103;3203:113475;3006:35701",
+  "properties": {
+    "visible": false,
+    "constraints": {
+      "horizontal": "STRETCH",
+      "vertical": "STRETCH"
+    },
+    "suggestedClassName": "background-color",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 86,
+    "height": 24,
+    "x": 0,
+    "y": 0,
+    "backgroundColor": {
+      "r": 248,
+      "g": 244,
+      "b": 219,
+      "a": 1
+    },
+    "backgroundColorHex": "#f8f4db",
+    "borderRadius": 100,
+    "opacity": 1,
+    "layout": {
+      "mode": "HORIZONTAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "CENTER",
+      "padding": {
+        "top": 0,
+        "right": 4,
+        "bottom": 0,
+        "left": 4
+      },
+      "itemSpacing": 4
+    }
+  },
+  "metadata": {
+    "figmaId": "I337:6097;3843:212061;3843:223400;3857:113481;3397:127432;3392:127103;3203:113475;3006:35701",
+    "figmaType": "FRAME",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Not Published, Property 3=Items Displayed",
+      "Auto Layout Vertical",
+      "Event Items list",
+      "Event Items List",
+      "Frame 377",
+      "Extra info composition",
+      "Extra info",
+      "Extra info raw component",
+      "Frame 654",
+      "Statuses",
+      "Background color"
+    ]
+  },
+  "children": []
+}

@@ -1,0 +1,121 @@
+{
+  "type": "frame",
+  "name": "Content",
+  "id": "I337:6099;3857:87357;3856:104505",
+  "properties": {
+    "visible": true,
+    "constraints": {
+      "horizontal": "MIN",
+      "vertical": "MIN"
+    },
+    "suggestedClassName": "content",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 113,
+    "height": 24,
+    "x": 40,
+    "y": 0,
+    "borderRadius": 0,
+    "opacity": 1,
+    "layout": {
+      "mode": "VERTICAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "CENTER",
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "itemSpacing": 8
+    }
+  },
+  "metadata": {
+    "figmaId": "I337:6099;3857:87357;3856:104505",
+    "figmaType": "FRAME",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+      "Auto Layout Vertical",
+      "Messages",
+      "Frame 711",
+      "Content"
+    ]
+  },
+  "children": [
+    {
+      "type": "text",
+      "name": "Headline",
+      "id": "I337:6099;3857:87357;3856:104506",
+      "properties": {
+        "text": "No Item Created",
+        "visible": true,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "headline",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 113,
+        "height": 24,
+        "x": 0,
+        "y": 0,
+        "backgroundColor": {
+          "r": 98,
+          "g": 121,
+          "b": 149,
+          "a": 1
+        },
+        "backgroundColorHex": "#627995",
+        "opacity": 1,
+        "typography": {
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": 600,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 1
+          },
+          "textAlign": "LEFT",
+          "verticalAlign": "CENTER",
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "color": {
+            "r": 98,
+            "g": 121,
+            "b": 149,
+            "a": 1
+          }
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6099;3857:87357;3856:104506",
+        "figmaType": "TEXT",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Not Published, Property 3=No Items",
+          "Auto Layout Vertical",
+          "Messages",
+          "Frame 711",
+          "Content",
+          "Headline"
+        ]
+      }
+    }
+  ]
+}

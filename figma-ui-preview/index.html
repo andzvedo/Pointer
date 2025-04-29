@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Items Overview</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="page-header">
+            <div class="header-content">
+                <div>
+                    <h1>Events and Items Overview</h1>
+                    <p>Review bids and choose the best professionals for your event</p>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-primary">
+                        <span class="material-icons">add_circle</span>
+                        <span>Create an Event</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <button class="filter-btn active">All <span class="count">48</span></button>
+                    <button class="filter-btn">All <span class="count">18</span></button>
+                </div>
+                <div class="filter-group">
+                    <button class="filter-btn">
+                        <span class="material-icons">schedule</span>
+                        <span>Pending Review</span>
+                        <span class="count">13</span>
+                    </button>
+                    <button class="filter-btn">
+                        <span class="material-icons">schedule</span>
+                        <span>Pending Review</span>
+                        <span class="count">13</span>
+                    </button>
+                    <button class="filter-btn">
+                        <span class="material-icons">gavel</span>
+                        <span>Open for bids</span>
+                        <span class="count">12</span>
+                    </button>
+                    <button class="filter-btn">
+                        <span class="material-icons">check_circle</span>
+                        <span>Accepted</span>
+                        <span class="count">8</span>
+                    </button>
+                    <button class="filter-btn">
+                        <span class="material-icons">hourglass_top</span>
+                        <span>In Progress</span>
+                        <span class="count">0</span>
+                    </button>
+                    <button class="filter-btn">
+                        <span class="material-icons">task_alt</span>
+                        <span>Completed</span>
+                        <span class="count">0</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Event Details Section -->
+            <section class="event-details">
+                <div class="detail-item">
+                    <span class="material-icons">event</span>
+                    <span>Event Date: May 15, 2025</span>
+                </div>
+                <div class="detail-item">
+                    <span class="material-icons">location_on</span>
+                    <span>Location: San Francisco, CA</span>
+                    <a href="#" class="external-link">
+                        <span class="material-icons">open_in_new</span>
+                    </a>
+                </div>
+                <div class="detail-item">
+                    <span class="material-icons">person</span>
+                    <span>Host: John Doe</span>
+                </div>
+                <div class="detail-item warning">
+                    <span class="material-icons">warning</span>
+                    <span>Important Notice</span>
+                </div>
+            </section>
+            
+            <section class="events-list">
+                <!-- Event 1 -->
+                <div class="event-card">
+                    <div class="event-header">
+                        <button class="collapse-btn">
+                            <span class="material-icons">expand_less</span>
+                        </button>
+                        <h2>John and Jane's Wedding</h2>
+                        <div class="event-status">
+                            <span class="status-badge draft">Drafts</span>
+                            <span class="item-count">5 items</span>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-outline">View Event</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-items">
+                        <!-- Item 1 -->
+                        <div class="item-row">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/40x40/ff9966/ffffff?text=🎂" alt="Birthday Cake">
+                                <span class="bid-count">+2</span>
+                            </div>
+                            <div class="item-details">
+                                <h3>Birthday Cake, Cookies, Mini Desserts, Cupcakes</h3>
+                                <div class="item-status">
+                                    <span class="status-pill pending">
+                                        <span class="material-icons">schedule</span>
+                                        <span>Pending Review</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div class="item-row">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/40x40/f5f5f5/555555?text=🍰" alt="Chocolate Cake">
+                                <span class="bid-count">+2</span>
+                            </div>
+                            <div class="item-details">
+                                <h3>Simple Chocolate Cake</h3>
+                                <div class="item-status">
+                                    <span class="status-pill pending">
+                                        <span class="material-icons">schedule</span>
+                                        <span>Pending Review</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 3 -->
+                        <div class="item-row">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/40x40/654321/ffffff?text=🍫" alt="Deluxe Chocolate Cake">
+                                <span class="bid-count">+2</span>
+                            </div>
+                            <div class="item-details">
+                                <h3>Ultimate Deluxe Chocolate Bliss Cake with Gourmet Toppings</h3>
+                                <div class="item-status">
+                                    <span class="status-pill pending">
+                                        <span class="material-icons">schedule</span>
+                                        <span>Pending Review</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 4 -->
+                        <div class="item-row">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/40x40/f5f5f5/555555?text=🍮" alt="Mini Desserts">
+                                <span class="bid-count">+2</span>
+                            </div>
+                            <div class="item-details">
+                                <h3>Mini Desserts</h3>
+                                <div class="item-status">
+                                    <span class="status-pill pending">
+                                        <span class="material-icons">schedule</span>
+                                        <span>Pending Review</span>
+                                    </span>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="btn btn-outline">Review Bids</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 5 -->
+                        <div class="item-row">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/40x40/f5f5f5/555555?text=🧁" alt="Cupcakes">
+                                <span class="bid-count">+2</span>
+                            </div>
+                            <div class="item-details">
+                                <h3>Cupcakes</h3>
+                                <div class="item-status">
+                                    <span class="status-pill pending">
+                                        <span class="material-icons">schedule</span>
+                                        <span>Pending Review</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="event-card">
+                    <div class="event-header">
+                        <button class="collapse-btn">
+                            <span class="material-icons">expand_less</span>
+                        </button>
+                        <h2>Helen's Birthday</h2>
+                        <div class="event-status">
+                            <span class="status-badge published">Published</span>
+                            <span class="item-count">1 item</span>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-outline">View Event</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-items">
+                        <!-- Item 1 -->
+                        <div class="item-row">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/40x40/f5f5f5/555555?text=🍮" alt="Mini Desserts">
+                                <span class="bid-count">+2</span>
+                            </div>
+                            <div class="item-details">
+                                <h3>Mini Desserts</h3>
+                                <div class="item-status">
+                                    <span class="status-pill pending">
+                                        <span class="material-icons">schedule</span>
+                                        <span>Pending Review</span>
+                                    </span>
+                                </div>
+                                <div class="item-actions">
+                                    <button class="btn btn-outline">Review Bids</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="event-card">
+                    <div class="event-header">
+                        <button class="collapse-btn">
+                            <span class="material-icons">expand_less</span>
+                        </button>
+                        <h2>Corporate Event</h2>
+                        <div class="event-status">
+                            <span class="status-badge draft">Drafts</span>
+                            <span class="item-count">No items</span>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-outline">View Event</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-items">
+                        <div class="empty-state">
+                            <div class="empty-icon">
+                                <span class="material-icons">inventory_2</span>
+                            </div>
+                            <p>No Item Created</p>
+                            <div class="empty-actions">
+                                <button class="btn btn-link">Learn more about Items</button>
+                                <button class="btn btn-primary">
+                                    <span class="material-icons">add_circle</span>
+                                    <span>Create an Item</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

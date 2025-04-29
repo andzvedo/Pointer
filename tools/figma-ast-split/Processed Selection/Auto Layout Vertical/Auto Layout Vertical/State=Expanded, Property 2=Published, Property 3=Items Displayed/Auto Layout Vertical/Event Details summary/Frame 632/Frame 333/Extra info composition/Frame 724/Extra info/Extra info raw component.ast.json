@@ -1,0 +1,3233 @@
+{
+  "type": "instance",
+  "name": "Extra info raw component",
+  "id": "I337:6098;3843:211104;3392:126956",
+  "properties": {
+    "isInstance": true,
+    "componentId": "296:3400",
+    "componentName": "Type=Inline",
+    "componentProperties": {
+      "Left icon down#3392:83": {
+        "value": false,
+        "type": "BOOLEAN"
+      },
+      "Host name#3204:27": {
+        "value": false,
+        "type": "BOOLEAN"
+      },
+      "User Name#3399:198": {
+        "value": false,
+        "type": "BOOLEAN"
+      },
+      "Right Icon down#3204:21": {
+        "value": true,
+        "type": "BOOLEAN"
+      },
+      "High emphasis text#3205:33": {
+        "value": "U$ 1,000.00",
+        "type": "TEXT"
+      },
+      "Low emphasis#3203:18": {
+        "value": false,
+        "type": "BOOLEAN"
+      },
+      "Left icon up#3392:80": {
+        "value": true,
+        "type": "BOOLEAN"
+      },
+      "High emphasis Text#3203:15": {
+        "value": true,
+        "type": "BOOLEAN"
+      },
+      "Item Status#3203:9": {
+        "value": false,
+        "type": "BOOLEAN"
+      },
+      "Right Icon Up#3204:24": {
+        "value": true,
+        "type": "BOOLEAN"
+      },
+      "Right icon#3203:6": {
+        "value": false,
+        "type": "BOOLEAN"
+      },
+      "Badge#3843:21": {
+        "value": false,
+        "type": "BOOLEAN"
+      },
+      "Low emphasis text#3205:30": {
+        "value": "Type",
+        "type": "TEXT"
+      },
+      "Left icon#3203:3": {
+        "value": true,
+        "type": "BOOLEAN"
+      },
+      "Type": {
+        "value": "Inline",
+        "type": "VARIANT",
+        "boundVariables": {}
+      }
+    },
+    "visible": true,
+    "constraints": {
+      "horizontal": "MIN",
+      "vertical": "MIN"
+    },
+    "suggestedClassName": "extra-info-raw-component",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 106,
+    "height": 24,
+    "x": 0,
+    "y": 0,
+    "borderRadius": 0,
+    "opacity": 1,
+    "layout": {
+      "mode": "HORIZONTAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "CENTER",
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "itemSpacing": 8
+    }
+  },
+  "metadata": {
+    "figmaId": "I337:6098;3843:211104;3392:126956",
+    "figmaType": "INSTANCE",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+      "Auto Layout Vertical",
+      "Event Details summary",
+      "Frame 632",
+      "Frame 333",
+      "Extra info composition",
+      "Frame 724",
+      "Extra info",
+      "Extra info raw component"
+    ]
+  },
+  "children": [
+    {
+      "type": "frame",
+      "name": "Frame 653",
+      "id": "I337:6098;3843:211104;3392:126956;3203:113470",
+      "properties": {
+        "visible": true,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "frame-653",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 16,
+        "height": 24,
+        "x": 0,
+        "y": 0,
+        "borderRadius": 0,
+        "opacity": 1,
+        "layout": {
+          "mode": "HORIZONTAL",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "CENTER",
+          "padding": {
+            "top": 2,
+            "right": 0,
+            "bottom": 2,
+            "left": 0
+          },
+          "itemSpacing": 8
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6098;3843:211104;3392:126956;3203:113470",
+        "figmaType": "FRAME",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+          "Auto Layout Vertical",
+          "Event Details summary",
+          "Frame 632",
+          "Frame 333",
+          "Extra info composition",
+          "Frame 724",
+          "Extra info",
+          "Extra info raw component",
+          "Frame 653"
+        ]
+      },
+      "children": [
+        {
+          "type": "instance",
+          "name": "Left icon",
+          "id": "I337:6098;3843:211104;3392:126956;3203:113471",
+          "properties": {
+            "isInstance": true,
+            "componentId": "296:3280",
+            "componentName": "monetization_on",
+            "componentProperties": {},
+            "visible": true,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "left-icon",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 16,
+            "height": 16,
+            "x": 0,
+            "y": 4,
+            "borderRadius": 0,
+            "opacity": 1
+          },
+          "metadata": {
+            "figmaId": "I337:6098;3843:211104;3392:126956;3203:113471",
+            "figmaType": "INSTANCE",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+              "Auto Layout Vertical",
+              "Event Details summary",
+              "Frame 632",
+              "Frame 333",
+              "Extra info composition",
+              "Frame 724",
+              "Extra info",
+              "Extra info raw component",
+              "Frame 653",
+              "Left icon"
+            ]
+          },
+          "children": [
+            {
+              "type": "vector",
+              "name": "Vector",
+              "id": "I337:6098;3843:211104;3392:126956;3203:113471;2919:28415",
+              "properties": {
+                "visible": true,
+                "constraints": {
+                  "horizontal": "SCALE",
+                  "vertical": "SCALE"
+                },
+                "suggestedClassName": "vector",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 16,
+                "height": 16,
+                "x": 0,
+                "y": 0,
+                "borderRadius": 0,
+                "opacity": 1
+              },
+              "metadata": {
+                "figmaId": "I337:6098;3843:211104;3392:126956;3203:113471;2919:28415",
+                "figmaType": "VECTOR",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Frame 724",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Frame 653",
+                  "Left icon",
+                  "Vector"
+                ]
+              },
+              "vector": {
+                "network": {
+                  "vertices": [
+                    {
+                      "x": 0,
+                      "y": 0,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 16,
+                      "y": 0,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 16,
+                      "y": 16,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 0,
+                      "y": 16,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    }
+                  ],
+                  "segments": [
+                    {
+                      "start": 0,
+                      "end": 1,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 1,
+                      "end": 2,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 2,
+                      "end": 3,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 3,
+                      "end": 0,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    }
+                  ],
+                  "regions": [
+                    {
+                      "windingRule": "NONZERO",
+                      "loops": [
+                        [
+                          0,
+                          1,
+                          2,
+                          3
+                        ]
+                      ],
+                      "fillStyleId": "",
+                      "fills": []
+                    }
+                  ]
+                },
+                "vectorPaths": [
+                  {
+                    "windingRule": "NONZERO",
+                    "data": "M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z"
+                  }
+                ],
+                "fillStyles": [],
+                "strokeStyles": [],
+                "strokeProperties": null
+              }
+            },
+            {
+              "type": "vector",
+              "name": "Vector",
+              "id": "I337:6098;3843:211104;3392:126956;3203:113471;2919:28416",
+              "properties": {
+                "visible": true,
+                "constraints": {
+                  "horizontal": "SCALE",
+                  "vertical": "SCALE"
+                },
+                "suggestedClassName": "vector",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 13,
+                "height": 13,
+                "x": 1,
+                "y": 1,
+                "backgroundColor": {
+                  "r": 134,
+                  "g": 147,
+                  "b": 173,
+                  "a": 1
+                },
+                "backgroundColorHex": "#8693ad",
+                "borderRadius": 0,
+                "opacity": 1
+              },
+              "metadata": {
+                "figmaId": "I337:6098;3843:211104;3392:126956;3203:113471;2919:28416",
+                "figmaType": "VECTOR",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Frame 724",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Frame 653",
+                  "Left icon",
+                  "Vector"
+                ]
+              },
+              "vector": {
+                "network": {
+                  "vertices": [
+                    {
+                      "x": 6.6666669845581055,
+                      "y": 0,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 0,
+                      "y": 6.6666669845581055,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.6666669845581055,
+                      "y": 13.333333969116211,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 13.333333969116211,
+                      "y": 6.6666669845581055,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.6666669845581055,
+                      "y": 12.00000057220459,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 1.333333396911621,
+                      "y": 6.6666669845581055,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.6666669845581055,
+                      "y": 1.333333396911621,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 12.00000057220459,
+                      "y": 6.6666669845581055,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.873333940823886,
+                      "y": 6.093333852767955,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 5.313333764712024,
+                      "y": 4.980000415484119,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.713333449999481,
+                      "y": 4.026666833241779,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 8.006667201042182,
+                      "y": 5.120000447591155,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 9.146667280832935,
+                      "y": 5.120000447591155,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 7.486666718482956,
+                      "y": 3.1400001751581836,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 7.486666718482956,
+                      "y": 2.0000000953674313,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 5.93333336194355,
+                      "y": 2.0000000953674313,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 5.93333336194355,
+                      "y": 3.1266668539047258,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 4.12000039990744,
+                      "y": 5.000000238418579,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.560000414530441,
+                      "y": 7.140000365893047,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 8.120000590642302,
+                      "y": 8.386667015711463,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.720000269571937,
+                      "y": 9.313333955446886,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 5.173333732604988,
+                      "y": 8.22000034109751,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 4.026666833241779,
+                      "y": 8.22000034109751,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 5.93333336194355,
+                      "y": 10.199999977747574,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 5.93333336194355,
+                      "y": 11.333333873748778,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 7.4933335380554125,
+                      "y": 11.333333873748778,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 7.4933335380554125,
+                      "y": 10.220000436464943,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 9.313333955446886,
+                      "y": 8.37333401234946,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    },
+                    {
+                      "x": 6.873333940823886,
+                      "y": 6.093333852767955,
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER",
+                      "cornerRadius": 0,
+                      "handleMirroring": "NONE"
+                    }
+                  ],
+                  "segments": [
+                    {
+                      "start": 0,
+                      "end": 1,
+                      "tangentStart": {
+                        "x": -3.680000162760416,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": -3.680000162760416
+                      }
+                    },
+                    {
+                      "start": 1,
+                      "end": 2,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 3.680000162760416
+                      },
+                      "tangentEnd": {
+                        "x": -3.680000162760416,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 2,
+                      "end": 3,
+                      "tangentStart": {
+                        "x": 3.680000162760416,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 3.680000162760416
+                      }
+                    },
+                    {
+                      "start": 3,
+                      "end": 0,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": -3.680000162760416
+                      },
+                      "tangentEnd": {
+                        "x": 3.680000162760416,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 4,
+                      "end": 5,
+                      "tangentStart": {
+                        "x": -2.9400000384648592,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 2.9400000384648592
+                      }
+                    },
+                    {
+                      "start": 5,
+                      "end": 6,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": -2.9400000384648592
+                      },
+                      "tangentEnd": {
+                        "x": -2.9400000384648592,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 6,
+                      "end": 7,
+                      "tangentStart": {
+                        "x": 2.9400000384648592,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": -2.9400000384648592
+                      }
+                    },
+                    {
+                      "start": 7,
+                      "end": 4,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 2.9400000384648592
+                      },
+                      "tangentEnd": {
+                        "x": 2.9400000384648592,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 8,
+                      "end": 9,
+                      "tangentStart": {
+                        "x": -1.1800000435511264,
+                        "y": -0.30000000635782836
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0.48666670258839984
+                      }
+                    },
+                    {
+                      "start": 9,
+                      "end": 10,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": -0.5600000092188508
+                      },
+                      "tangentEnd": {
+                        "x": -0.8733333368301373,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 10,
+                      "end": 11,
+                      "tangentStart": {
+                        "x": 0.920000040690104,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": -0.026666667342185944,
+                        "y": -0.6533333772023524
+                      }
+                    },
+                    {
+                      "start": 11,
+                      "end": 12,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 12,
+                      "end": 13,
+                      "tangentStart": {
+                        "x": -0.03333333541949592,
+                        "y": -0.8933333981831878
+                      },
+                      "tangentEnd": {
+                        "x": 1.0800000546773276,
+                        "y": 0.2666666833559674
+                      }
+                    },
+                    {
+                      "start": 13,
+                      "end": 14,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 14,
+                      "end": 15,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 15,
+                      "end": 16,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 16,
+                      "end": 17,
+                      "tangentStart": {
+                        "x": -1.0066667083104448,
+                        "y": 0.21333333873748755
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": -1.0066667083104448
+                      }
+                    },
+                    {
+                      "start": 17,
+                      "end": 18,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 1.1933333648045845
+                      },
+                      "tangentEnd": {
+                        "x": -1.4466667865117415,
+                        "y": -0.3466666704813633
+                      }
+                    },
+                    {
+                      "start": 18,
+                      "end": 19,
+                      "tangentStart": {
+                        "x": 1.3000000937779759,
+                        "y": 0.30666668685277326
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": -0.4800000419616708
+                      }
+                    },
+                    {
+                      "start": 19,
+                      "end": 20,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0.35333333110809234
+                      },
+                      "tangentEnd": {
+                        "x": 1.1400000797907524,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 20,
+                      "end": 21,
+                      "tangentStart": {
+                        "x": -1.0666667334238695,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0.06000000524520885,
+                        "y": 0.6133333737055465
+                      }
+                    },
+                    {
+                      "start": 21,
+                      "end": 22,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 22,
+                      "end": 23,
+                      "tangentStart": {
+                        "x": 0.06666667083899185,
+                        "y": 1.1333334191640232
+                      },
+                      "tangentEnd": {
+                        "x": -1.0000000476837156,
+                        "y": -0.20666667811075853
+                      }
+                    },
+                    {
+                      "start": 23,
+                      "end": 24,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 24,
+                      "end": 25,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 25,
+                      "end": 26,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    },
+                    {
+                      "start": 26,
+                      "end": 27,
+                      "tangentStart": {
+                        "x": 1.0133333689371737,
+                        "y": -0.19333333698908461
+                      },
+                      "tangentEnd": {
+                        "x": -0.006666666835546486,
+                        "y": 1.0733333940505985
+                      }
+                    },
+                    {
+                      "start": 27,
+                      "end": 28,
+                      "tangentStart": {
+                        "x": -0.006666666835546486,
+                        "y": -1.4666667683919286
+                      },
+                      "tangentEnd": {
+                        "x": 1.1733333829243975,
+                        "y": 0.30666668685277326
+                      }
+                    },
+                    {
+                      "start": 28,
+                      "end": 8,
+                      "tangentStart": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tangentEnd": {
+                        "x": 0,
+                        "y": 0
+                      }
+                    }
+                  ],
+                  "regions": [
+                    {
+                      "windingRule": "NONZERO",
+                      "loops": [
+                        [
+                          0,
+                          1,
+                          2,
+                          3
+                        ],
+                        [
+                          4,
+                          5,
+                          6,
+                          7
+                        ],
+                        [
+                          8,
+                          9,
+                          10,
+                          11,
+                          12,
+                          13,
+                          14,
+                          15,
+                          16,
+                          17,
+                          18,
+                          19,
+                          20,
+                          21,
+                          22,
+                          23,
+                          24,
+                          25,
+                          26,
+                          27,
+                          28
+                        ]
+                      ],
+                      "fillStyleId": "S:254105e72dacee40b3df35a66456a836427781b5,3617:3",
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "visible": true,
+                          "opacity": 1,
+                          "blendMode": "NORMAL",
+                          "color": {
+                            "r": 0.523934543132782,
+                            "g": 0.577089786529541,
+                            "b": 0.6802734136581421
+                          },
+                          "boundVariables": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "vectorPaths": [
+                  {
+                    "windingRule": "NONZERO",
+                    "data": "M 6.6666669845581055 0 C 2.9866668217976895 0 0 2.9866668217976895 0 6.6666669845581055 C 0 10.346667147318522 2.9866668217976895 13.333333969116211 6.6666669845581055 13.333333969116211 C 10.346667147318522 13.333333969116211 13.333333969116211 10.346667147318522 13.333333969116211 6.6666669845581055 C 13.333333969116211 2.9866668217976895 10.346667147318522 0 6.6666669845581055 0 Z M 6.6666669845581055 12.00000057220459 C 3.7266669460932462 12.00000057220459 1.333333396911621 9.606667023022965 1.333333396911621 6.6666669845581055 C 1.333333396911621 3.7266669460932462 3.7266669460932462 1.333333396911621 6.6666669845581055 1.333333396911621 C 9.606667023022965 1.333333396911621 12.00000057220459 3.7266669460932462 12.00000057220459 6.6666669845581055 C 12.00000057220459 9.606667023022965 9.606667023022965 12.00000057220459 6.6666669845581055 12.00000057220459 Z M 6.873333940823886 6.093333852767955 C 5.69333389727276 5.7933338464101265 5.313333764712024 5.466667118072518 5.313333764712024 4.980000415484119 C 5.313333764712024 4.420000406265268 5.840000113169344 4.026666833241779 6.713333449999481 4.026666833241779 C 7.633333490689584 4.026666833241779 7.980000533699997 4.466667070388803 8.006667201042182 5.120000447591155 L 9.146667280832935 5.120000447591155 C 9.113333945413439 4.2266670494079674 8.566666773160284 3.406666858514151 7.486666718482956 3.1400001751581836 L 7.486666718482956 2.0000000953674313 L 5.93333336194355 2.0000000953674313 L 5.93333336194355 3.1266668539047258 C 4.926666653633105 3.340000192642213 4.12000039990744 3.993333530108134 4.12000039990744 5.000000238418579 C 4.12000039990744 6.193333603223164 5.113333628018699 6.793333695411683 6.560000414530441 7.140000365893047 C 7.860000508308417 7.446667052745821 8.120000590642302 7.906666973749792 8.120000590642302 8.386667015711463 C 8.120000590642302 8.740000346819556 7.860000349362689 9.313333955446886 6.720000269571937 9.313333955446886 C 5.653333536148067 9.313333955446886 5.233333737850197 8.833333714803057 5.173333732604988 8.22000034109751 L 4.026666833241779 8.22000034109751 C 4.093333504080771 9.353333760261533 4.933333314259834 9.993333299636815 5.93333336194355 10.199999977747574 L 5.93333336194355 11.333333873748778 L 7.4933335380554125 11.333333873748778 L 7.4933335380554125 10.220000436464943 C 8.506666906992587 10.026667099475858 9.30666728861134 9.446667406400058 9.313333955446886 8.37333401234946 C 9.30666728861134 6.906667243957531 8.046667323748284 6.400000539620729 6.873333940823886 6.093333852767955 L 6.873333940823886 6.093333852767955 Z"
+                  }
+                ],
+                "fillStyles": [
+                  {
+                    "type": "SOLID",
+                    "visible": true,
+                    "opacity": 1,
+                    "color": {
+                      "r": 134,
+                      "g": 147,
+                      "b": 173,
+                      "a": 1
+                    }
+                  }
+                ],
+                "strokeStyles": [],
+                "strokeProperties": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "name": "Badge",
+      "id": "I337:6098;3843:211104;3392:126956;3843:198548",
+      "properties": {
+        "visible": false,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "badge",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 20,
+        "height": 24,
+        "x": 24,
+        "y": 0,
+        "borderRadius": 0,
+        "opacity": 1,
+        "layout": {
+          "mode": "HORIZONTAL",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "CENTER",
+          "padding": {
+            "top": 2,
+            "right": 0,
+            "bottom": 2,
+            "left": 0
+          },
+          "itemSpacing": 8
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6098;3843:211104;3392:126956;3843:198548",
+        "figmaType": "FRAME",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+          "Auto Layout Vertical",
+          "Event Details summary",
+          "Frame 632",
+          "Frame 333",
+          "Extra info composition",
+          "Frame 724",
+          "Extra info",
+          "Extra info raw component",
+          "Badge"
+        ]
+      },
+      "children": [
+        {
+          "type": "instance",
+          "name": "Badge",
+          "id": "I337:6098;3843:211104;3392:126956;3843:198549",
+          "properties": {
+            "isInstance": true,
+            "componentId": "296:2823",
+            "componentName": "Property 1=Default",
+            "componentProperties": {
+              "Label#4012:7": {
+                "value": "Label",
+                "type": "TEXT"
+              },
+              "Value#3665:0": {
+                "value": "4",
+                "type": "TEXT"
+              },
+              "Property 1": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "visible": true,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "badge",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 20,
+            "height": 24,
+            "x": 0,
+            "y": 2,
+            "backgroundColor": {
+              "r": 239,
+              "g": 240,
+              "b": 246,
+              "a": 1
+            },
+            "backgroundColorHex": "#eff0f6",
+            "borderRadius": 14,
+            "opacity": 1,
+            "layout": {
+              "mode": "HORIZONTAL",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "padding": {
+                "top": 2,
+                "right": 6,
+                "bottom": 2,
+                "left": 6
+              },
+              "itemSpacing": 8
+            }
+          },
+          "metadata": {
+            "figmaId": "I337:6098;3843:211104;3392:126956;3843:198549",
+            "figmaType": "INSTANCE",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+              "Auto Layout Vertical",
+              "Event Details summary",
+              "Frame 632",
+              "Frame 333",
+              "Extra info composition",
+              "Frame 724",
+              "Extra info",
+              "Extra info raw component",
+              "Badge",
+              "Badge"
+            ]
+          },
+          "children": [
+            {
+              "type": "text",
+              "name": "48",
+              "id": "I337:6098;3843:211104;3392:126956;3843:198549;3528:67195",
+              "properties": {
+                "text": "4",
+                "visible": true,
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "suggestedClassName": "48",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 8,
+                "height": 20,
+                "x": 6,
+                "y": 2,
+                "backgroundColor": {
+                  "r": 98,
+                  "g": 121,
+                  "b": 149,
+                  "a": 1
+                },
+                "backgroundColorHex": "#627995",
+                "opacity": 1,
+                "typography": {
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": 500,
+                  "lineHeight": {
+                    "unit": "PIXELS",
+                    "value": 20
+                  },
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 2
+                  },
+                  "textAlign": "CENTER",
+                  "verticalAlign": "TOP",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE",
+                  "color": {
+                    "r": 98,
+                    "g": 121,
+                    "b": 149,
+                    "a": 1
+                  }
+                }
+              },
+              "metadata": {
+                "figmaId": "I337:6098;3843:211104;3392:126956;3843:198549;3528:67195",
+                "figmaType": "TEXT",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Frame 724",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Badge",
+                  "Badge",
+                  "48"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "name": "Frame 654",
+      "id": "I337:6098;3843:211104;3392:126956;3203:113472",
+      "properties": {
+        "visible": true,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "frame-654",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 82,
+        "height": 24,
+        "x": 24,
+        "y": 0,
+        "borderRadius": 0,
+        "opacity": 1,
+        "layout": {
+          "mode": "HORIZONTAL",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "CENTER",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "itemSpacing": 4
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6098;3843:211104;3392:126956;3203:113472",
+        "figmaType": "FRAME",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+          "Auto Layout Vertical",
+          "Event Details summary",
+          "Frame 632",
+          "Frame 333",
+          "Extra info composition",
+          "Frame 724",
+          "Extra info",
+          "Extra info raw component",
+          "Frame 654"
+        ]
+      },
+      "children": [
+        {
+          "type": "text",
+          "name": "In two weeks",
+          "id": "I337:6098;3843:211104;3392:126956;3203:113473",
+          "properties": {
+            "text": "Type",
+            "visible": false,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "in-two-weeks",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 34,
+            "height": 24,
+            "x": 0,
+            "y": 0,
+            "backgroundColor": {
+              "r": 98,
+              "g": 121,
+              "b": 149,
+              "a": 1
+            },
+            "backgroundColorHex": "#627995",
+            "opacity": 1,
+            "typography": {
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": 400,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 24
+              },
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 1
+              },
+              "textAlign": "LEFT",
+              "verticalAlign": "CENTER",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE",
+              "color": {
+                "r": 98,
+                "g": 121,
+                "b": 149,
+                "a": 1
+              }
+            }
+          },
+          "metadata": {
+            "figmaId": "I337:6098;3843:211104;3392:126956;3203:113473",
+            "figmaType": "TEXT",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+              "Auto Layout Vertical",
+              "Event Details summary",
+              "Frame 632",
+              "Frame 333",
+              "Extra info composition",
+              "Frame 724",
+              "Extra info",
+              "Extra info raw component",
+              "Frame 654",
+              "In two weeks"
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "name": "July 16th",
+          "id": "I337:6098;3843:211104;3392:126956;3203:113474",
+          "properties": {
+            "text": "U$ 1,000.00",
+            "visible": true,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "july-16th",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 82,
+            "height": 24,
+            "x": 0,
+            "y": 0,
+            "backgroundColor": {
+              "r": 0,
+              "g": 39,
+              "b": 86,
+              "a": 1
+            },
+            "backgroundColorHex": "#002756",
+            "opacity": 1,
+            "typography": {
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": 400,
+              "lineHeight": {
+                "unit": "PIXELS",
+                "value": 24
+              },
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 1
+              },
+              "textAlign": "LEFT",
+              "verticalAlign": "TOP",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE",
+              "color": {
+                "r": 0,
+                "g": 39,
+                "b": 86,
+                "a": 1
+              }
+            }
+          },
+          "metadata": {
+            "figmaId": "I337:6098;3843:211104;3392:126956;3203:113474",
+            "figmaType": "TEXT",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+              "Auto Layout Vertical",
+              "Event Details summary",
+              "Frame 632",
+              "Frame 333",
+              "Extra info composition",
+              "Frame 724",
+              "Extra info",
+              "Extra info raw component",
+              "Frame 654",
+              "July 16th"
+            ]
+          }
+        },
+        {
+          "type": "instance",
+          "name": "Statuses",
+          "id": "I337:6098;3843:211104;3392:126956;3203:113475",
+          "properties": {
+            "isInstance": true,
+            "componentId": "296:3329",
+            "componentName": "Type=Declined, Size=Small",
+            "componentProperties": {
+              "Background color#3006:3": {
+                "value": false,
+                "type": "BOOLEAN"
+              },
+              "Text#2949:0": {
+                "value": "Label",
+                "type": "TEXT"
+              },
+              "Type": {
+                "value": "Declined",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Size": {
+                "value": "Small",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "visible": false,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "statuses",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 86,
+            "height": 24,
+            "x": 174,
+            "y": 0,
+            "borderRadius": 0,
+            "opacity": 1,
+            "layout": {
+              "mode": "HORIZONTAL",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "CENTER",
+              "padding": {
+                "top": 0,
+                "right": 8,
+                "bottom": 0,
+                "left": 6
+              },
+              "itemSpacing": 4
+            }
+          },
+          "metadata": {
+            "figmaId": "I337:6098;3843:211104;3392:126956;3203:113475",
+            "figmaType": "INSTANCE",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+              "Auto Layout Vertical",
+              "Event Details summary",
+              "Frame 632",
+              "Frame 333",
+              "Extra info composition",
+              "Frame 724",
+              "Extra info",
+              "Extra info raw component",
+              "Frame 654",
+              "Statuses"
+            ]
+          },
+          "children": [
+            {
+              "type": "instance",
+              "name": "remove_circle_outline",
+              "id": "I337:6098;3843:211104;3392:126956;3203:113475;2990:24400",
+              "properties": {
+                "isInstance": true,
+                "componentId": "296:3306",
+                "componentName": "remove_circle_outline",
+                "componentProperties": {},
+                "visible": true,
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "suggestedClassName": "remove_circle_outline",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 16,
+                "height": 16,
+                "x": 6,
+                "y": 4,
+                "borderRadius": 0,
+                "opacity": 1
+              },
+              "metadata": {
+                "figmaId": "I337:6098;3843:211104;3392:126956;3203:113475;2990:24400",
+                "figmaType": "INSTANCE",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Frame 724",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Frame 654",
+                  "Statuses",
+                  "remove_circle_outline"
+                ]
+              },
+              "children": [
+                {
+                  "type": "vector",
+                  "name": "Vector",
+                  "id": "I337:6098;3843:211104;3392:126956;3203:113475;2990:24400;2919:28003",
+                  "properties": {
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "SCALE",
+                      "vertical": "SCALE"
+                    },
+                    "suggestedClassName": "vector",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 16,
+                    "height": 16,
+                    "x": 0,
+                    "y": 0,
+                    "borderRadius": 0,
+                    "opacity": 1
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6098;3843:211104;3392:126956;3203:113475;2990:24400;2919:28003",
+                    "figmaType": "VECTOR",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Frame 724",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Frame 654",
+                      "Statuses",
+                      "remove_circle_outline",
+                      "Vector"
+                    ]
+                  },
+                  "vector": {
+                    "network": {
+                      "vertices": [
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 16,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 16,
+                          "y": 16,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 0,
+                          "y": 16,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        }
+                      ],
+                      "segments": [
+                        {
+                          "start": 0,
+                          "end": 1,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 1,
+                          "end": 2,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 2,
+                          "end": 3,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 3,
+                          "end": 0,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        }
+                      ],
+                      "regions": [
+                        {
+                          "windingRule": "NONZERO",
+                          "loops": [
+                            [
+                              0,
+                              1,
+                              2,
+                              3
+                            ]
+                          ],
+                          "fillStyleId": "",
+                          "fills": []
+                        }
+                      ]
+                    },
+                    "vectorPaths": [
+                      {
+                        "windingRule": "NONZERO",
+                        "data": "M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z"
+                      }
+                    ],
+                    "fillStyles": [],
+                    "strokeStyles": [],
+                    "strokeProperties": null
+                  }
+                },
+                {
+                  "type": "vector",
+                  "name": "Vector",
+                  "id": "I337:6098;3843:211104;3392:126956;3203:113475;2990:24400;2919:28004",
+                  "properties": {
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "SCALE",
+                      "vertical": "SCALE"
+                    },
+                    "suggestedClassName": "vector",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 13,
+                    "height": 13,
+                    "x": 1,
+                    "y": 1,
+                    "backgroundColor": {
+                      "r": 185,
+                      "g": 156,
+                      "b": 4,
+                      "a": 1
+                    },
+                    "backgroundColorHex": "#b99c04",
+                    "borderRadius": 0,
+                    "opacity": 1
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6098;3843:211104;3392:126956;3203:113475;2990:24400;2919:28004",
+                    "figmaType": "VECTOR",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Frame 724",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Frame 654",
+                      "Statuses",
+                      "remove_circle_outline",
+                      "Vector"
+                    ]
+                  },
+                  "vector": {
+                    "network": {
+                      "vertices": [
+                        {
+                          "x": 3.3333334922790527,
+                          "y": 6.000000286102295,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 3.3333334922790527,
+                          "y": 7.333333683013915,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 10.000000476837158,
+                          "y": 7.333333683013915,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 10.000000476837158,
+                          "y": 6.000000286102295,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 6.6666669845581055,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 0,
+                          "y": 6.6666669845581055,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 6.6666669845581055,
+                          "y": 13.333333969116211,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 13.333333969116211,
+                          "y": 6.6666669845581055,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 6.6666669845581055,
+                          "y": 12.00000057220459,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 1.333333396911621,
+                          "y": 6.6666669845581055,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 6.6666669845581055,
+                          "y": 1.333333396911621,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 12.00000057220459,
+                          "y": 6.6666669845581055,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        }
+                      ],
+                      "segments": [
+                        {
+                          "start": 0,
+                          "end": 1,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 1,
+                          "end": 2,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 2,
+                          "end": 3,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 3,
+                          "end": 0,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 4,
+                          "end": 5,
+                          "tangentStart": {
+                            "x": -3.680000162760416,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": -3.680000162760416
+                          }
+                        },
+                        {
+                          "start": 5,
+                          "end": 6,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 3.680000162760416
+                          },
+                          "tangentEnd": {
+                            "x": -3.680000162760416,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 6,
+                          "end": 7,
+                          "tangentStart": {
+                            "x": 3.680000162760416,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 3.680000162760416
+                          }
+                        },
+                        {
+                          "start": 7,
+                          "end": 4,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": -3.680000162760416
+                          },
+                          "tangentEnd": {
+                            "x": 3.680000162760416,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 8,
+                          "end": 9,
+                          "tangentStart": {
+                            "x": -2.9400000384648592,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 2.9400000384648592
+                          }
+                        },
+                        {
+                          "start": 9,
+                          "end": 10,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": -2.9400000384648592
+                          },
+                          "tangentEnd": {
+                            "x": -2.9400000384648592,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 10,
+                          "end": 11,
+                          "tangentStart": {
+                            "x": 2.9400000384648592,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": -2.9400000384648592
+                          }
+                        },
+                        {
+                          "start": 11,
+                          "end": 8,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 2.9400000384648592
+                          },
+                          "tangentEnd": {
+                            "x": 2.9400000384648592,
+                            "y": 0
+                          }
+                        }
+                      ],
+                      "regions": [
+                        {
+                          "windingRule": "NONZERO",
+                          "loops": [
+                            [
+                              0,
+                              1,
+                              2,
+                              3
+                            ],
+                            [
+                              4,
+                              5,
+                              6,
+                              7
+                            ],
+                            [
+                              8,
+                              9,
+                              10,
+                              11
+                            ]
+                          ],
+                          "fillStyleId": "S:6d405b1512cebfccac995d4f3424dadf79747894,3076:2",
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 0.7265462279319763,
+                                "g": 0.6127452254295349,
+                                "b": 0.015290108509361744
+                              },
+                              "boundVariables": {}
+                            },
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 0.30000001192092896,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 0,
+                                "g": 0,
+                                "b": 0
+                              },
+                              "boundVariables": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "vectorPaths": [
+                      {
+                        "windingRule": "NONZERO",
+                        "data": "M 3.3333334922790527 6.000000286102295 L 3.3333334922790527 7.333333683013915 L 10.000000476837158 7.333333683013915 L 10.000000476837158 6.000000286102295 L 3.3333334922790527 6.000000286102295 Z M 6.6666669845581055 0 C 2.9866668217976895 0 0 2.9866668217976895 0 6.6666669845581055 C 0 10.346667147318522 2.9866668217976895 13.333333969116211 6.6666669845581055 13.333333969116211 C 10.346667147318522 13.333333969116211 13.333333969116211 10.346667147318522 13.333333969116211 6.6666669845581055 C 13.333333969116211 2.9866668217976895 10.346667147318522 0 6.6666669845581055 0 Z M 6.6666669845581055 12.00000057220459 C 3.7266669460932462 12.00000057220459 1.333333396911621 9.606667023022965 1.333333396911621 6.6666669845581055 C 1.333333396911621 3.7266669460932462 3.7266669460932462 1.333333396911621 6.6666669845581055 1.333333396911621 C 9.606667023022965 1.333333396911621 12.00000057220459 3.7266669460932462 12.00000057220459 6.6666669845581055 C 12.00000057220459 9.606667023022965 9.606667023022965 12.00000057220459 6.6666669845581055 12.00000057220459 Z"
+                      }
+                    ],
+                    "fillStyles": [
+                      {
+                        "type": "SOLID",
+                        "visible": true,
+                        "opacity": 1,
+                        "color": {
+                          "r": 185,
+                          "g": 156,
+                          "b": 4,
+                          "a": 1
+                        }
+                      },
+                      {
+                        "type": "SOLID",
+                        "visible": true,
+                        "opacity": 0.30000001192092896,
+                        "color": {
+                          "r": 0,
+                          "g": 0,
+                          "b": 0,
+                          "a": 0.30000001192092896
+                        }
+                      }
+                    ],
+                    "strokeStyles": [],
+                    "strokeProperties": null
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "name": "Declined",
+              "id": "I337:6098;3843:211104;3392:126956;3203:113475;2990:24401",
+              "properties": {
+                "text": "Declined",
+                "visible": true,
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "suggestedClassName": "declined",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 52,
+                "height": 24,
+                "x": 26,
+                "y": 0,
+                "backgroundColor": {
+                  "r": 185,
+                  "g": 156,
+                  "b": 4,
+                  "a": 1
+                },
+                "backgroundColorHex": "#b99c04",
+                "opacity": 1,
+                "typography": {
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": 500,
+                  "lineHeight": {
+                    "unit": "PIXELS",
+                    "value": 24
+                  },
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 2
+                  },
+                  "textAlign": "LEFT",
+                  "verticalAlign": "CENTER",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE",
+                  "color": {
+                    "r": 185,
+                    "g": 156,
+                    "b": 4,
+                    "a": 1
+                  }
+                }
+              },
+              "metadata": {
+                "figmaId": "I337:6098;3843:211104;3392:126956;3203:113475;2990:24401",
+                "figmaType": "TEXT",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Frame 724",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Frame 654",
+                  "Statuses",
+                  "Declined"
+                ]
+              }
+            },
+            {
+              "type": "frame",
+              "name": "Background color",
+              "id": "I337:6098;3843:211104;3392:126956;3203:113475;3006:35701",
+              "properties": {
+                "visible": false,
+                "constraints": {
+                  "horizontal": "STRETCH",
+                  "vertical": "STRETCH"
+                },
+                "suggestedClassName": "background-color",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 86,
+                "height": 24,
+                "x": 0,
+                "y": 0,
+                "backgroundColor": {
+                  "r": 248,
+                  "g": 244,
+                  "b": 219,
+                  "a": 1
+                },
+                "backgroundColorHex": "#f8f4db",
+                "borderRadius": 100,
+                "opacity": 1,
+                "layout": {
+                  "mode": "HORIZONTAL",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "CENTER",
+                  "padding": {
+                    "top": 0,
+                    "right": 4,
+                    "bottom": 0,
+                    "left": 4
+                  },
+                  "itemSpacing": 4
+                }
+              },
+              "metadata": {
+                "figmaId": "I337:6098;3843:211104;3392:126956;3203:113475;3006:35701",
+                "figmaType": "FRAME",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Frame 724",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Frame 654",
+                  "Statuses",
+                  "Background color"
+                ]
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "name": "Right Icon",
+      "id": "I337:6098;3843:211104;3392:126956;3203:113476",
+      "properties": {
+        "visible": false,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "right-icon",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 24,
+        "height": 24,
+        "x": 191,
+        "y": 0,
+        "borderRadius": 0,
+        "opacity": 1,
+        "layout": {
+          "mode": "HORIZONTAL",
+          "primaryAxisAlignItems": "CENTER",
+          "counterAxisAlignItems": "CENTER",
+          "padding": {
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "itemSpacing": 8
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6098;3843:211104;3392:126956;3203:113476",
+        "figmaType": "FRAME",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+          "Auto Layout Vertical",
+          "Event Details summary",
+          "Frame 632",
+          "Frame 333",
+          "Extra info composition",
+          "Frame 724",
+          "Extra info",
+          "Extra info raw component",
+          "Right Icon"
+        ]
+      },
+      "children": [
+        {
+          "type": "instance",
+          "name": "Button rectangular",
+          "id": "I337:6098;3843:211104;3392:126956;3203:113477",
+          "properties": {
+            "isInstance": true,
+            "componentId": "296:3205",
+            "componentName": "Type=Icon only, State=Default, Size=Very Small, Style=Secundary color",
+            "componentProperties": {
+              "Right Icon#3405:61": {
+                "value": false,
+                "type": "BOOLEAN"
+              },
+              "Left Icon#2838:0": {
+                "value": true,
+                "type": "BOOLEAN"
+              },
+              "Label#1798:0": {
+                "value": "Save",
+                "type": "TEXT"
+              },
+              "Type": {
+                "value": "Icon only",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Size": {
+                "value": "Very Small",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Style": {
+                "value": "Secundary color",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "visible": true,
+            "constraints": {
+              "horizontal": "MIN",
+              "vertical": "MIN"
+            },
+            "suggestedClassName": "button-rectangular",
+            "locked": false,
+            "isMask": false,
+            "exportSettings": []
+          },
+          "styles": {
+            "width": 24,
+            "height": 24,
+            "x": 0,
+            "y": 0,
+            "backgroundGradient": {
+              "type": "radial",
+              "gradientTransform": [
+                [
+                  2.4053047219447544e-14,
+                  0.472222238779068,
+                  0.4999999403953552
+                ],
+                [
+                  -0.5773017406463623,
+                  2.179311164716329e-15,
+                  0.7886508703231812
+                ]
+              ],
+              "stops": [
+                {
+                  "position": 0,
+                  "color": {
+                    "r": 252,
+                    "g": 227,
+                    "b": 0,
+                    "a": 1
+                  }
+                },
+                {
+                  "position": 1,
+                  "color": {
+                    "r": 254,
+                    "g": 255,
+                    "b": 197,
+                    "a": 1
+                  }
+                }
+              ]
+            },
+            "border": {
+              "width": 1,
+              "style": "INSIDE",
+              "color": {
+                "r": 55,
+                "g": 30,
+                "b": 158,
+                "a": 0.30000001192092896
+              }
+            },
+            "borderRadius": 4,
+            "opacity": 1,
+            "layout": {
+              "mode": "HORIZONTAL",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "padding": {
+                "top": 4,
+                "right": 4,
+                "bottom": 4,
+                "left": 4
+              },
+              "itemSpacing": 8
+            }
+          },
+          "metadata": {
+            "figmaId": "I337:6098;3843:211104;3392:126956;3203:113477",
+            "figmaType": "INSTANCE",
+            "figmaPath": [
+              "MVP",
+              "Auto Layout Vertical",
+              "Auto Layout Vertical",
+              "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+              "Auto Layout Vertical",
+              "Event Details summary",
+              "Frame 632",
+              "Frame 333",
+              "Extra info composition",
+              "Frame 724",
+              "Extra info",
+              "Extra info raw component",
+              "Right Icon",
+              "Button rectangular"
+            ]
+          },
+          "children": [
+            {
+              "type": "instance",
+              "name": "download",
+              "id": "I337:6098;3843:211104;3392:126956;3203:113477;3688:84195",
+              "properties": {
+                "isInstance": true,
+                "componentId": "296:3385",
+                "componentName": "download",
+                "componentProperties": {},
+                "visible": true,
+                "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "MIN"
+                },
+                "suggestedClassName": "download",
+                "locked": false,
+                "isMask": false,
+                "exportSettings": []
+              },
+              "styles": {
+                "width": 16,
+                "height": 16,
+                "x": 4,
+                "y": 4,
+                "borderRadius": 0,
+                "opacity": 1
+              },
+              "metadata": {
+                "figmaId": "I337:6098;3843:211104;3392:126956;3203:113477;3688:84195",
+                "figmaType": "INSTANCE",
+                "figmaPath": [
+                  "MVP",
+                  "Auto Layout Vertical",
+                  "Auto Layout Vertical",
+                  "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                  "Auto Layout Vertical",
+                  "Event Details summary",
+                  "Frame 632",
+                  "Frame 333",
+                  "Extra info composition",
+                  "Frame 724",
+                  "Extra info",
+                  "Extra info raw component",
+                  "Right Icon",
+                  "Button rectangular",
+                  "download"
+                ]
+              },
+              "children": [
+                {
+                  "type": "vector",
+                  "name": "Vector",
+                  "id": "I337:6098;3843:211104;3392:126956;3203:113477;3688:84195;2919:28540",
+                  "properties": {
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "SCALE",
+                      "vertical": "SCALE"
+                    },
+                    "suggestedClassName": "vector",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 16,
+                    "height": 16,
+                    "x": 0,
+                    "y": 0,
+                    "borderRadius": 0,
+                    "opacity": 1
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6098;3843:211104;3392:126956;3203:113477;3688:84195;2919:28540",
+                    "figmaType": "VECTOR",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Frame 724",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Right Icon",
+                      "Button rectangular",
+                      "download",
+                      "Vector"
+                    ]
+                  },
+                  "vector": {
+                    "network": {
+                      "vertices": [
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 16,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 16,
+                          "y": 16,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 0,
+                          "y": 16,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        }
+                      ],
+                      "segments": [
+                        {
+                          "start": 0,
+                          "end": 1,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 1,
+                          "end": 2,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 2,
+                          "end": 3,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 3,
+                          "end": 0,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        }
+                      ],
+                      "regions": [
+                        {
+                          "windingRule": "NONZERO",
+                          "loops": [
+                            [
+                              0,
+                              1,
+                              2,
+                              3
+                            ]
+                          ],
+                          "fillStyleId": "",
+                          "fills": []
+                        }
+                      ]
+                    },
+                    "vectorPaths": [
+                      {
+                        "windingRule": "NONZERO",
+                        "data": "M 0 0 L 16 0 L 16 16 L 0 16 L 0 0 Z"
+                      }
+                    ],
+                    "fillStyles": [],
+                    "strokeStyles": [],
+                    "strokeProperties": null
+                  }
+                },
+                {
+                  "type": "vector",
+                  "name": "Vector",
+                  "id": "I337:6098;3843:211104;3392:126956;3203:113477;3688:84195;2919:28541",
+                  "properties": {
+                    "visible": true,
+                    "constraints": {
+                      "horizontal": "SCALE",
+                      "vertical": "SCALE"
+                    },
+                    "suggestedClassName": "vector",
+                    "locked": false,
+                    "isMask": false,
+                    "exportSettings": []
+                  },
+                  "styles": {
+                    "width": 9,
+                    "height": 11,
+                    "x": 3,
+                    "y": 2,
+                    "backgroundColor": {
+                      "r": 98,
+                      "g": 121,
+                      "b": 149,
+                      "a": 1
+                    },
+                    "backgroundColorHex": "#627995",
+                    "borderRadius": 0,
+                    "opacity": 1
+                  },
+                  "metadata": {
+                    "figmaId": "I337:6098;3843:211104;3392:126956;3203:113477;3688:84195;2919:28541",
+                    "figmaType": "VECTOR",
+                    "figmaPath": [
+                      "MVP",
+                      "Auto Layout Vertical",
+                      "Auto Layout Vertical",
+                      "State=Expanded, Property 2=Published, Property 3=Items Displayed",
+                      "Auto Layout Vertical",
+                      "Event Details summary",
+                      "Frame 632",
+                      "Frame 333",
+                      "Extra info composition",
+                      "Frame 724",
+                      "Extra info",
+                      "Extra info raw component",
+                      "Right Icon",
+                      "Button rectangular",
+                      "download",
+                      "Vector"
+                    ]
+                  },
+                  "vector": {
+                    "network": {
+                      "vertices": [
+                        {
+                          "x": 9.333333969116211,
+                          "y": 3.999999887803021,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 6.666667120797294,
+                          "y": 3.999999887803021,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 6.666667120797294,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 2.6666668483189175,
+                          "y": 0,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 2.6666668483189175,
+                          "y": 3.999999887803021,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 0,
+                          "y": 3.999999887803021,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 4.6666669845581055,
+                          "y": 8.666666423573213,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 4.000000272478376,
+                          "y": 5.333333183737362,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 4.000000272478376,
+                          "y": 1.3333332959343405,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 5.333333696637835,
+                          "y": 1.3333332959343405,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 5.333333696637835,
+                          "y": 5.333333183737362,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 6.113333800633752,
+                          "y": 5.333333183737362,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 4.6666669845581055,
+                          "y": 6.77999986068875,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 3.2200001684824593,
+                          "y": 5.333333183737362,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 0,
+                          "y": 9.999999719507553,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 9.333333969116211,
+                          "y": 9.999999719507553,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 9.333333969116211,
+                          "y": 11.333333015441895,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        },
+                        {
+                          "x": 0,
+                          "y": 11.333333015441895,
+                          "strokeCap": "NONE",
+                          "strokeJoin": "MITER",
+                          "cornerRadius": 0,
+                          "handleMirroring": "NONE"
+                        }
+                      ],
+                      "segments": [
+                        {
+                          "start": 0,
+                          "end": 1,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 1,
+                          "end": 2,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 2,
+                          "end": 3,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 3,
+                          "end": 4,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 4,
+                          "end": 5,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 5,
+                          "end": 6,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 6,
+                          "end": 0,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 7,
+                          "end": 8,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 8,
+                          "end": 9,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 9,
+                          "end": 10,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 10,
+                          "end": 11,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 11,
+                          "end": 12,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 12,
+                          "end": 13,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 13,
+                          "end": 7,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 14,
+                          "end": 15,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 15,
+                          "end": 16,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 16,
+                          "end": 17,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        },
+                        {
+                          "start": 17,
+                          "end": 14,
+                          "tangentStart": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tangentEnd": {
+                            "x": 0,
+                            "y": 0
+                          }
+                        }
+                      ],
+                      "regions": [
+                        {
+                          "windingRule": "NONZERO",
+                          "loops": [
+                            [
+                              0,
+                              1,
+                              2,
+                              3,
+                              4,
+                              5,
+                              6
+                            ],
+                            [
+                              7,
+                              8,
+                              9,
+                              10,
+                              11,
+                              12,
+                              13
+                            ],
+                            [
+                              14,
+                              15,
+                              16,
+                              17
+                            ]
+                          ],
+                          "fillStyleId": "S:c45b0aca44e24c6b6ebf597d543825db0465e619,2955:53",
+                          "fills": [
+                            {
+                              "type": "SOLID",
+                              "visible": true,
+                              "opacity": 1,
+                              "blendMode": "NORMAL",
+                              "color": {
+                                "r": 0.38268789649009705,
+                                "g": 0.4736708402633667,
+                                "b": 0.5833170413970947
+                              },
+                              "boundVariables": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "vectorPaths": [
+                      {
+                        "windingRule": "NONZERO",
+                        "data": "M 9.333333969116211 3.999999887803021 L 6.666667120797294 3.999999887803021 L 6.666667120797294 0 L 2.6666668483189175 0 L 2.6666668483189175 3.999999887803021 L 0 3.999999887803021 L 4.6666669845581055 8.666666423573213 L 9.333333969116211 3.999999887803021 Z M 4.000000272478376 5.333333183737362 L 4.000000272478376 1.3333332959343405 L 5.333333696637835 1.3333332959343405 L 5.333333696637835 5.333333183737362 L 6.113333800633752 5.333333183737362 L 4.6666669845581055 6.77999986068875 L 3.2200001684824593 5.333333183737362 L 4.000000272478376 5.333333183737362 Z M 0 9.999999719507553 L 9.333333969116211 9.999999719507553 L 9.333333969116211 11.333333015441895 L 0 11.333333015441895 L 0 9.999999719507553 Z"
+                      }
+                    ],
+                    "fillStyles": [
+                      {
+                        "type": "SOLID",
+                        "visible": true,
+                        "opacity": 1,
+                        "color": {
+                          "r": 98,
+                          "g": 121,
+                          "b": 149,
+                          "a": 1
+                        }
+                      }
+                    ],
+                    "strokeStyles": [],
+                    "strokeProperties": null
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

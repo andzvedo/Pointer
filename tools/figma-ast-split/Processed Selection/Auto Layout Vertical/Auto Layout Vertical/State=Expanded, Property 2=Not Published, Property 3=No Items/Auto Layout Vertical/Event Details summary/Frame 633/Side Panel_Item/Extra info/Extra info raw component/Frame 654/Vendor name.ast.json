@@ -1,0 +1,224 @@
+{
+  "type": "frame",
+  "name": "Vendor name",
+  "id": "I337:6099;3843:130377;3607:58210;3399:182700;3204:114258",
+  "properties": {
+    "visible": true,
+    "constraints": {
+      "horizontal": "MIN",
+      "vertical": "MIN"
+    },
+    "suggestedClassName": "vendor-name",
+    "locked": false,
+    "isMask": false,
+    "exportSettings": []
+  },
+  "styles": {
+    "width": 198,
+    "height": 24,
+    "x": 0,
+    "y": 28,
+    "backgroundColor": {
+      "r": 202,
+      "g": 206,
+      "b": 213,
+      "a": 1
+    },
+    "backgroundColorHex": "#caced5",
+    "borderRadius": 4,
+    "opacity": 1,
+    "layout": {
+      "mode": "HORIZONTAL",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "CENTER",
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "itemSpacing": 8
+    }
+  },
+  "metadata": {
+    "figmaId": "I337:6099;3843:130377;3607:58210;3399:182700;3204:114258",
+    "figmaType": "FRAME",
+    "figmaPath": [
+      "MVP",
+      "Auto Layout Vertical",
+      "Auto Layout Vertical",
+      "State=Expanded, Property 2=Not Published, Property 3=No Items",
+      "Auto Layout Vertical",
+      "Event Details summary",
+      "Frame 633",
+      "Side Panel/Item",
+      "Extra info",
+      "Extra info raw component",
+      "Frame 654",
+      "Vendor name"
+    ]
+  },
+  "children": [
+    {
+      "type": "rectangle",
+      "name": "Rectangle 44",
+      "id": "I337:6099;3843:130377;3607:58210;3399:182700;3204:114259",
+      "properties": {
+        "visible": true,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "rectangle-44",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 24,
+        "height": 24,
+        "x": 0,
+        "y": 0,
+        "backgroundGradient": {
+          "type": "linear",
+          "gradientTransform": [
+            [
+              6.123234262925839e-17,
+              1,
+              0
+            ],
+            [
+              -1,
+              6.123234262925839e-17,
+              1
+            ]
+          ],
+          "stops": [
+            {
+              "position": 0,
+              "color": {
+                "r": 255,
+                "g": 95,
+                "b": 210,
+                "a": 1
+              }
+            },
+            {
+              "position": 1,
+              "color": {
+                "r": 255,
+                "g": 112,
+                "b": 112,
+                "a": 1
+              }
+            }
+          ]
+        },
+        "border": {
+          "width": 1,
+          "style": "INSIDE",
+          "color": {
+            "r": 185,
+            "g": 197,
+            "b": 211,
+            "a": 1
+          }
+        },
+        "borderRadius": 34,
+        "opacity": 1
+      },
+      "metadata": {
+        "figmaId": "I337:6099;3843:130377;3607:58210;3399:182700;3204:114259",
+        "figmaType": "RECTANGLE",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Not Published, Property 3=No Items",
+          "Auto Layout Vertical",
+          "Event Details summary",
+          "Frame 633",
+          "Side Panel/Item",
+          "Extra info",
+          "Extra info raw component",
+          "Frame 654",
+          "Vendor name",
+          "Rectangle 44"
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "name": "André Azevedo",
+      "id": "I337:6099;3843:130377;3607:58210;3399:182700;3204:114260",
+      "properties": {
+        "text": "André Azevedo",
+        "visible": true,
+        "constraints": {
+          "horizontal": "MIN",
+          "vertical": "MIN"
+        },
+        "suggestedClassName": "andr--azevedo",
+        "locked": false,
+        "isMask": false,
+        "exportSettings": []
+      },
+      "styles": {
+        "width": 166,
+        "height": 24,
+        "x": 32,
+        "y": 0,
+        "backgroundColor": {
+          "r": 0,
+          "g": 39,
+          "b": 86,
+          "a": 1
+        },
+        "backgroundColorHex": "#002756",
+        "opacity": 1,
+        "typography": {
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": 400,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 24
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 1
+          },
+          "textAlign": "LEFT",
+          "verticalAlign": "TOP",
+          "textCase": "ORIGINAL",
+          "textDecoration": "NONE",
+          "color": {
+            "r": 0,
+            "g": 39,
+            "b": 86,
+            "a": 1
+          }
+        }
+      },
+      "metadata": {
+        "figmaId": "I337:6099;3843:130377;3607:58210;3399:182700;3204:114260",
+        "figmaType": "TEXT",
+        "figmaPath": [
+          "MVP",
+          "Auto Layout Vertical",
+          "Auto Layout Vertical",
+          "State=Expanded, Property 2=Not Published, Property 3=No Items",
+          "Auto Layout Vertical",
+          "Event Details summary",
+          "Frame 633",
+          "Side Panel/Item",
+          "Extra info",
+          "Extra info raw component",
+          "Frame 654",
+          "Vendor name",
+          "André Azevedo"
+        ]
+      }
+    }
+  ]
+}
