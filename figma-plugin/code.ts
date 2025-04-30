@@ -284,7 +284,7 @@ function diagnoseComponentIssue(node: SceneNode, reason: string): string {
     let nodePath = '';
     try {
       // Usar uma função recursiva auxiliar para construir o caminho com segurança
-      function buildPath(currentNode: BaseNodeMixin): string[] {
+      const buildPath = (currentNode: BaseNodeMixin): string[] => {
         const path: string[] = [];
         if (currentNode && 'name' in currentNode && typeof currentNode.name === 'string') {
           path.push(currentNode.name);
@@ -1199,7 +1199,8 @@ async function convertNodeToAst(
 
 // ----- LÓGICA PRINCIPAL DO PLUGIN -----
 
-async function main() {
+// Using a named function expression to avoid conflicts with other main functions
+const pluginMain = async function() {
   figma.showUI(__html__, { width: 340, height: 480 }); 
 
   figma.ui.onmessage = async (msg) => {
@@ -1382,8 +1383,8 @@ function countNodesWithIssues(node: DesignASTNode): number {
   return count;
 }
 
-main().catch(err => console.error(err));
-
+// Execute the plugin main function
+pluginMain().catch(err => console.error(err));
 
 // --- Funções de formatação (Manter? Mover para UI/Backend?) ---
 // A geração de SVG, por exemplo, pode ser pesada para o core do plugin.

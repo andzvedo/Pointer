@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from 'next/dist/server/web/spec-extension/response';
 import fs from 'fs';
 import path from 'path';
 
