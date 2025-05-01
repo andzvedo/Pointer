@@ -29,6 +29,10 @@ yarn-debug.log*
 yarn-error.log*
 
 # Vercel
+
+# Large data folders
+/IGNORE-Data-extracted-figma/
+/public/images/Events and Items Overview.JSON
 .vercel
 
 # TypeScript
