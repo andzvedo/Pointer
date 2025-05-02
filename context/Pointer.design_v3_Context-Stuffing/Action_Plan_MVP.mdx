@@ -1,0 +1,107 @@
+---
+title: Plano de Ação — Pointer.design v3
+description: Roadmap detalhado e plano de execução para a nova fase do Pointer.design — Design Context Stuffing para LLMs e VLMs.
+---
+
+import Alert from '@components/Alert'
+
+# Plano de Ação — Pointer.design v3
+
+<Alert type="info">
+  Este documento detalha o plano de execução da nova fase do Pointer.design, focada em transformar designs em contexto rico para LLMs e VLMs.
+</Alert>
+
+## Visão Geral
+
+Pointer.design será a ponte entre design (Figma) e IA, extraindo e organizando o máximo de contexto possível para que modelos de IA possam gerar código, documentação, análises e automações fiéis ao design original.
+
+---
+
+## Fase 1: Fundamentos Técnicos e Infraestrutura
+
+### 1.1. Revisão e Consolidação do Plugin Figma
+- [x] Plugin extrai SceneNodes e propriedades essenciais
+- [x] Build e integração básica validados
+- [ ] Documentar fluxo de dados do plugin até o web app
+
+### 1.2. APIs e Exportação Inicial
+- [x] APIs exportam JSON filtrado (AST compacta)
+- [ ] Refatorar endpoints para integração com sumarização e bundle
+- [ ] Adicionar testes básicos de integração
+
+### 1.3. (Opcional) WebSocket para Tempo Real
+- [ ] Prototipar bridge WebSocket para atualização instantânea do contexto
+- [ ] Documentar arquitetura e limitações
+
+---
+
+## Fase 2: Enriquecimento e Sumarização
+
+### 2.1. Sumarização Automática de Telas e Componentes
+- [ ] Definir regras/templates de sumarização textual
+- [ ] Implementar função de sumarização automática
+- [ ] Validar sumarização com exemplos reais
+
+### 2.2. Extração de Interações e Prototipagem
+- [ ] Integrar reactions, prototyping links e estados
+- [ ] Sumarizar fluxos de navegação/interações
+- [ ] Adicionar exemplos de saída
+
+### 2.3. Tokens Visuais e Acessibilidade
+- [ ] Mapear tokens (cores, fontes, espaçamentos)
+- [ ] Implementar análise básica de acessibilidade
+- [ ] Sugerir melhorias automáticas
+
+### 2.4. Histórico e Colaboração
+- [ ] Integrar extração de comentários e histórico
+- [ ] Sumarizar discussões relevantes
+
+---
+
+## Fase 3: Exportação, Preview e Consumo
+
+### 3.1. Exportador de Context Bundle
+- [ ] Definir formatos de saída (JSON, Markdown, prompt templates)
+- [ ] Implementar camada de empacotamento e sumarização final
+- [ ] Permitir granularidade configurável
+
+### 3.2. Interface de Preview e Exportação
+- [ ] Criar UI amigável para preview do context bundle
+- [ ] Permitir seleção de formato/exportação direta para LLMs/VLMs
+- [ ] Adicionar exemplos de prompts e integração com playgrounds de IA
+
+---
+
+## Fase 4: Testes, Benchmarks e Iteração
+
+### 4.1. Testes Automatizados e Cobertura
+- [ ] Automatizar testes com múltiplos arquivos Figma
+- [ ] Validar sumarizações e bundles gerados
+
+### 4.2. Benchmark de Performance
+- [ ] Medir tempo de exportação/sumarização por tela/frame
+- [ ] Otimizar pipeline para garantir exportação rápida
+
+### 4.3. Feedback e Iteração Contínua
+- [ ] Coletar feedback de usuários
+- [ ] Iterar sobre sumarização, formatos e UX
+- [ ] Integrar analytics básicos
+
+---
+
+## Critérios de Sucesso
+
+- Context bundle é compacto, claro e útil para LLMs/VLMs
+- Sumarizações são fiéis ao design e agregam valor para automação/codegen
+- Pipeline é rápido, extensível e fácil de evoluir
+- Usuários conseguem exportar contexto de qualquer arquivo Figma com poucos cliques
+- Feedback positivo de usuários e integração real com fluxos de LLM/VLM
+
+---
+
+## Priorização Sugerida
+
+1. Sumarização automática e exportação de context bundle
+2. Extração de interações e tokens visuais
+3. Interface de preview/exportação e testes automáticos
+4. Acessibilidade, histórico e feedback/analytics
