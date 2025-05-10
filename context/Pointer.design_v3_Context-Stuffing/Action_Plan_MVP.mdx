@@ -105,3 +105,76 @@ Pointer.design será a ponte entre design (Figma) e IA, extraindo e organizando 
 2. Extração de interações e tokens visuais
 3. Interface de preview/exportação e testes automáticos
 4. Acessibilidade, histórico e feedback/analytics
+
+
+
+-----------------------
+
+Aqui está um levantamento geral do codebase da Pointer.design, focado em como o projeto já interage com o Figma e quais tipos de contexto podem ser extraídos e potencializados para LLMs e VLMs:
+
+1. O que já existe no codebase
+a) Integração com Figma
+APIs: O projeto possui rotas API para buscar dados do Figma (figma, figma-asset, figma-assets).
+Extração de dados: Já são extraídos:
+Estrutura do arquivo Figma (document, components, styles, etc).
+Assets visuais: SVGs de nodes específicos, vetores, imagens.
+Navegação por nodeId, fileKey, e parsing de URLs do Figma.
+Funções utilitárias: Para extrair parâmetros de URLs, buscar assets recursivamente, e serializar respostas.
+b) Organização dos dados
+Estrutural: A árvore de nodes é acessada e pode ser percorrida recursivamente (ex: função findNodeById).
+Visual: SVGs e imagens são baixados e servidos.
+Semântico: Nomes de nodes, tipos (VECTOR, IMAGE, ICON), e textos dos elementos são acessíveis.
+Prototipação: Não há evidências claras de extração de links de protótipo, mas pode ser facilmente adicionado via API do Figma.
+Acessibilidade e histórico: Não há extração explícita de dados de acessibilidade ou histórico/colaboração, mas a API do Figma oferece acesso a comentários e histórico de versões.
+
+2. Possibilidades de Transformação de Designs em Contexto
+a) Contexto Estrutural
+Já possível: Exportar a árvore de nodes, tipos de elementos, hierarquia.
+A evoluir: Gerar descrições automáticas da estrutura ("Frame X contém botões A, B, C e imagem D").
+
+b) Contexto Semântico
+Já possível: Nomes de componentes, textos dos elementos.
+A evoluir: Extrair e sumarizar textos, gerar descrições de propósito de cada componente/tela.
+
+c) Contexto Visual
+Já possível: SVGs, imagens, nomes de estilos.
+A evoluir: Mapear paleta de cores, fontes, tokens de design, gerar resumos visuais ("Predominância de azul, fontes sans-serif, estilo minimalista").
+
+d) Contexto Interativo
+Já possível: Não identificado no codebase atual.
+A evoluir: Extrair links de prototipação (navegação entre frames), estados de componentes, animações.
+
+e) Contexto de Acessibilidade
+Já possível: Não identificado no codebase atual.
+A evoluir: Calcular contraste, mapear hierarquia de headings, sugerir melhorias de acessibilidade.
+
+f) Contexto Histórico/Colaborativo
+Já possível: Não identificado no codebase atual.
+A evoluir: Extrair comentários, histórico de versões, responsáveis por elementos.
+
+g) Contexto para LLMs/VLMs (Prompt Engineering)
+Já possível: Dados brutos já podem ser usados como contexto.
+A evoluir: Gerar bundles de contexto em formatos amigáveis para LLMs (JSON, Markdown, YAML, prompt templates), sumarizar telas, gerar descrições automáticas.
+
+
+3. Gaps e Oportunidades
+Faltam: Extração de prototipagem, comentários, dados de acessibilidade, sumarizações automáticas.
+Oportunidade: Criar uma camada de processamento que transforma o JSON bruto do Figma em um "context bundle" com:
+Árvore estrutural resumida.
+Lista de componentes e suas funções/textos.
+Paleta de cores e estilos predominantes.
+Resumo visual e semântico de cada tela/frame.
+Links de navegação entre telas.
+Comentários e discussões relevantes.
+Sugestões de prompts para LLMs baseados no design.
+
+4. Recomendações Práticas
+Adicionar extração de contexto interativo e colaborativo: Usar endpoints adicionais da API do Figma para pegar prototipagem e comentários.
+Implementar sumarização automática: Funções que percorrem a árvore de nodes e geram descrições textuais ("Esta tela é um dashboard com gráfico de barras, menu lateral e botão de logout").
+Criar exportador de contexto: Endpoint que gera um bundle de contexto em JSON/Markdown, pronto para consumo por LLMs/VLMs.
+Pensar em extensibilidade: Permitir que o usuário escolha que tipo de contexto quer exportar (estrutural, visual, interativo, colaborativo).
+Testar integração com LLMs/VLMs: Usar bundles gerados como input para tarefas de geração de código, documentação, análise de acessibilidade, etc.
+Resumo
+O codebase já tem uma base sólida para extração de dados do Figma, especialmente estrutural e visual. Para transformar designs em contexto rico para LLMs/VLMs, o próximo passo é adicionar processamento semântico, sumarização, extração de interações e acessibilidade, e empacotar tudo em formatos amigáveis para modelos de IA.
+
+Se quiser, posso sugerir uma arquitetura para o exportador de contexto ou prototipar um endpoint inicial para sumarização automática!
