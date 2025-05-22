@@ -616,8 +616,8 @@ function extractVectorData(node: SceneNode): any {
     vectorData.fillStyles = node.fills.map((fill: Paint) => {
       const baseStyle = {
         type: fill.type,
-        visible: fill.visible !== false, // Default true
-        opacity: ('opacity' in fill) ? fill.opacity : 1 // Default 1
+        visible: ('visible' in fill && typeof fill.visible === 'boolean') ? fill.visible : true, // Default true
+        opacity: ('opacity' in fill && typeof fill.opacity === 'number') ? fill.opacity : 1 // Default 1
       };
       if (fill.type === 'SOLID') {
         const solidFill = fill as SolidPaint;
@@ -655,8 +655,8 @@ function extractVectorData(node: SceneNode): any {
      vectorData.strokeStyles = node.strokes.map((stroke: Paint) => {
         const baseStyle = {
           type: stroke.type,
-          visible: stroke.visible !== false, 
-          opacity: ('opacity' in stroke) ? stroke.opacity : 1
+          visible: ('visible' in stroke && typeof stroke.visible === 'boolean') ? stroke.visible : true, // Default true
+          opacity: ('opacity' in stroke && typeof stroke.opacity === 'number') ? stroke.opacity : 1 // Default 1
         };
          if (stroke.type === 'SOLID') {
            const solidStroke = stroke as SolidPaint;

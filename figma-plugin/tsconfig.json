@@ -1,20 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "es2020",
     "moduleResolution": "node",
-    "lib": ["ES2017"],
+    "lib": ["es2020", "dom"],
     "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./node_modules/@figma"
-    ],
     "types": [
       "@figma/plugin-typings"
     ]
   },
   "include": ["code.ts"]
-} 
+}
