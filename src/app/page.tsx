@@ -5,135 +5,27 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Loader2, AlertCircle, Copy, Info } from 'lucide-react'
-import { Textarea } from '@/components/ui/textarea'
+import { Loader2, AlertCircle, Copy, Info, ZoomIn, ZoomOut } from 'lucide-react' // Added ZoomIn, ZoomOut
+import { Textarea } from '@/components/ui/textarea';
+import { FigmaNode, renderNode } from '../components/FigmaNodeRenderer';
+import { FigmaNodeDetailsPanel } from '../components/FigmaNodeDetailsPanel';
 
-// Helper function to convert Figma color (0-1 range) to CSS rgba string
-function figmaColorToCss(color?: { r: number; g: number; b: number; a: number }): string {
-    if (!color) return 'transparent';
-    const r = Math.round(color.r * 255);
-    const g = Math.round(color.g * 255);
-    const b = Math.round(color.b * 255);
-    return `rgba(${r}, ${g}, ${b}, ${color.a})`;
-}
-
-// Helper function to get background color from fills
-function getBackgroundColor(fills?: ReadonlyArray<any>): string {
-    if (!fills || fills.length === 0) return 'transparent';
-    const solidFill = fills.find((fill: any) => fill.type === 'SOLID' && fill.color);
-    return figmaColorToCss(solidFill?.color);
-}
-
-// Helper function to render a node recursively
-function renderNode(node: FigmaNode, scale: number = 0.2): React.ReactNode {
-    if (!node) {
-        console.log('Attempted to render null node');
-        return null;
-    }
-    
-    console.log('Rendering node:', { id: node.id, name: node.name, type: node.type, bbox: node.absoluteBoundingBox });
-    
-    // Se o nó não tiver absoluteBoundingBox, não podemos renderizá-lo corretamente
-    if (!node.absoluteBoundingBox) {
-        console.log('Node missing absoluteBoundingBox:', node.id, node.name);
-        return null;
-    }
-    
-    // Para nós de primeiro nível (frames), definir posição relativa ao container
-    // Para nós filhos, definir posição absoluta em relação ao pai
-    const isTopLevelNode = node.type === 'FRAME' || node.type === 'COMPONENT' || node.type === 'INSTANCE';
-    
-    const style: React.CSSProperties = {
-        position: 'absolute',
-        left: isTopLevelNode ? '0' : `${(node.absoluteBoundingBox.x - (node.parent?.absoluteBoundingBox?.x || 0)) * scale}px`,
-        top: isTopLevelNode ? '0' : `${(node.absoluteBoundingBox.y - (node.parent?.absoluteBoundingBox?.y || 0)) * scale}px`,
-        width: `${node.absoluteBoundingBox.width * scale}px`,
-        height: `${node.absoluteBoundingBox.height * scale}px`,
-        backgroundColor: getBackgroundColor(node.fills),
-        borderRadius: typeof node.cornerRadius === 'number' ? `${node.cornerRadius * scale}px` : undefined,
-        overflow: 'hidden',
-    };
-    
-    // Add border if there are strokes
-    if (node.strokes && node.strokes.length > 0 && node.strokeWeight) {
-        const strokeFill = node.strokes.find((stroke: any) => stroke.type === 'SOLID');
-        if (strokeFill) {
-            style.border = `${node.strokeWeight * scale}px solid ${figmaColorToCss(strokeFill.color)}`;
-        }
-    }
-    
-    // Special handling for TEXT nodes
-    if (node.type === 'TEXT' && node.characters) {
-        return (
-            <div style={style}>
-                <p style={{
-                    fontSize: node.style?.fontSize ? `${node.style.fontSize * scale}px` : undefined,
-                    fontWeight: node.style?.fontWeight,
-                    textAlign: node.style?.textAlignHorizontal?.toLowerCase() as any,
-                    margin: 0,
-                    padding: 0,
-                    color: getBackgroundColor(node.fills) !== 'transparent' ? getBackgroundColor(node.fills) : '#000',
-                    overflow: 'hidden',
-                    textOverflow: 'ellipsis',
-                }}>
-                    {node.characters}
-                </p>
-            </div>
-        );
-    }
-    
-    // Render children recursively for container nodes
-    return (
-        <div style={style}>
-            {node.children?.map((child: FigmaNode) => (
-                <React.Fragment key={child.id}>
-                    {renderNode(child, scale)}
-                </React.Fragment>
-            ))}
-        </div>
-    );
-}
-
-// Interface for Figma nodes (expanded to support more node types)
-interface FigmaNode {
-    id: string;
-    name: string;
-    type: string; // 'FRAME', 'RECTANGLE', 'TEXT', 'GROUP', 'COMPONENT', etc.
-    absoluteBoundingBox?: { x: number; y: number; width: number; height: number };
-    fills?: ReadonlyArray<any>;
-    strokes?: ReadonlyArray<any>;
-    strokeWeight?: number;
-    cornerRadius?: number | { topLeft?: number; topRight?: number; bottomRight?: number; bottomLeft?: number };
-    characters?: string; // For TEXT nodes
-    style?: { // For TEXT nodes
-        fontFamily?: string;
-        fontWeight?: number;
-        fontSize?: number;
-        textAlignHorizontal?: string;
-        textAlignVertical?: string;
-        letterSpacing?: number;
-        lineHeightPx?: number;
-        lineHeightPercent?: number;
-    };
-    layoutMode?: string; // For AUTO_LAYOUT
-    primaryAxisSizingMode?: string;
-    counterAxisSizingMode?: string;
-    paddingLeft?: number;
-    paddingRight?: number;
-    paddingTop?: number;
-    paddingBottom?: number;
-    itemSpacing?: number; // For AUTO_LAYOUT
-    children?: FigmaNode[];
-    parent?: FigmaNode; // Referência ao nó pai para cálculo de posição relativa
-}
-
-type FetchStatus = 'idle' | 'loading' | 'success' | 'error'
+type FetchStatus = 'idle' | 'loading' | 'success' | 'error';
 
 export default function FigmaExtractorPage() {
   const [figmaUrl, setFigmaUrl] = useState<string>('')
   const [status, setStatus] = useState<FetchStatus>('idle')
   const [nodes, setNodes] = useState<FigmaNode[]>([])
   const [error, setError] = useState<string | null>(null)
+  const [previewScale, setPreviewScale] = useState<number>(1.0); // Added previewScale state
+
+  const handleZoomIn = () => {
+    setPreviewScale(prevScale => Math.min(prevScale * 1.2, 5.0)); // Zoom in by 20%, max 5x
+  };
+
+  const handleZoomOut = () => {
+    setPreviewScale(prevScale => Math.max(prevScale / 1.2, 0.1)); // Zoom out by 20%, min 0.1x
+  };
 
   const handleFetchData = async () => {
     if (!figmaUrl) {
@@ -344,107 +236,30 @@ export default function FigmaExtractorPage() {
   // State 4: Success (Data Extracted Layout)
   return (
     <div className="flex h-screen w-screen bg-white overflow-hidden">
-      <aside className="w-72 bg-white border-r border-gray-200 p-4 flex flex-col space-y-4 overflow-y-auto">
-          <div>
-              <label htmlFor="figmaUrlDisplay" className="text-xs font-medium text-gray-500 flex items-center justify-between mb-1">
-                  <span>Figma URL</span>
-                  <span className="cursor-pointer" title="The URL of the Figma file being displayed.">
-                    <Info className="h-3 w-3 text-gray-400" />
-                  </span>
-              </label>
-              <Input 
-                  id="figmaUrlDisplay"
-                  type="text" 
-                  value={figmaUrl} 
-                  readOnly 
-                  className="w-full border-gray-300 bg-gray-50 text-xs h-8 focus-visible:ring-offset-0 focus-visible:ring-0"
-              />
-          </div>
-
-          {nodes.length > 0 && nodes[0] && (
-            <div className="flex-grow overflow-y-auto border rounded-md p-3 bg-white space-y-3">
-              <div className="flex justify-between items-center border-b pb-2 mb-2">
-                  <h3 className="text-sm font-semibold truncate" title={nodes[0].name}>{nodes[0].name}</h3>
-                  <Button variant="ghost" size="icon" onClick={handleCopyJson} title="Copy JSON" className="h-6 w-6">
-                      <Copy className="h-4 w-4 text-gray-500" />
-                  </Button>
-              </div>
-              <div className="space-y-3">
-                  <div className="space-y-1">
-                      <p className="text-xs font-medium text-gray-500">Properties</p>
-                      <div className="bg-gray-50 rounded p-2 space-y-1">
-                          <p className="text-xs text-gray-600">Type: <span className="font-medium text-gray-800">{nodes[0].type}</span></p>
-                          {nodes[0].absoluteBoundingBox && (
-                            <p className="text-xs text-gray-600">Dimensions: <span className="font-medium text-gray-800">{nodes[0].absoluteBoundingBox.width.toFixed(0)} × {nodes[0].absoluteBoundingBox.height.toFixed(0)}</span></p>
-                          )}
-                          {nodes[0].characters && (
-                            <p className="text-xs text-gray-600">Text: <span className="font-medium text-gray-800">{nodes[0].characters.substring(0, 50)}{nodes[0].characters.length > 50 ? '...' : ''}</span></p>
-                          )}
-                          {nodes[0].layoutMode && (
-                            <p className="text-xs text-gray-600">Layout: <span className="font-medium text-gray-800">{nodes[0].layoutMode}</span></p>
-                          )}
-                          {nodes[0].children && (
-                            <p className="text-xs text-gray-600">Children: <span className="font-medium text-gray-800">{nodes[0].children.length}</span></p>
-                          )}
-                      </div>
-                  </div>
-                  
-                  {nodes[0].fills && nodes[0].fills.length > 0 && (
-                    <div className="space-y-1">
-                        <p className="text-xs font-medium text-gray-500">Fill</p>
-                        <div className="flex items-center gap-1">
-                            {nodes[0].fills.map((fill: any, index: number) => {
-                                if (fill.type === 'SOLID') {
-                                    return (
-                                        <div key={index} className="w-5 h-5 rounded-full border border-gray-300" 
-                                             style={{ backgroundColor: figmaColorToCss(fill.color) }} />
-                                    );
-                                }
-                                return null;
-                            })}
-                        </div>
-                    </div>
-                  )}
-                  
-                  {nodes[0].strokes && nodes[0].strokes.length > 0 && (
-                    <div className="space-y-1">
-                        <p className="text-xs font-medium text-gray-500">Stroke</p>
-                        <div className="flex items-center gap-1">
-                            {nodes[0].strokes.map((stroke: any, index: number) => {
-                                if (stroke.type === 'SOLID') {
-                                    return (
-                                        <div key={index} className="w-5 h-5 rounded-full border border-gray-300" 
-                                             style={{ backgroundColor: figmaColorToCss(stroke.color) }} />
-                                    );
-                                }
-                                return null;
-                            })}
-                        </div>
-                    </div>
-                  )}
-              </div>
-              
-              <div className="pt-2">
-                  <p className="text-xs font-medium text-gray-500 mb-1">JSON Data</p>
-                  <Textarea
-                      readOnly
-                      value={JSON.stringify(nodes[0], null, 2)}
-                      className="w-full h-56 font-mono text-xs resize-none bg-gray-50 border-gray-300 focus-visible:ring-offset-0 focus-visible:ring-0"
-                  />
-              </div>
-            </div>
-          )}
-      </aside>
+      <FigmaNodeDetailsPanel 
+        figmaUrl={figmaUrl}
+        nodes={nodes}
+        onCopyJson={handleCopyJson}
+      />
 
       <main className="flex-1 flex flex-col bg-gray-50 h-full">
           <header className="bg-white border-b border-gray-200 p-3 flex justify-between items-center">
               <h1 className="text-base font-semibold">Preview</h1>
-              <Button 
-                  onClick={() => { setStatus('idle'); setNodes([]); setFigmaUrl(''); }} 
-                  className="bg-gray-800 hover:bg-gray-700 text-white h-8 px-3 text-sm"
-              >
-                 + New extraction
-              </Button>
+              <div className="flex items-center gap-2">
+                <Button variant="outline" size="icon" onClick={handleZoomOut} title="Zoom Out" className="h-8 w-8">
+                    <ZoomOut className="h-4 w-4" />
+                </Button>
+                <span className="text-sm text-gray-600 w-12 text-center">{Math.round(previewScale * 100)}%</span>
+                <Button variant="outline" size="icon" onClick={handleZoomIn} title="Zoom In" className="h-8 w-8">
+                    <ZoomIn className="h-4 w-4" />
+                </Button>
+                <Button 
+                    onClick={() => { setStatus('idle'); setNodes([]); setFigmaUrl(''); setPreviewScale(1.0); }} 
+                    className="bg-gray-800 hover:bg-gray-700 text-white h-8 px-3 text-sm ml-4"
+                >
+                   + New extraction
+                </Button>
+              </div>
           </header>
 
           <div className="flex-grow p-6 overflow-auto h-full w-full flex items-center justify-center">
@@ -488,17 +303,18 @@ export default function FigmaExtractorPage() {
                       // Calcular a escala mantendo a proporção original
                       const scaleByHeight = containerHeight / height;
                       const scaleByWidth = containerWidth / width;
-                      const scale = Math.min(scaleByHeight, scaleByWidth, 1); // Limitar a escala a no máximo 1 (tamanho real)
+                      const initialFitScale = Math.min(scaleByHeight, scaleByWidth, 1); // Limitar a escala a no máximo 1 (tamanho real)
                       
-                      const previewHeight = height * scale;
-                      const previewWidth = width * scale;
-                      
+                      const effectiveScale = initialFitScale * previewScale;
+                                            
                       console.log('Rendering preview for node:', {
                           id: node.id,
                           name: node.name,
                           type: node.type,
                           dimensions: `${width}x${height}`,
-                          scale,
+                          initialFitScale,
+                          previewScale,
+                          effectiveScale,
                           hasChildren: (node.children && node.children.length > 0) || false
                       });
                       
@@ -516,7 +332,7 @@ export default function FigmaExtractorPage() {
                                       <span className="text-xs text-gray-500">{Math.round(width)} × {Math.round(height)}</span>
                                   </div>
                               </div>
-                              <div className="relative bg-gray-100 overflow-hidden flex-1 flex items-center justify-center" style={{ height: 'calc(100vh - 200px)' }}>
+                              <div className="relative bg-gray-100 overflow-auto flex-1 flex items-center justify-center" style={{ height: 'calc(100vh - 200px)' }}> {/* Changed overflow-hidden to overflow-auto */}
                                   <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
                                       <div className="relative" style={{ 
                                           width: '100%', 
@@ -531,10 +347,10 @@ export default function FigmaExtractorPage() {
                                               position: 'relative', 
                                               width: '100%', 
                                               height: '100%',
-                                              transform: `scale(${scale})`,
+                                              transform: `scale(${effectiveScale})`, // Use effectiveScale
                                               transformOrigin: 'center center'
                                           }}>
-                                              {renderNode(node, scale)}
+                                              {renderNode(node, effectiveScale)} {/* Pass effectiveScale to renderNode */}
                                           </div>
                                       </div>
                                   </div>

@@ -1,5 +1,25 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## About This Project
+
+This application serves as a tool to extract, view, and inspect Figma file data. Users can input a Figma File URL to fetch design nodes from the Figma API and see a rendered preview of these nodes. It allows for a closer look at the structure and properties of Figma designs directly within a web interface.
+
+### Key Features:
+
+*   **Figma URL Input:** Users can paste a Figma file URL to initiate the data extraction process.
+*   **Visual Preview:** Renders a visual representation of top-level frames and components from the specified Figma file.
+*   **Node Properties Display:** Shows detailed properties of the primary selected/viewed node, such as its type, dimensions (width, height), and other relevant metadata.
+*   **Raw JSON Data:** Provides a view of the raw JSON data for the selected node, with a convenient copy-to-clipboard feature for developers.
+*   **Zoom Functionality:** Allows users to zoom in and out of the visual preview for a more detailed inspection.
+
+### Main Technologies Used:
+
+*   **Next.js:** A React framework for building server-side rendered and static web applications.
+*   **TypeScript:** A superset of JavaScript that adds static typing.
+*   **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+*   **Shadcn UI:** A collection of re-usable UI components.
+*   **Figma API:** Used to fetch file data, accessed via the `figma-api` library in the backend.
+
 ## Getting Started
 
 First, run the development server:
